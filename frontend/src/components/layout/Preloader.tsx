@@ -23,17 +23,26 @@ export function Preloader() {
       return;
     }
 
-    // Smooth, fast progress increment (reaches 100% in ~500ms)
+    // Smooth, cinematic progress increment (~1.8s - 2.2s total)
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
           return 100;
         }
-        const step = prev < 60 ? Math.floor(Math.random() * 10) + 8 : Math.floor(Math.random() * 8) + 5;
+        let step = 1;
+        if (prev < 30) {
+          step = Math.floor(Math.random() * 3) + 2; // 2 to 4
+        } else if (prev < 70) {
+          step = Math.floor(Math.random() * 2) + 1; // 1 to 2
+        } else if (prev < 92) {
+          step = Math.floor(Math.random() * 3) + 1; // 1 to 3
+        } else {
+          step = 1; // deliberate crawl into 100%
+        }
         return Math.min(prev + step, 100);
       });
-    }, 28);
+    }, 32);
 
     return () => clearInterval(interval);
   }, []);
@@ -41,13 +50,15 @@ export function Preloader() {
   useEffect(() => {
     if (progress === 100) {
       sessionStorage.setItem('kingsphere_preloaded', 'true');
+      // Hold comfortably at 100% so the user clearly sees the 100% state and completion message
       const timeout = setTimeout(() => {
         setIsFinished(true);
-      }, 400);
+      }, 950);
 
+      // Gracefully unmount after smooth fade out transition
       const removeTimeout = setTimeout(() => {
         setShouldRender(false);
-      }, 1100);
+      }, 1950);
 
       return () => {
         clearTimeout(timeout);
@@ -62,7 +73,7 @@ export function Preloader() {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-between p-4 sm:p-8 md:p-10 transition-all duration-700 ease-out overflow-hidden ${isFinished ? 'opacity-0 -translate-y-3 pointer-events-none' : 'opacity-100 pointer-events-auto'
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-between p-4 sm:p-8 md:p-10 transition-all duration-1000 ease-in-out overflow-hidden ${isFinished ? 'opacity-0 scale-[1.02] pointer-events-none' : 'opacity-100 scale-100 pointer-events-auto'
         }`}
       style={{ backgroundColor: '#080909' }}
       aria-hidden={isFinished}
