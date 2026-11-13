@@ -50,7 +50,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Autoplay Status & Controls Bar */}
-      <div className="flex items-center justify-between text-xs text-[#A5A39C] font-sans px-1">
+      <div className="flex items-center justify-between text-xs text-white font-sans px-1">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#C9A34F] animate-pulse" />
           <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#E8D29A]">
@@ -60,7 +60,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
 
         <button
           onClick={() => setIsPaused((prev) => !prev)}
-          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.25)] hover:border-[#C9A34F] text-[#E8D29A] text-[10px] uppercase tracking-wider transition-colors cursor-pointer"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.25)] hover:border-[#C9A34F] text-[#E8D29A] text-[10px] uppercase tracking-wider transition-colors cursor-pointer"
           title={isPaused ? 'Resume Auto-Progression' : 'Pause Auto-Progression'}
         >
           {isPaused ? (
@@ -105,8 +105,8 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                   className={`relative z-20 w-12 h-12 rounded-[2px] flex items-center justify-center transition-all duration-300 border ${isActive
                       ? 'bg-[#171816] border-[#E8D29A] text-[#E8D29A] shadow-[0_0_20px_rgba(201,163,79,0.45)] scale-110 ring-2 ring-[#C9A34F]/30'
                       : isPassed
-                        ? 'bg-[#101111] border-[#C9A34F] text-[#C9A34F]'
-                        : 'bg-[#080909] border-[rgba(201,163,79,0.25)] text-[#A5A39C] hover:border-[#C9A34F]/60 hover:text-[#E8D29A]'
+                        ? 'bg-[#070B0E] border-[#C9A34F] text-[#C9A34F]'
+                        : 'bg-[#080909] border-[rgba(201,163,79,0.25)] text-white hover:border-[#C9A34F]/60 hover:text-[#E8D29A]'
                     }`}
                 >
                   <span className="font-mono text-xs font-semibold">{step.step}</span>
@@ -123,7 +123,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                 </div>
 
                 {/* Title & Phase Label */}
-                <span className={`font-serif text-xs font-normal mt-3.5 leading-snug max-w-[130px] transition-colors ${isActive ? 'text-[#E8D29A] font-medium' : 'text-[#D4D2CD] group-hover:text-[#F3F0E9]'
+                <span className={`font-serif text-xs font-normal mt-3.5 leading-snug max-w-[130px] transition-colors ${isActive ? 'text-[#E8D29A] font-medium' : 'text-white group-hover:text-[#F3F0E9]'
                   }`}>
                   {step.title}
                 </span>
@@ -136,7 +136,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
       {/* Active Step Highlight Card (Desktop Display) - Dynamic Animated Content */}
       <div
         key={activeStep.step}
-        className="hidden lg:block rounded-[2px] bg-[#101111] border border-[rgba(201,163,79,0.28)] p-8 sm:p-10 shadow-card-dark transition-all duration-500 animate-in fade-in slide-in-from-bottom-2"
+        className="hidden lg:block rounded-[2px] bg-[#070B0E] border border-[rgba(201,163,79,0.28)] p-8 sm:p-10 shadow-card-dark transition-all duration-500 animate-in fade-in slide-in-from-bottom-2"
       >
         <div className="grid grid-cols-12 gap-8 items-center">
           {/* Left Column: Phase Description */}
@@ -158,7 +158,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
               &ldquo;{activeStep.tagline}&rdquo;
             </p>
 
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans max-w-2xl">
+            <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-2xl">
               {activeStep.description}
             </p>
           </div>
@@ -178,7 +178,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
               <div className="text-[10px] uppercase font-medium tracking-wider text-[#E8D29A]">
                 Key Deliverable
               </div>
-              <div className="text-xs text-[#A5A39C] mt-1 flex items-start gap-1.5 leading-relaxed">
+              <div className="text-xs text-white mt-1 flex items-start gap-1.5 leading-relaxed">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#C9A34F] shrink-0 mt-0.5" />
                 <span>{activeStep.deliverable}</span>
               </div>
@@ -187,7 +187,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
         </div>
 
         {/* Bottom Step Timing Bar */}
-        <div className="mt-8 pt-4 border-t border-[rgba(201,163,79,0.12)] flex items-center justify-between text-[10px] text-[#A5A39C] font-mono">
+        <div className="mt-8 pt-4 border-t border-[rgba(201,163,79,0.12)] flex items-center justify-between text-[10px] text-white font-mono">
           <span>STEP PROGRESSION</span>
           <div className="w-48 h-[2px] bg-[#171816] rounded-full overflow-hidden">
             <div
@@ -219,7 +219,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
               key={step.step}
               className={`relative rounded-[1px] p-4 sm:p-5 border transition-all duration-300 cursor-pointer ${isSelected
                   ? 'bg-[#141615] border-[#C9A34F] shadow-[0_0_20px_rgba(201,163,79,0.18)]'
-                  : 'bg-[#101111] border-[rgba(201,163,79,0.18)] hover:border-[rgba(201,163,79,0.4)]'
+                  : 'bg-[#070B0E] border-[rgba(201,163,79,0.18)] hover:border-[rgba(201,163,79,0.4)]'
                 }`}
               onClick={() => handleStepClick(idx)}
             >
@@ -229,7 +229,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                     ? 'bg-[#C9A34F] text-[#080909] border-[#E8D29A] shadow-[0_0_15px_rgba(201,163,79,0.6)] scale-110'
                     : isPassed
                       ? 'bg-[#171816] border-[#C9A34F] text-[#E8D29A]'
-                      : 'bg-[#080909] border-[rgba(201,163,79,0.3)] text-[#A5A39C]'
+                      : 'bg-[#080909] border-[rgba(201,163,79,0.3)] text-white'
                   }`}
               >
                 {step.step}
@@ -240,7 +240,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                   <span className="font-mono text-[10px] text-[#C9A34F] font-semibold tracking-wider">
                     PHASE {step.step}
                   </span>
-                  <span className="text-[9px] text-[#A5A39C] uppercase tracking-wider font-mono">
+                  <span className="text-[9px] text-white uppercase tracking-wider font-mono">
                     0{step.step} / 06
                   </span>
                 </div>
@@ -253,7 +253,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                   &ldquo;{step.tagline}&rdquo;
                 </p>
 
-                <p className="text-xs text-[#A5A39C] leading-relaxed mt-2 font-sans">
+                <p className="text-xs text-white leading-relaxed mt-2 font-sans">
                   {step.description}
                 </p>
 
@@ -265,7 +265,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                       </span>
                       <span className="text-[#F3F0E9]">{step.keyAction}</span>
                     </div>
-                    <div className="flex items-start gap-1.5 text-[#A5A39C] pt-0.5">
+                    <div className="flex items-start gap-1.5 text-white pt-0.5">
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#C9A34F] shrink-0 mt-0.5" />
                       <span>{step.deliverable}</span>
                     </div>

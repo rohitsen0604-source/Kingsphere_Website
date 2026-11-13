@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsCapabilitiesPage() {
   return (
-    <div className="relative bg-[#080909] text-[#F3F0E9] min-h-screen">
+    <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* 1. Capabilities Hero with /images/hero/05-projects-capabilities-hero.png */}
       <PageHero
         badge="OPERATIONAL CAPACITY & INFRASTRUCTURE"
@@ -32,7 +32,7 @@ export default function ProjectsCapabilitiesPage() {
         imageSrc="/images/kingsphere/05-projects-capabilities-hero.png"
         imageAlt="KINGSPHERE Projects & Capabilities Scope"
       >
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[1px] bg-[#101111]/80 border border-[rgba(201,163,79,0.25)] text-xs text-[#E8D29A] font-sans">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[1px] bg-[#070B0E]/80 border border-[rgba(201,163,79,0.25)] text-xs text-[#E8D29A] font-sans">
           <Sparkles className="w-3.5 h-3.5 text-[#C9A34F]" />
           <span>Verified enterprise execution domains and collaborative frameworks.</span>
         </div>
@@ -56,7 +56,7 @@ export default function ProjectsCapabilitiesPage() {
                 <GsapReveal key={domain.id} animation="fade-up" duration={0.85}>
                   <div
                     id={domain.id}
-                    className="group rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.2)] overflow-hidden shadow-card-dark p-6 sm:p-8 lg:p-10 hover:border-[rgba(201,163,79,0.38)] transition-all duration-400"
+                    className="group rounded-[2px] royal-glass overflow-hidden p-6 sm:p-8 lg:p-10 transition-all duration-400"
                   >
                     <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
                       {/* Visual Container */}
@@ -69,9 +69,9 @@ export default function ProjectsCapabilitiesPage() {
                             className="object-cover filter brightness-[0.8] contrast-[1.1] transition-transform duration-700 ease-out group-hover:scale-105"
                             sizes="(max-width: 1024px) 100vw, 40vw"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#101111] via-transparent to-transparent opacity-80" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-80" />
                           <div className="absolute top-4 left-4">
-                            <span className="font-mono text-xs px-2.5 py-1 rounded-[1px] bg-[#080909]/90 border border-[#C9A34F] text-[#E8D29A] font-semibold">
+                            <span className="font-mono text-xs px-2.5 py-1 rounded-[2px] bg-[#070B0E]/90 border border-[#DDB763] text-[#F8E9C6] font-semibold">
                               {domain.category}
                             </span>
                           </div>
@@ -87,7 +87,7 @@ export default function ProjectsCapabilitiesPage() {
                         <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#F3F0E9] mt-1">
                           {domain.title}
                         </h3>
-                        <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed mt-2 font-sans">
+                        <p className="text-xs sm:text-sm text-white leading-relaxed mt-2 font-sans">
                           {domain.summary}
                         </p>
                       </div>
@@ -98,7 +98,7 @@ export default function ProjectsCapabilitiesPage() {
                           <div className="text-[11px] font-medium uppercase tracking-wider text-[#E8D29A]">
                             Operational Scope
                           </div>
-                          <ul className="space-y-1.5 text-xs text-[#A5A39C]">
+                          <ul className="space-y-1.5 text-xs text-white">
                             {domain.operationalScope.map((scope, i) => (
                               <li key={i} className="flex items-start gap-1.5 leading-relaxed">
                                 <CheckCircle2 className="w-3.5 h-3.5 text-[#C9A34F] shrink-0 mt-0.5" />
@@ -113,7 +113,7 @@ export default function ProjectsCapabilitiesPage() {
                           <div className="text-[11px] font-medium uppercase tracking-wider text-[#E8D29A]">
                             Assets & Alliances
                           </div>
-                          <ul className="space-y-1.5 text-xs text-[#A5A39C]">
+                          <ul className="space-y-1.5 text-xs text-white">
                             {domain.equipmentAndAssets.map((asset, i) => (
                               <li key={i} className="flex items-start gap-1.5 leading-relaxed">
                                 <Boxes className="w-3.5 h-3.5 text-[#C9A34F] shrink-0 mt-0.5" />
@@ -124,20 +124,28 @@ export default function ProjectsCapabilitiesPage() {
                         </div>
                       </div>
 
-                      {/* Opportunities */}
-                      <div className="pt-2 font-sans">
-                        <div className="text-[10px] uppercase font-medium tracking-wider text-[#C9A34F] mb-1.5">
-                          Development Vectors:
+                      {/* Opportunities & Sector Detail Link */}
+                      <div className="pt-2 font-sans space-y-4">
+                        <div>
+                          <div className="text-[10px] uppercase font-medium tracking-wider text-[#D4AF5A] mb-1.5">
+                            Development Vectors:
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {domain.opportunityVectors.map((opp, i) => (
+                              <span
+                                key={i}
+                                className="text-[11px] px-2.5 py-1 rounded-[2px] bg-[#0F1A1F] border border-[rgba(221,183,99,0.22)] text-white"
+                              >
+                                {opp}
+                              </span>
+                            ))}
+                          </div>
                         </div>
-                        <div className="flex flex-wrap gap-2">
-                          {domain.opportunityVectors.map((opp, i) => (
-                            <span
-                              key={i}
-                              className="text-[11px] px-2.5 py-1 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.16)] text-[#F3F0E9]"
-                            >
-                              {opp}
-                            </span>
-                          ))}
+
+                        <div className="pt-1">
+                          <Button href={`/business-sectors/${domain.id}`} variant="secondary" size="sm" withArrow>
+                            VIEW FULL SECTOR PROFILE
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -151,7 +159,7 @@ export default function ProjectsCapabilitiesPage() {
       </section>
 
       {/* Collaboration CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#101111] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto relative z-10 space-y-5">
           <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
             DEPLOY CAPABILITIES WITH US
@@ -159,7 +167,7 @@ export default function ProjectsCapabilitiesPage() {
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#F3F0E9]">
             SEEKING EXECUTION PARTNERS IN MAHARASHTRA OR PAN-INDIA?
           </h2>
-          <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto">
             We collaborate with project owners, general contractors, equipment suppliers, and institutional investors to execute projects with engineering discipline.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 pt-3 w-full sm:w-auto max-w-md mx-auto">

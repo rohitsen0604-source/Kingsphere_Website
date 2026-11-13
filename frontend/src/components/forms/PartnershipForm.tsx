@@ -66,7 +66,7 @@ export function PartnershipForm() {
     );
 
     return (
-      <div className="p-8 rounded-[1px] bg-[#101111] border border-[#C9A34F]/40 text-center space-y-5 animate-in fade-in duration-300">
+      <div className="p-8 rounded-[1px] bg-[#070B0E] border border-[#C9A34F]/40 text-center space-y-5 animate-in fade-in duration-300">
         <div className="w-12 h-12 mx-auto rounded-[1px] bg-[rgba(201,163,79,0.1)] border border-[#C9A34F] flex items-center justify-center text-[#E8D29A]">
           <CheckCircle2 className="w-6 h-6" />
         </div>
@@ -74,7 +74,7 @@ export function PartnershipForm() {
           <h3 className="font-serif text-2xl font-normal text-[#F3F0E9]">
             Partnership Inquiry Recorded
           </h3>
-          <p className="text-xs sm:text-sm text-[#A5A39C] mt-2 max-w-md mx-auto font-sans leading-relaxed">
+          <p className="text-xs sm:text-sm text-white mt-2 max-w-md mx-auto font-sans leading-relaxed">
             Thank you, <strong className="text-[#E8D29A]">{submittedData.fullName}</strong>. Your strategic alliance inquiry for{' '}
             <strong className="text-[#F3F0E9]">{submittedData.companyName}</strong> has been prepared.
           </p>
@@ -82,11 +82,11 @@ export function PartnershipForm() {
 
         <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)] text-left text-xs space-y-1.5 max-w-md mx-auto font-sans">
           <div>
-            <span className="text-[#A5A39C]">Category:</span>{' '}
+            <span className="text-white">Category:</span>{' '}
             <span className="text-[#E8D29A] font-medium">{submittedData.category}</span>
           </div>
           <div>
-            <span className="text-[#A5A39C]">Corporate Destination:</span>{' '}
+            <span className="text-white">Corporate Destination:</span>{' '}
             <span className="text-[#F3F0E9]">partnerships@kingsphere.in</span>
           </div>
         </div>
@@ -111,7 +111,7 @@ export function PartnershipForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="p-6 md:p-8 rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.2)] space-y-6 shadow-card-dark font-sans"
+      className="p-6 md:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-6 shadow-card-dark font-sans"
     >
       <div className="border-b border-[rgba(201,163,79,0.14)] pb-4">
         <span className="text-[10px] font-sans font-medium tracking-[0.25em] uppercase text-[#C9A34F]">
@@ -120,7 +120,7 @@ export function PartnershipForm() {
         <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#F3F0E9] mt-1">
           Initiate Strategic Partnership
         </h3>
-        <p className="text-xs text-[#A5A39C] mt-1">
+        <p className="text-xs text-white mt-1">
           Complete the credentials below for direct evaluation by our executive leadership.
         </p>
       </div>
@@ -294,7 +294,7 @@ export function PartnershipForm() {
           type="checkbox"
           className="mt-1 h-3.5 w-3.5 rounded-[1px] border-[rgba(201,163,79,0.3)] bg-[#171816] accent-[#C9A34F]"
         />
-        <label htmlFor="partnership-consent" className="text-xs text-[#A5A39C] leading-relaxed">
+        <label htmlFor="partnership-consent" className="text-xs text-white leading-relaxed">
           I confirm that the submitted corporate information is accurate and authorize KINGSPHERE to review this inquiry for strategic business alignment.
         </label>
       </div>

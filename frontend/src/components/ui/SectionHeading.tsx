@@ -27,34 +27,34 @@ export function SectionHeading({
   return (
     <div className={cn('flex flex-col mb-12 md:mb-16', alignmentClasses[align], className)}>
       {badge && (
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-[1px] border border-[rgba(201,163,79,0.25)] bg-[#101111]/80 backdrop-blur-sm">
-          <span className="w-1 h-1 rounded-full bg-[#C9A34F]" />
-          <span className="text-[10px] font-sans font-medium tracking-[0.25em] uppercase text-[#E8D29A]">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 mb-4 rounded-full border border-[rgba(221, 183, 99,0.32)] bg-[#0B151A]/90 backdrop-blur-md shadow-[0_4px_15px_rgba(0,0,0,0.5)]">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] shadow-[0_0_8px_#DDB763]" />
+          <span className="text-[10px] font-sans font-bold tracking-[0.22em] uppercase text-[#F8E9C6]">
             {badge}
           </span>
         </div>
       )}
 
-      <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-normal tracking-tight text-[#F3F0E9] leading-[1.18] max-w-3xl">
+      <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight text-white leading-[1.18] max-w-3xl">
         {title}{' '}
         {highlight && (
-          <span className="italic font-serif text-[#E8D29A]">
+          <span className="font-sans font-bold bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent drop-shadow-[0_2px_14px_rgba(221,183,99,0.25)]">
             {highlight}
           </span>
         )}
       </h2>
 
-      {/* Thin Architectural Gold Accent Line */}
+      {/* Thin Modern Accent Line */}
       <div
         className={cn(
-          'h-[1.5px] w-12 bg-gradient-to-r from-[#C9A34F] via-[#E8D29A] to-transparent my-4 transition-all duration-700 ease-out shadow-[0_0_8px_rgba(201,163,79,0.5)]',
+          'h-[2px] w-12 bg-gradient-to-r from-[#DDB763] via-[#DDB763] to-transparent my-4 transition-all duration-700 ease-out shadow-[0_0_8px_rgba(221, 183, 99,0.4)]',
           align === 'center' &&
-            'bg-gradient-to-r from-transparent via-[#C9A34F] to-transparent w-24'
+          'bg-gradient-to-r from-transparent via-[#DDB763] to-transparent w-24'
         )}
       />
 
       {description && (
-        <p className="text-xs sm:text-sm md:text-base text-[#A5A39C] leading-relaxed max-w-2xl font-sans mt-1">
+        <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-2xl font-sans mt-1">
           {description}
         </p>
       )}

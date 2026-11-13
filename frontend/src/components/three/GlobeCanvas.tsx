@@ -131,7 +131,7 @@ function MetallicGlobeMesh({ radius = 2.4 }: { radius?: number }) {
       {/* 1. Deep Metallic Core Sphere with refined dark reflection */}
       <Sphere args={[radius, 64, 64]}>
         <meshStandardMaterial
-          color="#101111"
+          color="#070B0E"
           roughness={0.45}
           metalness={0.65}
         />

@@ -24,23 +24,23 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    'relative inline-flex items-center justify-center font-sans uppercase font-medium tracking-[0.14em] transition-all duration-300 rounded-[1px] select-none cursor-pointer group text-center overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A34F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080909]';
+    'relative inline-flex items-center justify-center font-sans uppercase font-bold tracking-[0.14em] transition-all duration-300 rounded-full select-none cursor-pointer group text-center overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DDB763] focus-visible:ring-offset-2 focus-visible:ring-offset-[#070B0E]';
 
   const sizeStyles = {
-    sm: 'min-h-[40px] sm:min-h-[44px] text-[11px] px-4 py-2 gap-1.5',
-    md: 'min-h-[44px] text-xs px-5 sm:px-6 py-2.5 sm:py-3 gap-2',
-    lg: 'min-h-[48px] text-xs sm:text-[13px] px-6 sm:px-8 py-3 sm:py-3.5 gap-2.5',
+    sm: 'min-h-[40px] sm:min-h-[44px] text-[11px] px-5 py-2 gap-1.5',
+    md: 'min-h-[44px] text-xs px-6 sm:px-7 py-2.5 sm:py-3 gap-2',
+    lg: 'min-h-[48px] text-xs sm:text-[13px] px-7 sm:px-9 py-3 sm:py-3.5 gap-2.5',
   };
 
   const variantStyles = {
     primary:
-      'bg-gradient-to-r from-[#E8D29A] via-[#C9A34F] to-[#A77D32] text-[#080909] font-semibold hover:shadow-[0_0_24px_rgba(201,163,79,0.45)] hover:brightness-105 active:scale-[0.98] before:absolute before:inset-0 before:-translate-x-full hover:before:translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent before:transition-transform before:duration-700 ease-out',
+      'bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] text-black font-bold shadow-[0_4px_20px_rgba(221,183,99,0.25)] hover:shadow-[0_0_28px_rgba(221,183,99,0.45)] hover:brightness-105 active:scale-[0.98] before:absolute before:inset-0 before:-translate-x-full hover:before:translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-transform before:duration-700 ease-out',
     secondary:
-      'bg-[#171816] text-[#E8D29A] border border-[rgba(201,163,79,0.3)] hover:border-[#E8D29A] hover:bg-[#1E201D] hover:shadow-[0_0_18px_rgba(201,163,79,0.2)] active:scale-[0.98]',
+      'bg-[#0B1317] text-white border border-[rgba(221, 183, 99,0.35)] hover:border-[#DDB763] hover:bg-[#101C22] hover:shadow-[0_0_20px_rgba(221, 183, 99,0.25)] active:scale-[0.98]',
     outline:
-      'bg-transparent text-[#F3F0E9] border border-[rgba(201,163,79,0.24)] hover:text-[#E8D29A] hover:border-[#C9A34F] hover:bg-[rgba(201,163,79,0.06)] hover:shadow-[0_0_15px_rgba(201,163,79,0.12)] active:scale-[0.98]',
+      'bg-transparent text-white border border-white/20 hover:text-white hover:border-[#DDB763] hover:bg-white/5 hover:shadow-[0_0_15px_rgba(221, 183, 99,0.2)] active:scale-[0.98]',
     ghost:
-      'bg-transparent text-[#A5A39C] hover:text-[#E8D29A] hover:bg-[rgba(201,163,79,0.08)] active:scale-[0.98]',
+      'bg-transparent text-white/80 hover:text-white hover:bg-white/10 active:scale-[0.98]',
   };
 
   const content = (

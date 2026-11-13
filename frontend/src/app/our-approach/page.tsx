@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function OurApproachPage() {
   return (
-    <div className="relative bg-[#080909] text-[#F3F0E9] min-h-screen">
+    <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* Approach Hero with /images/hero/04-our-approach-hero.png */}
       <PageHero
         badge="SYSTEMATIC EXECUTION BLUEPRINT"
@@ -45,7 +45,7 @@ export default function OurApproachPage() {
       </section>
 
       {/* Additional Pillars Section */}
-      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#101111] border-y border-[rgba(201,163,79,0.2)]">
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-y border-[rgba(201,163,79,0.2)]">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badge="ARCHITECTURAL FOUNDATION"
@@ -70,7 +70,7 @@ export default function OurApproachPage() {
                   <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed">
+                  <p className="text-xs sm:text-sm text-white leading-relaxed">
                     {pillar.content}
                   </p>
                 </GlassCard>
@@ -89,7 +89,7 @@ export default function OurApproachPage() {
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#F3F0E9]">
             HAVE AN OPPORTUNITY REQUIRING STRATEGY & EXECUTION?
           </h2>
-          <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto">
             Let us review your market opportunity or asset proposal through our Phase 01 discovery framework.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 pt-3 w-full sm:w-auto max-w-md mx-auto">

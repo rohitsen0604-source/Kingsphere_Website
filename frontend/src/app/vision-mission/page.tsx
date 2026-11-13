@@ -34,7 +34,7 @@ const VALUE_ICONS: Record<string, React.ElementType> = {
 
 export default function VisionMissionPage() {
   return (
-    <div className="relative bg-[#080909] text-[#F3F0E9] min-h-screen">
+    <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* Hero with /images/hero/07-vision-mission-hero.png */}
       <PageHero
         badge="STRATEGIC CHARTER & ETHICAL FOUNDATION"
@@ -51,7 +51,7 @@ export default function VisionMissionPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Vision Panel */}
           <GsapReveal animation="fade-up" delay={0} duration={0.85}>
-            <div className="relative h-full rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
+            <div className="relative h-full rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
@@ -71,7 +71,7 @@ export default function VisionMissionPage() {
                 </blockquote>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-[#A5A39C] font-sans leading-relaxed">
+              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-white font-sans leading-relaxed">
                 We anchor our vision in building long-term trust, creating asset-backed value, and establishing bridges between Indian regional capability and international market demand.
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function VisionMissionPage() {
 
           {/* Mission Panel */}
           <GsapReveal animation="fade-up" delay={0.15} duration={0.85}>
-            <div className="relative h-full rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
+            <div className="relative h-full rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
@@ -99,7 +99,7 @@ export default function VisionMissionPage() {
                 </blockquote>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-[#A5A39C] font-sans leading-relaxed">
+              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-white font-sans leading-relaxed">
                 Our mission turns intention into reality through disciplined execution, responsible resource extraction, clean energy transition, and agile joint ventures.
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function VisionMissionPage() {
       </section>
 
       {/* Six Core Values Section */}
-      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#101111] border-y border-[rgba(201,163,79,0.2)]">
+      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E] border-y border-[rgba(201,163,79,0.2)]">
         <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
           <SectionHeading
             badge="OUR CORE CREED"
@@ -142,7 +142,7 @@ export default function VisionMissionPage() {
                         &ldquo;{val.tagline}&rdquo;
                       </div>
 
-                      <p className="text-xs text-[#A5A39C] leading-relaxed">
+                      <p className="text-xs text-white leading-relaxed">
                         {val.description}
                       </p>
                     </div>
@@ -165,26 +165,26 @@ export default function VisionMissionPage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 font-sans">
-            <div className="p-6 sm:p-8 rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.2)] space-y-3">
+            <div className="p-6 sm:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-3">
               <div className="flex items-center gap-2.5">
                 <Leaf className="w-5 h-5 text-[#C9A34F]" />
                 <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                   Sustainable Development Framework
                 </h3>
               </div>
-              <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed">
+              <p className="text-xs sm:text-sm text-white leading-relaxed">
                 Economic development cannot come at the expense of ecological balance. We embed circular economy recovery, renewable captive energy, and environmental impact audits into our industrial ventures from day zero.
               </p>
             </div>
 
-            <div className="p-6 sm:p-8 rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.2)] space-y-3">
+            <div className="p-6 sm:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-3">
               <div className="flex items-center gap-2.5">
                 <Lightbulb className="w-5 h-5 text-[#C9A34F]" />
                 <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                   Innovation & Digital Transformation
                 </h3>
               </div>
-              <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed">
+              <p className="text-xs sm:text-sm text-white leading-relaxed">
                 By embracing telemetry, digital trade clearing, enterprise workflows, and modern production automation, we build agile operations capable of competing on the international stage.
               </p>
             </div>
@@ -193,12 +193,12 @@ export default function VisionMissionPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#101111] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
+      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto relative z-10 space-y-5">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#F3F0E9] leading-tight">
             JOIN US IN SHAPING A RESPONSIBLE INDUSTRIAL FUTURE.
           </h2>
-          <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto">
             Discover how your enterprise can co-invest, partner, and expand with KINGSPHERE.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 pt-3">

@@ -1,35 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-manrope: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-cormorant: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --bg-primary: #080909;
-  --bg-secondary: #101111;
-  --bg-surface: #171816;
-  --gold-primary: #C9A34F;
-  --gold-champagne: #E8D29A;
-  --gold-metallic: #A77D32;
-  --text-primary: #F3F0E9;
-  --text-secondary: #A5A39C;
-  --border-gold: rgba(201, 163, 79, 0.24);
+  --font-sans: 'Plus Jakarta Sans', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-manrope: 'Plus Jakarta Sans', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-cormorant: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+  --bg-primary: #070B0E;
+  --bg-secondary: #0B1317;
+  --bg-surface: #0F1A1F;
+  --bg-elevated: #14232A;
+  --gold-primary: #DDB763;
+  --gold-champagne: #F8E9C6;
+  --gold-metallic: #C9A34F;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FFFFFF;
+  --border-gold: rgba(221, 183, 99, 0.32);
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #080909;
-  color: #F3F0E9;
+  background-color: #070B0E;
+  color: #FFFFFF;
   overflow-x: hidden;
   width: 100%;
 }
 
 body {
-  background-color: #080909;
-  color: #F3F0E9;
-  font-family: var(--font-manrope);
+  background-color: #070B0E;
+  background-image:
+    radial-gradient(ellipse 85% 60% at 50% -8%, rgba(221, 183, 99, 0.22) 0%, transparent 75%),
+    radial-gradient(ellipse 65% 50% at 88% 28%, rgba(201, 163, 79, 0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 45% at 10% 75%, rgba(221, 183, 99, 0.12) 0%, transparent 65%);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
@@ -111,4 +117,53 @@ main {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Award-Winning Luxury Surface & Gradient Utilities */
+.royal-glass {
+  background: linear-gradient(145deg, rgba(16, 26, 32, 0.94) 0%, rgba(10, 18, 23, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(221, 183, 99, 0.22);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+.royal-glass:hover {
+  border-color: rgba(221, 183, 99, 0.55);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 26px rgba(221, 183, 99, 0.35), inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFDF7 0%, #F8E9C6 45%, #DDB763 80%, #C9A34F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ambient-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(212, 175, 90, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 90, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Seamless Infinite Marquee Loop for Strategic Partnerships */
+@keyframes marquee-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-horizontal 34s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-track:hover {
+  animation-play-state: paused;
 }

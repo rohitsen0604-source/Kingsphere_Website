@@ -9,6 +9,7 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/Button';
 import { PageHero } from '@/components/layout/PageHero';
 import { GsapReveal } from '@/components/animations/GsapReveal';
+import { PhilosophyHoneycomb } from '@/components/about/PhilosophyHoneycomb';
 import {
   ShieldCheck,
   Award,
@@ -40,7 +41,7 @@ const VALUE_ICONS: Record<string, React.ElementType> = {
 
 export default function AboutPage() {
   return (
-    <div className="relative bg-[#080909] text-[#F3F0E9] min-h-screen">
+    <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* ========================================================
           1. FULL-WIDTH LUXURY ABOUT HERO (with /images/hero/02-about-hero.png)
       ======================================================== */}
@@ -53,11 +54,11 @@ export default function AboutPage() {
         imageAlt="KINGSPHERE Corporate Profile and Vision"
       >
         <div className="flex flex-wrap items-center justify-center gap-6 pt-3 text-xs text-[#E8D29A] font-sans">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-[1px] bg-[#101111]/80 border border-[rgba(201,163,79,0.25)]">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-[1px] bg-[#070B0E]/80 border border-[rgba(201,163,79,0.25)]">
             <MapPin className="w-3.5 h-3.5 text-[#C9A34F]" />
             <span>Headquartered in Parbhani, Maharashtra, India</span>
           </div>
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-[1px] bg-[#101111]/80 border border-[rgba(201,163,79,0.25)]">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-[1px] bg-[#070B0E]/80 border border-[rgba(201,163,79,0.25)]">
             <Building2 className="w-3.5 h-3.5 text-[#C9A34F]" />
             <span>OPC Private Limited Structure</span>
           </div>
@@ -67,7 +68,7 @@ export default function AboutPage() {
       {/* ========================================================
           2. WHO WE ARE & 3. COMPANY OVERVIEW
       ======================================================== */}
-      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#101111] border-b border-[rgba(201,163,79,0.2)]">
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-b border-[rgba(201,163,79,0.2)]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <SectionHeading
@@ -80,10 +81,10 @@ export default function AboutPage() {
             <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#F3F0E9]">
               {COMPANY_CONFIG.name}
             </h3>
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-white leading-relaxed font-sans">
               KINGSPHERE is an Indian corporation dedicated to unlocking enterprise potential. Situated in Maharashtra, we identify underserved industrial sectors, assemble capable operational consortia, and bridge domestic resources with international commerce.
             </p>
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-white leading-relaxed font-sans">
               {COMPANY_CONFIG.positioning}
             </p>
 
@@ -116,14 +117,14 @@ export default function AboutPage() {
                   fill
                   className="object-cover filter brightness-[0.75]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#101111] via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-80" />
               </div>
 
-              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-[1px] bg-[#080909]/90 border border-[rgba(201,163,79,0.2)] backdrop-blur-md">
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-[2px] bg-[#0B1317]/95 border border-[rgba(221,183,99,0.25)] backdrop-blur-md">
                 <div className="text-xs font-semibold text-[#E8D29A] font-sans">
                   Regional Strength • International Standards
                 </div>
-                <div className="text-[11px] text-[#A5A39C] mt-1 font-sans">
+                <div className="text-[11px] text-white mt-1 font-sans">
                   Integrating localized Indian execution agility with disciplined corporate governance.
                 </div>
               </div>
@@ -152,7 +153,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   Infrastructure & Civil Development
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Coordinating civil infrastructure, arterial roadway connectivity, commercial development, and turnkey project execution across Maharashtra and neighbouring regions.
                 </p>
               </GlassCard>
@@ -164,7 +165,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   Manufacturing & Supply Chains
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Facilitating industrial production partnerships, component fabrication, equipment tooling, and resilient supply chain integration for OEM manufacturers.
                 </p>
               </GlassCard>
@@ -176,7 +177,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   International Trade & Sourcing
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Structuring cross-border sourcing, bilateral trade contracts, import-export compliance, multi-modal freight coordination, and global supplier qualification.
                 </p>
               </GlassCard>
@@ -188,7 +189,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   Mining & Natural Resources
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Responsible extraction, crushing, sorting, and wholesale supply of essential minerals, industrial salt, limestone, and steel feedstocks.
                 </p>
               </GlassCard>
@@ -200,7 +201,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   Energy & Circular Economy
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Developing captive commercial solar energy projects, industrial energy efficiency upgrades, secondary raw material recovery, and circular economy initiatives.
                 </p>
               </GlassCard>
@@ -212,7 +213,7 @@ export default function AboutPage() {
                 <h4 className="font-serif text-lg font-normal text-[#F3F0E9]">
                   Consultancy & Strategic Alliances
                 </h4>
-                <p className="text-xs text-[#A5A39C] leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   Corporate governance advisory, distressed business recovery, market entry roadmaps, joint venture structuring, and public-private project facilitation.
                 </p>
               </GlassCard>
@@ -222,88 +223,22 @@ export default function AboutPage() {
       </section>
 
       {/* ========================================================
-          6. BUSINESS PHILOSOPHY & 7. OUR STRENGTHS
+          6. BUSINESS PHILOSOPHY & STRATEGIC STRENGTHS (Screenshot 5 Honeycomb Grid)
       ======================================================== */}
-      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#101111] border-b border-[rgba(201,163,79,0.2)]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 space-y-5">
-            <SectionHeading
-              badge="ETHOS & FOUNDATION"
-              title="OUR BUSINESS"
-              highlight="PHILOSOPHY"
-              align="left"
-              className="mb-4"
-            />
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans">
-              At KINGSPHERE, we reject short-term speculation in favor of enduring asset creation. Our philosophy rests on three non-negotiables:
-            </p>
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-b border-[rgba(221,183,99,0.22)] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            badge="FOUNDATIONAL ETHOS & STRATEGIC STRENGTHS"
+            title="OUR BUSINESS PHILOSOPHY &"
+            highlight="CORE TENETS"
+            description="At KINGSPHERE, we reject short-term speculation in favor of enduring asset creation. Click on any tenet below to view detailed operational principles."
+            align="center"
+            className="mb-8 sm:mb-12"
+          />
 
-            <div className="space-y-3 font-sans">
-              <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)]">
-                <h4 className="text-xs font-semibold text-[#F3F0E9]">1. Substance Over Speculation</h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  We invest time, management focus, and capital strictly in tangible productive enterprises—manufacturing, infrastructure, real trade, and essential resources.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)]">
-                <h4 className="text-xs font-semibold text-[#F3F0E9]">2. Symmetric Stakeholder Value</h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  Every strategic partnership must create fair, measurable upside for both sides. Enduring collaborations cannot exist without mutual prosperity.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)]">
-                <h4 className="text-xs font-semibold text-[#F3F0E9]">3. Integrity of Word</h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  Trust is our primary asset. We fulfill our contractual commitments with precision, compliance, and transparent communication.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Strengths Grid */}
-          <div className="lg:col-span-6 space-y-3 font-sans">
-            <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#F3F0E9] mb-5">
-              Our Core Strategic Strengths
-            </h3>
-
-            <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)] flex items-start gap-3">
-              <Award className="w-4 h-4 text-[#C9A34F] shrink-0 mt-0.5" />
-              <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#E8D29A]">
-                  Regional Sourcing Depth
-                </h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  Intimate familiarity with Maharashtra’s land parcels, industrial corridors, supply ecosystems, and administrative requirements.
-                </p>
-              </div>
-            </div>
-
-            <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)] flex items-start gap-3">
-              <Globe2 className="w-4 h-4 text-[#C9A34F] shrink-0 mt-0.5" />
-              <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#E8D29A]">
-                  Cross-Industry Versatility
-                </h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  Ability to connect disparate industrial sectors—linking mining off-take with manufacturing, or energy efficiency with real estate development.
-                </p>
-              </div>
-            </div>
-
-            <div className="p-4 rounded-[1px] bg-[#171816] border border-[rgba(201,163,79,0.18)] flex items-start gap-3">
-              <TrendingUp className="w-4 h-4 text-[#C9A34F] shrink-0 mt-0.5" />
-              <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#E8D29A]">
-                  Flexible Partnership Structures
-                </h4>
-                <p className="text-xs text-[#A5A39C] mt-1 leading-relaxed">
-                  Agile joint ventures, project consortia, SPVs, or contract delivery models configured to match investor and corporate needs.
-                </p>
-              </div>
-            </div>
-          </div>
+          <GsapReveal animation="fade-up" duration={0.85}>
+            <PhilosophyHoneycomb />
+          </GsapReveal>
         </div>
       </section>
 
@@ -318,7 +253,7 @@ export default function AboutPage() {
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#F3F0E9]">
             DISCOVER HOW KINGSPHERE CAN ACCELERATE YOUR ENTERPRISE.
           </h2>
-          <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed font-sans max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto">
             Whether you are an international investor seeking grounded Indian opportunities or a manufacturer seeking supply resilience, we welcome direct dialogue.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 pt-3 w-full sm:w-auto max-w-md mx-auto">

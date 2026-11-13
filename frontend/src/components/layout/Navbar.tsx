@@ -91,8 +91,8 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-[env(safe-area-inset-top,0px)] ${
           isScrolled
-            ? 'bg-[#080909]/95 backdrop-blur-md border-b border-[rgba(201,163,79,0.2)] shadow-[0_10px_35px_rgba(0,0,0,0.85)] py-3 sm:py-3.5'
-            : 'bg-gradient-to-b from-[#080909]/90 via-[#080909]/50 to-transparent py-4 sm:py-5'
+            ? 'bg-[#070B0E]/95 backdrop-blur-md border-b border-[rgba(221, 183, 99,0.22)] shadow-[0_10px_35px_rgba(0,0,0,0.6)] py-3 sm:py-3.5'
+            : 'bg-gradient-to-b from-[#070B0E]/90 via-[#070B0E]/50 to-transparent py-4 sm:py-5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
@@ -120,7 +120,7 @@ export function Navbar() {
                         className={`inline-flex items-center gap-1 px-3 py-2 text-xs font-sans font-medium uppercase tracking-[0.14em] transition-colors duration-200 ${
                           isActive || megaMenuOpen
                             ? 'text-[#E8D29A]'
-                            : 'text-[#A5A39C] hover:text-[#F3F0E9]'
+                            : 'text-white hover:text-[#F3F0E9]'
                         }`}
                       >
                         <span>{item.title}</span>
@@ -139,19 +139,19 @@ export function Navbar() {
                             : 'opacity-0 -translate-y-2 pointer-events-none invisible'
                         }`}
                       >
-                        <div className="rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.28)] shadow-[0_24px_60px_rgba(0,0,0,0.95)] p-6 backdrop-blur-xl">
-                          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(201,163,79,0.16)]">
+                        <div className="rounded-2xl bg-[#0B1317]/98 border border-[rgba(221, 183, 99,0.24)] shadow-[0_24px_60px_rgba(0,0,0,0.7)] p-6 backdrop-blur-xl">
+                          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(221, 183, 99,0.2)]">
                             <div>
-                              <span className="text-[10px] uppercase font-sans font-medium tracking-[0.25em] text-[#C9A34F]">
+                              <span className="text-[10px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
                                 DIVERSIFIED PORTFOLIO
                               </span>
-                              <h3 className="font-serif text-base font-normal text-[#F3F0E9]">
+                              <h3 className="font-sans text-base font-bold text-white">
                                 11 Core Business Sectors
                               </h3>
                             </div>
                             <Link
                               href="/business-sectors"
-                              className="inline-flex items-center gap-1 text-xs text-[#C9A34F] hover:text-[#E8D29A] font-medium tracking-[0.12em] uppercase group"
+                              className="inline-flex items-center gap-1 text-xs text-[#DDB763] hover:text-[#F8E9C6] font-bold tracking-[0.12em] uppercase group"
                             >
                               <span>View Sector Directory</span>
                               <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -165,17 +165,17 @@ export function Navbar() {
                                 <Link
                                   key={sector.id}
                                   href={`/business-sectors#${sector.id}`}
-                                  className="group flex items-start gap-2.5 p-2 rounded-[1px] hover:bg-[#171816] border border-transparent hover:border-[rgba(201,163,79,0.2)] transition-all"
+                                  className="group flex items-start gap-2.5 p-2 rounded-xl hover:bg-[#101C22] border border-transparent hover:border-[rgba(221, 183, 99,0.25)] transition-all"
                                 >
-                                  <div className="w-7 h-7 rounded-[1px] bg-[rgba(201,163,79,0.06)] border border-[rgba(201,163,79,0.18)] flex items-center justify-center shrink-0 group-hover:border-[#C9A34F] group-hover:bg-[#C9A34F]/10 transition-colors">
-                                    <Icon className="w-3.5 h-3.5 text-[#C9A34F] group-hover:text-[#E8D29A]" />
+                                  <div className="w-7 h-7 rounded-lg bg-[rgba(221, 183, 99,0.08)] border border-[rgba(221, 183, 99,0.2)] flex items-center justify-center shrink-0 group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">
+                                    <Icon className="w-3.5 h-3.5 text-[#DDB763] group-hover:text-white" />
                                   </div>
-                                  <div className="min-w-0">
-                                    <div className="text-[11px] font-sans font-medium text-[#F3F0E9] group-hover:text-[#E8D29A] truncate">
+                                  <div className="overflow-hidden">
+                                    <div className="text-xs font-sans font-bold text-white group-hover:text-[#F8E9C6] transition-colors truncate">
                                       {sector.title}
                                     </div>
-                                    <div className="text-[9.5px] text-[#A5A39C] line-clamp-1 mt-0.5">
-                                      {sector.shortDescription}
+                                    <div className="text-[10px] text-white/70 truncate mt-0.5 font-sans">
+                                      Sector {sector.number}
                                     </div>
                                   </div>
                                 </Link>
@@ -193,7 +193,7 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     className={`relative px-3 py-2 text-xs font-sans font-medium uppercase tracking-[0.14em] transition-colors duration-200 group ${
-                      isActive ? 'text-[#E8D29A]' : 'text-[#A5A39C] hover:text-[#F3F0E9]'
+                      isActive ? 'text-[#E8D29A]' : 'text-white hover:text-[#F3F0E9]'
                     }`}
                   >
                     <span>{item.title}</span>
@@ -228,12 +228,12 @@ export function Navbar() {
               </Button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="w-11 h-11 rounded-[1px] text-[#F3F0E9] hover:text-[#E8D29A] border border-[rgba(201,163,79,0.24)] bg-[#101111] flex items-center justify-center transition-all duration-300 shrink-0"
+                className="w-11 h-11 rounded-xl text-white hover:text-[#F8E9C6] border border-[rgba(221, 183, 99,0.28)] bg-[#0B1317] flex items-center justify-center transition-all duration-300 shrink-0"
                 aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
                 aria-expanded={mobileMenuOpen}
               >
                 <div className="transition-transform duration-300 ease-out">
-                  {mobileMenuOpen ? <X className="w-5 h-5 text-[#E8D29A] rotate-90" /> : <Menu className="w-5 h-5" />}
+                  {mobileMenuOpen ? <X className="w-5 h-5 text-[#F8E9C6] rotate-90" /> : <Menu className="w-5 h-5" />}
                 </div>
               </button>
             </div>
@@ -243,7 +243,7 @@ export function Navbar() {
 
       {/* Mobile Editorial Slide Navigation */}
       <div
-        className={`fixed inset-0 z-40 bg-[#080909]/98 backdrop-blur-2xl transition-all duration-300 xl:hidden ${
+        className={`fixed inset-0 z-40 bg-[#070B0E]/98 backdrop-blur-2xl transition-all duration-300 xl:hidden ${
           mobileMenuOpen
             ? 'opacity-100 pointer-events-auto visible'
             : 'opacity-0 pointer-events-none invisible'
@@ -251,7 +251,7 @@ export function Navbar() {
         aria-hidden={!mobileMenuOpen}
       >
         <div className="flex flex-col h-full pt-[calc(env(safe-area-inset-top,0px)+5.2rem)] pb-[calc(env(safe-area-inset-bottom,0px)+2rem)] px-5 sm:px-8 overflow-y-auto">
-          <div className="flex flex-col divide-y divide-[rgba(201,163,79,0.12)]">
+          <div className="flex flex-col divide-y divide-[rgba(221, 183, 99,0.15)]">
             {MAIN_NAV_ITEMS.map((item, idx) => {
               const isActive = pathname === item.href;
               const staggerStyle = {
@@ -271,15 +271,15 @@ export function Navbar() {
                       <Link
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`text-sm sm:text-base font-serif font-medium uppercase tracking-[0.16em] flex-1 py-2 ${
-                          isActive ? 'text-[#E8D29A]' : 'text-[#F3F0E9]'
+                        className={`text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] flex-1 py-2 ${
+                          isActive ? 'text-[#DDB763]' : 'text-white'
                         }`}
                       >
                         {item.title}
                       </Link>
                       <button
                         onClick={() => setMobileSectorsOpen(!mobileSectorsOpen)}
-                        className="w-11 h-11 flex items-center justify-center text-[#C9A34F] hover:text-[#E8D29A]"
+                        className="w-11 h-11 flex items-center justify-center text-[#DDB763] hover:text-[#F8E9C6]"
                         aria-label="Toggle sectors list"
                         aria-expanded={mobileSectorsOpen}
                       >
@@ -292,15 +292,15 @@ export function Navbar() {
                     </div>
 
                     {mobileSectorsOpen && (
-                      <div className="my-2 pl-3.5 space-y-1 border-l-2 border-[#C9A34F]/40 animate-in fade-in slide-in-from-top-1 duration-200">
+                      <div className="my-2 pl-3.5 space-y-1 border-l-2 border-[#DDB763]/40 animate-in fade-in slide-in-from-top-1 duration-200">
                         {BUSINESS_SECTORS.map((sector) => (
                           <Link
                             key={sector.id}
                             href={`/business-sectors#${sector.id}`}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex items-center min-h-[38px] text-xs text-[#A5A39C] hover:text-[#E8D29A] py-1 font-sans transition-colors"
+                            className="flex items-center min-h-[38px] text-xs text-white/90 hover:text-[#DDB763] py-1 font-sans transition-colors"
                           >
-                            <span className="text-[#C9A34F] font-mono mr-2">{sector.number}.</span>
+                            <span className="text-[#DDB763] font-mono mr-2">{sector.number}.</span>
                             <span className="truncate">{sector.title}</span>
                           </Link>
                         ))}
@@ -319,8 +319,8 @@ export function Navbar() {
                   <Link
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center min-h-[44px] text-sm sm:text-base font-serif font-medium uppercase tracking-[0.16em] transition-colors py-2 ${
-                      isActive ? 'text-[#E8D29A] font-semibold' : 'text-[#F3F0E9] hover:text-[#E8D29A]'
+                    className={`flex items-center min-h-[44px] text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] transition-colors py-2 ${
+                      isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#DDB763]'
                     }`}
                   >
                     {item.title}
@@ -342,7 +342,7 @@ export function Navbar() {
             >
               {CTA_BUTTON.title}
             </Button>
-            <p className="text-[10px] sm:text-[11px] text-[#A5A39C] text-center font-sans leading-relaxed">
+            <p className="text-[10px] sm:text-[11px] text-white text-center font-sans leading-relaxed">
               KINGSPHERE INFRA-TECH-TRADE (OPC) PRIVATE LIMITED
               <br />
               Parbhani, Maharashtra, India

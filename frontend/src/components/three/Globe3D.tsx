@@ -18,7 +18,7 @@ function GlobeFallback() {
           <div className="text-[10px] uppercase tracking-[0.25em] text-[#C9A34F] font-semibold">
             GLOBAL CONNECTIVITY
           </div>
-          <div className="text-[9px] text-[#A5A39C] tracking-wider mt-0.5">
+          <div className="text-[9px] text-white tracking-wider mt-0.5">
             KINGSPHERE NETWORK
           </div>
         </div>

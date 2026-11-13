@@ -42,7 +42,7 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
 
 export default function PartnershipsPage() {
   return (
-    <div className="relative bg-[#080909] text-[#F3F0E9] min-h-screen">
+    <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* 1. Partnerships Hero with /images/hero/06-partnerships-hero.png */}
       <PageHero
         badge="STRATEGIC ALLIANCES & CAPITAL SYNDICATION"
@@ -55,7 +55,7 @@ export default function PartnershipsPage() {
       />
 
       {/* 2. Our Partnership Philosophy */}
-      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#101111]">
+      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           <div className="lg:col-span-6 space-y-4 sm:space-y-5 font-sans">
             <SectionHeading
@@ -65,10 +65,10 @@ export default function PartnershipsPage() {
               align="left"
               className="mb-4"
             />
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed">
+            <p className="text-xs sm:text-sm text-white leading-relaxed">
               We believe the scale of India’s economic transformation cannot be achieved in isolation. Durable growth is born from aligned interests, clear contractual frameworks, and shared accountability.
             </p>
-            <p className="text-xs sm:text-sm text-[#A5A39C] leading-relaxed">
+            <p className="text-xs sm:text-sm text-white leading-relaxed">
               Whether establishing an equity-based Special Purpose Vehicle (SPV), an OEM contract manufacturing agreement, or an international import-export corridor, we prioritize transparent governance, mutual respect, and long-term asset value.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function PartnershipsPage() {
               <h4 className="font-serif text-base font-normal text-[#F3F0E9]">
                 Fiduciary Integrity
               </h4>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Stringent statutory compliance, ethical reporting, and transparent capital accounting across all ventures.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function PartnershipsPage() {
               <h4 className="font-serif text-base font-normal text-[#F3F0E9]">
                 Shared Value Creation
               </h4>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Incentive structures designed to ensure that both KINGSPHERE and our partners harvest sustainable, compounding returns.
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function PartnershipsPage() {
               <h4 className="font-serif text-base font-normal text-[#F3F0E9]">
                 Long-Term Horizon
               </h4>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 We cultivate relationships intended to survive market cycles and create lasting multi-decade industrial footprints.
               </p>
             </div>
@@ -109,7 +109,7 @@ export default function PartnershipsPage() {
               <h4 className="font-serif text-base font-normal text-[#F3F0E9]">
                 Operational Agility
               </h4>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Direct access to our senior leadership for agile decision-making, swift problem-solving, and timely execution.
               </p>
             </div>
@@ -148,7 +148,7 @@ export default function PartnershipsPage() {
                         {cat.title}
                       </h3>
 
-                      <p className="text-xs text-[#A5A39C] leading-relaxed">
+                      <p className="text-xs text-white leading-relaxed">
                         {cat.description}
                       </p>
                     </div>
@@ -157,7 +157,7 @@ export default function PartnershipsPage() {
                       <div className="text-[10px] uppercase font-medium tracking-wider text-[#E8D29A]">
                         Collaboration Formats:
                       </div>
-                      <ul className="space-y-1 text-xs text-[#A5A39C]">
+                      <ul className="space-y-1 text-xs text-white">
                         {cat.collaborationModes.map((mode, i) => (
                           <li key={i} className="flex items-center gap-1.5">
                             <CheckCircle2 className="w-3 h-3 text-[#C9A34F] shrink-0" />
@@ -175,7 +175,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* 4. Strategic Alliances, 5. Joint Ventures & 6. Business Collaboration */}
-      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#101111]">
+      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E]">
         <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
           <SectionHeading
             badge="ENGAGEMENT STRUCTURES"
@@ -191,7 +191,7 @@ export default function PartnershipsPage() {
               <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                 Equity Joint Ventures (SPVs)
               </h3>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Formation of dedicated Special Purpose Vehicles (SPV) under Indian corporate law for specific industrial parks, captive solar farms, or real estate developments with ring-fenced balance sheets and clear exit pathways.
               </p>
             </div>
@@ -201,7 +201,7 @@ export default function PartnershipsPage() {
               <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                 Contract Manufacturing & Sourcing
               </h3>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Master supply and contract assembly agreements where KINGSPHERE provides regional facility orchestration, supplier vetting, and quality compliance while partners provide technical blueprints and guaranteed off-take.
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function PartnershipsPage() {
               <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
                 Public-Private Consortia (PPP)
               </h3>
-              <p className="text-xs text-[#A5A39C] leading-relaxed">
+              <p className="text-xs text-white leading-relaxed">
                 Consortium bidding frameworks for state and national infrastructure tenders, combining our grounded regional relationships and site mobilization with our partners’ technical pre-qualifications.
               </p>
             </div>

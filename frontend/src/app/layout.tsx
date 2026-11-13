@@ -77,7 +77,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
         <script
@@ -85,7 +85,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-[#080909] text-[#F3F0E9] antialiased selection:bg-[#C9A34F]/30 selection:text-[#E8D29A]">
+      <body className="bg-[#070B0E] text-white antialiased selection:bg-[#DDB763]/30 selection:text-white">
         <Preloader />
         <div className="relative flex min-h-screen flex-col">
           <Navbar />

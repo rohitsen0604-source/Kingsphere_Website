@@ -64,7 +64,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[1px] bg-[#101111] border border-[rgba(201,163,79,0.32)] shadow-[0_30px_70px_rgba(0,0,0,0.98)] text-[#F3F0E9] p-6 sm:p-8 md:p-10"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.32)] shadow-[0_30px_70px_rgba(0,0,0,0.98)] text-[#F3F0E9] p-6 sm:p-8 md:p-10"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -73,7 +73,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-[1px] bg-[#171816] text-[#A5A39C] hover:text-[#E8D29A] border border-[rgba(201,163,79,0.2)] hover:border-[#C9A34F] transition-colors z-20"
+          className="absolute top-5 right-5 p-2 rounded-[1px] bg-[#171816] text-white hover:text-[#E8D29A] border border-[rgba(201,163,79,0.2)] hover:border-[#C9A34F] transition-colors z-20"
           aria-label="Close sector details"
         >
           <X className="w-5 h-5" />
@@ -102,7 +102,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
             fill
             className="object-cover filter brightness-[0.8] contrast-[1.1]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101111] via-transparent to-transparent opacity-85" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-85" />
           <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-[1px] bg-[#080909]/85 border border-[rgba(201,163,79,0.2)] backdrop-blur-sm">
             <div className="text-[10px] uppercase font-sans font-medium tracking-[0.2em] text-[#C9A34F]">
               Strategic Focus
@@ -119,7 +119,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
             <h3 className="text-xs font-sans font-medium uppercase tracking-[0.2em] text-[#C9A34F] mb-2">
               Domain Overview
             </h3>
-            <p className="text-sm sm:text-base text-[#A5A39C] leading-relaxed font-sans">
+            <p className="text-sm sm:text-base text-white leading-relaxed font-sans">
               {sector.fullDescription}
             </p>
           </div>
@@ -131,7 +131,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
                 <CheckCircle className="w-4 h-4 text-[#C9A34F]" />
                 <span>Operational Capabilities</span>
               </div>
-              <ul className="space-y-2.5 text-xs text-[#A5A39C] font-sans">
+              <ul className="space-y-2.5 text-xs text-white font-sans">
                 {sector.capabilities.map((cap, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <span className="w-1 h-1 rounded-full bg-[#C9A34F] mt-1.5 shrink-0" />
@@ -147,7 +147,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
                 <TrendingUp className="w-4 h-4 text-[#C9A34F]" />
                 <span>Partnership Opportunities</span>
               </div>
-              <ul className="space-y-2.5 text-xs text-[#A5A39C] font-sans">
+              <ul className="space-y-2.5 text-xs text-white font-sans">
                 {sector.opportunities.map((opp, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <span className="w-1 h-1 rounded-full bg-[#E8D29A] mt-1.5 shrink-0" />
@@ -160,7 +160,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
 
           {/* Modal Action CTA */}
           <div className="pt-6 border-t border-[rgba(201,163,79,0.18)] flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-xs text-[#A5A39C] font-sans">
+            <div className="text-xs text-white font-sans">
               Interested in collaborating in this sector?
             </div>
             <div className="flex items-center gap-3 w-full sm:w-auto">
