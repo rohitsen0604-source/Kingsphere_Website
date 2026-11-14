@@ -20,13 +20,17 @@ import { COMPANY_CONFIG } from '@/config/company';
 
 const ENQUIRY_TYPES = [
   'General Business Inquiry',
-  'Strategic Partnership & Joint Venture',
-  'Industrial Manufacturing & Sourcing',
-  'Infrastructure & Construction Projects',
-  'International Trade & Commodities',
-  'Consultancy & Corporate Recovery',
+  'Strategic Investment & Joint Ventures',
+  'Manufacturing & Industrial Development',
+  'Infrastructure, Construction & Development',
+  'International Trade & Import-Export',
+  'Consumer Goods & Commercial Businesses (ALBINE AQUA™ / ELBRUS™)',
+  'Technology & Digital Businesses',
   'Mining & Natural Resources',
-  'Clean Energy & Circular Economy',
+  'Energy & Sustainable Solutions',
+  'Recycling & Circular Economy',
+  'Consultancy & Business Recovery',
+  'Projects & Services (PROJECTS & CONTRACT EXECUTION)',
 ];
 
 const contactSchema = z.object({

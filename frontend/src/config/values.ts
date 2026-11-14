@@ -9,58 +9,48 @@ export interface CoreValue {
 
 export const CORE_VALUES: CoreValue[] = [
   {
-    id: 'trust',
+    id: 'integrity',
     number: '01',
-    title: 'TRUST',
-    tagline: 'Developing reliable and meaningful relationships.',
+    title: 'INTEGRITY',
+    tagline: 'Honesty, transparency, fairness and ethical business practices.',
     description:
-      'We conduct our affairs with uncompromised integrity, creating enduring relationships with partners, clients, and institutions built upon transparent commitments and ethical corporate stewardship.',
+      'We believe in honesty, transparency, fairness and ethical business practices. We are committed to building trust through responsible decisions, clear commitments and actions that stand the test of time.',
     iconName: 'ShieldCheck',
   },
   {
-    id: 'capability',
+    id: 'responsibility',
     number: '02',
-    title: 'CAPABILITY',
-    tagline: 'Developing practical execution and delivery capabilities.',
+    title: 'RESPONSIBILITY',
+    tagline: 'Conducting business with social, environmental and economic stewardship.',
     description:
-      'We invest systematically in our people, industrial know-how, and technical infrastructure to tackle complex operational challenges and deliver robust, repeatable outcomes.',
+      'We believe in conducting business with social, environmental and economic responsibility. We strive to create opportunities that benefit our customers, partners, communities and future generations.',
+    iconName: 'Leaf',
+  },
+  {
+    id: 'excellence',
+    number: '03',
+    title: 'EXCELLENCE',
+    tagline: 'Uncompromising quality, professionalism and continuous improvement.',
+    description:
+      'We are committed to quality, professionalism and continuous improvement. We strive to achieve high standards in every project, product, service and business relationship we undertake.',
     iconName: 'Award',
   },
   {
     id: 'innovation',
-    number: '03',
+    number: '04',
     title: 'INNOVATION',
-    tagline: 'Embracing technology and new business models.',
+    tagline: 'Embracing forward-thinking solutions and technological advancement.',
     description:
-      'We challenge traditional constraints by implementing modern digital systems, agile operational frameworks, and progressive business models across our diversified sectors.',
+      'We embrace new ideas, emerging technologies and forward-thinking solutions. We encourage creativity, explore new opportunities and transform possibilities into sustainable business ventures.',
     iconName: 'Lightbulb',
   },
   {
-    id: 'partnership',
-    number: '04',
-    title: 'PARTNERSHIP',
-    tagline: 'Creating mutually beneficial collaborations.',
+    id: 'collaboration',
+    number: '05',
+    title: 'UNITY & COLLABORATION',
+    tagline: 'Lasting success achieved together through mutual respect and collective growth.',
     description:
-      'We believe the most durable value arises from synergy. We align incentives, pool strategic strengths, and foster reciprocal growth with domestic and international allies.',
+      'We believe that lasting success is achieved together. We build strong relationships with employees, investors, customers, suppliers and strategic partners through mutual respect, shared goals and collective growth.',
     iconName: 'Handshake',
   },
-  {
-    id: 'sustainability',
-    number: '05',
-    title: 'SUSTAINABILITY',
-    tagline: 'Creating long-term economic and environmental value.',
-    description:
-      'We integrate resource stewardship, circular economy principles, and long-range environmental consciousness into every project and industrial initiative we undertake.',
-    iconName: 'Leaf',
-  },
-  {
-    id: 'execution',
-    number: '06',
-    title: 'EXECUTION',
-    tagline: 'Turning opportunities into measurable results.',
-    description:
-      'Ideas achieve impact through disciplined delivery. We maintain relentless focus on milestones, rigorous quality metrics, and concrete commercial completion.',
-    iconName: 'Target',
-  },
 ];
-

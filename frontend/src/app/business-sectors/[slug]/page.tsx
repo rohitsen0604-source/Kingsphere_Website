@@ -241,6 +241,40 @@ export default function SectorDetailPage({
               </GlassCard>
             </GsapReveal>
 
+            {/* Proprietary Brands Callout (e.g., ALBINE AQUA & ELBRUS) */}
+            {sector.brands && sector.brands.length > 0 && (
+              <GsapReveal animation="fade-up" delay={0.12}>
+                <div className="p-6 rounded-2xl bg-[#0B1317] border-2 border-[#DDB763] shadow-lg space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-[#DDB763]" />
+                    <span className="text-[11px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
+                      OUR PROPRIETARY BRANDS & PRODUCTS
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    {sector.brands.map((brand, bIdx) => (
+                      <div
+                        key={bIdx}
+                        className="p-4 rounded-xl bg-[#070B0E] border border-[#DDB763]/40 flex items-center justify-between"
+                      >
+                        <div>
+                          <div className="font-sans text-base font-bold text-white tracking-wide">
+                            {brand.name}
+                          </div>
+                          <div className="text-xs text-[#F8E9C6] mt-0.5 font-medium">
+                            {brand.category}
+                          </div>
+                        </div>
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#DDB763]/15 text-[#DDB763] border border-[#DDB763]/30">
+                          Official Brand
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </GsapReveal>
+            )}
+
             {/* Target Partners */}
             <GsapReveal animation="fade-up" delay={0.15}>
               <div className="space-y-3">

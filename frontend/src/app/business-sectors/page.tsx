@@ -32,13 +32,13 @@ export default function BusinessSectorsPage() {
     <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* Editorial Hero Header with /images/hero/03-business-sectors-hero.png */}
       <PageHero
-        badge="11 DIVERSIFIED BUSINESS SECTORS"
+        badge="11 BUSINESS VERTICALS. ONE DIVERSIFIED GROUP."
         badgeIcon={<Layers className="w-3.5 h-3.5 text-[#DDB763]" />}
-        title="DIVERSIFIED SECTORS."
-        highlightTitle="UNIFIED OPPORTUNITIES."
-        description="Exploring opportunities across industries, infrastructure, trade, technology, resources, and sustainable business development."
+        title="11 BUSINESS VERTICALS."
+        highlightTitle="ONE VISION."
+        description="CREATING TRUST • DELIVERING VALUE • BUILDING OPPORTUNITIES. KINGSPHERE is engaged in developing business opportunities across manufacturing, infrastructure, international trade, consumer products, technology, mining, energy, recycling, consultancy, projects, and strategic investments."
         imageSrc="/images/kingsphere/03-business-sectors-hero.png"
-        imageAlt="KINGSPHERE 11 Diversified Business Sectors"
+        imageAlt="KINGSPHERE 11 Diversified Business Verticals"
       >
         {/* Minimalist Filter Bar */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 pt-4 font-sans">

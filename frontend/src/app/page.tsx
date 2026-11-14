@@ -71,10 +71,10 @@ export default function HomePage() {
           <div className="lg:col-span-8 space-y-5 sm:space-y-6 text-left">
             <GsapReveal animation="fade-up" duration={0.8}>
               {/* Eyebrow Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221, 183, 99,0.35)] bg-[#0B151A]/90 backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221,183,99,0.35)] bg-[#0B151A]/90 backdrop-blur-md">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] animate-pulse" />
                 <span className="text-[9px] sm:text-[11px] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#F8E9C6]">
-                  INFRASTRUCTURE • TECHNOLOGY • TRADE • ALLIANCES
+                  CONNECTING EXPERTISE • BUILDING BUSINESSES • CREATING GROWTH
                 </span>
               </div>
             </GsapReveal>
@@ -83,18 +83,26 @@ export default function HomePage() {
               {/* Controlled line breaks heading with white & brand logo metallic gold */}
               <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-bold tracking-tight text-white leading-[1.12]">
                 BUILDING STRATEGIC PARTNERSHIPS.<br />
-                <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1">CREATING GLOBAL OPPORTUNITIES.</span>
+                <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1">
+                  CREATING GLOBAL OPPORTUNITIES.
+                </span>
               </h1>
             </GsapReveal>
 
-            <GsapReveal animation="fade-up" delay={0.3} duration={0.9}>
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-xl font-sans font-normal">
+            <GsapReveal animation="fade-up" delay={0.25} duration={0.9}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-xl font-sans font-medium">
                 A diversified business and development company connecting industries, investments, infrastructure, technology, and global trade opportunities.
               </p>
             </GsapReveal>
 
+            <GsapReveal animation="fade-up" delay={0.35} duration={0.9}>
+              <p className="text-xs sm:text-[13px] text-white/90 leading-relaxed max-w-xl font-sans font-normal border-l-2 border-[#DDB763] pl-3 py-0.5">
+                We bring together industry experts, entrepreneurs, investors, professionals, and strategic partners to develop businesses, expand opportunities, and build sustainable growth across multiple sectors.
+              </p>
+            </GsapReveal>
+
             {/* CTAs */}
-            <GsapReveal animation="fade-up" delay={0.4} duration={0.9}>
+            <GsapReveal animation="fade-up" delay={0.45} duration={0.9}>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1 w-full sm:w-auto">
                 <Button href="/business-sectors" variant="primary" size="lg" withArrow className="w-full sm:w-auto text-center justify-center">
                   EXPLORE OUR BUSINESS
@@ -107,11 +115,11 @@ export default function HomePage() {
 
             {/* Below CTAs: Three Core Credentials */}
             <GsapReveal animation="fade-in" delay={0.55}>
-              <div className="pt-5 sm:pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-6 border-t border-[rgba(221, 183, 99,0.2)] max-w-lg font-sans">
+              <div className="pt-5 sm:pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-lg font-sans">
                 <div className="p-2 sm:p-0">
                   <div className="font-sans text-xl sm:text-2xl font-bold text-white">11</div>
                   <div className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-[0.14em] mt-0.5 font-medium">
-                    CORE BUSINESS SECTORS
+                    BUSINESS VERTICALS
                   </div>
                 </div>
                 <div className="p-2 sm:p-0">
@@ -120,7 +128,7 @@ export default function HomePage() {
                     EXECUTION FRAMEWORK
                   </div>
                 </div>
-                <div className="col-span-2 sm:col-span-1 p-2 sm:p-0 border-t sm:border-t-0 border-[rgba(221, 183, 99,0.15)]">
+                <div className="col-span-2 sm:col-span-1 p-2 sm:p-0 border-t sm:border-t-0 border-[rgba(221,183,99,0.15)]">
                   <div className="font-sans text-lg sm:text-2xl font-bold text-white">PARBHANI</div>
                   <div className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-[0.14em] mt-0.5 font-medium">
                     MAHARASHTRA, INDIA
@@ -199,6 +207,12 @@ export default function HomePage() {
                 </p>
               </GsapReveal>
 
+              <GsapReveal animation="fade-up" delay={0.3}>
+                <p className="text-xs sm:text-sm text-white/90 leading-relaxed font-sans font-normal">
+                  Bringing industries, experts, entrepreneurs, investors, and strategic partners together to develop businesses, create opportunities, and drive diversified growth across Maharashtra and India.
+                </p>
+              </GsapReveal>
+
               <GsapReveal animation="fade-up" delay={0.35}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                   {COMPANY_CONFIG.brandPillars.map((pillar, i) => (
@@ -232,9 +246,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="DIVERSIFIED OPERATIONS"
-            title="OUR ELEVEN"
-            highlight="BUSINESS SECTORS"
-            description="Explore our multi-sector operations spanning manufacturing, civil infrastructure, global trade, clean energy, natural resources, and strategic alliances."
+            title="11 BUSINESS VERTICALS."
+            highlight="ONE VISION."
+            description="CREATING TRUST • DELIVERING VALUE • BUILDING OPPORTUNITIES. Explore our operations across manufacturing, infrastructure, international trade, consumer goods, technology, mining, energy, recycling, consultancy, projects, and strategic investments."
             align="center"
           />
 
@@ -449,9 +463,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="FOUNDATIONAL ETHOS"
-            title="OUR SIX CORE"
+            title="OUR FIVE CORE"
             highlight="VALUES"
-            description="Six foundational principles defining our corporate character, partner relations, and project delivery."
+            description="Our business philosophy is founded on strong principles of integrity, responsibility, excellence, innovation and collaboration. These values guide our decisions, shape our partnerships and define the way we conduct our business."
             align="center"
           />
 
@@ -465,10 +479,10 @@ export default function HomePage() {
       <section className="py-20 md:py-28 bg-[#0B1317] border-y border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="COLLABORATIVE ALLIANCES"
-            title="STRATEGIC"
-            highlight="PARTNERSHIP PROFILES"
-            description="We welcome institutional investors, manufacturers, technology providers, and trade organizations to build long-term value together."
+            badge="OUR BUSINESS & PARTNERSHIP ECOSYSTEM"
+            title="CONNECTING PARTNERS."
+            highlight="BUILDING BUSINESSES."
+            description="KINGSPHERE aims to develop opportunities through collaboration with strategic investors, joint venture partners, manufacturers, technology pioneers, and institutional organizations."
             align="center"
           />
 

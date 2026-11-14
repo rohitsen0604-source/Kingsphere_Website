@@ -85,6 +85,20 @@ export function SectorCard({ sector, featured = false }: SectorCardProps) {
           </p>
         </div>
 
+        {/* Brands Tag if applicable */}
+        {sector.brands && sector.brands.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 pt-1">
+            {sector.brands.map((b, i) => (
+              <span
+                key={i}
+                className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#DDB763]/15 text-[#F8E9C6] border border-[#DDB763]/40 font-bold tracking-wide"
+              >
+                ★ {b.name}
+              </span>
+            ))}
+          </div>
+        )}
+
         {/* Key Capabilities Preview Tags */}
         <div className="pt-2 border-t border-[rgba(221, 183, 99,0.18)]">
           <div className="flex flex-wrap gap-1.5">

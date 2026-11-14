@@ -15,12 +15,14 @@ import {
   Lightbulb,
   Handshake,
   Leaf,
+  CheckCircle2,
+  Sparkles,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Vision & Mission | KINGSPHERE Corporate Purpose & Core Values',
   description:
-    'Read the official vision, mission, and six core foundational values of KINGSPHERE INFRA-TECH-TRADE (OPC) PRIVATE LIMITED.',
+    'Read the official vision, mission, and five core foundational values of KINGSPHERE INFRA-TECH-TRADE (OPC) PRIVATE LIMITED.',
 };
 
 const VALUE_ICONS: Record<string, React.ElementType> = {
@@ -38,10 +40,10 @@ export default function VisionMissionPage() {
       {/* Hero with /images/hero/07-vision-mission-hero.png */}
       <PageHero
         badge="STRATEGIC CHARTER & ETHICAL FOUNDATION"
-        badgeIcon={<Compass className="w-3.5 h-3.5 text-[#C9A34F]" />}
-        title="GUIDED BY PURPOSE."
-        highlightTitle="DRIVEN BY SUSTAINABLE VALUE."
-        description="Our corporate vision and mission delineate our commitment to converting emerging opportunities into durable, multi-generational economic assets."
+        badgeIcon={<Compass className="w-3.5 h-3.5 text-[#DDB763]" />}
+        title="11 BUSINESS VERTICALS. ONE VISION."
+        highlightTitle="CREATING TRUST • DELIVERING VALUE."
+        description="Building Businesses. Developing Opportunities. Creating Partnerships. Guided by purposeful long-term growth, ethical governance, and sustainable value creation."
         imageSrc="/images/kingsphere/07-vision-mission-hero.png"
         imageAlt="KINGSPHERE Corporate Purpose & Core Values"
       />
@@ -51,27 +53,27 @@ export default function VisionMissionPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Vision Panel */}
           <GsapReveal animation="fade-up" delay={0} duration={0.85}>
-            <div className="relative h-full rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
+            <div className="relative h-full rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
+                  <span className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
                     CORPORATE VISION
                   </span>
-                  <div className="w-8 h-8 rounded-[1px] bg-[rgba(201,163,79,0.08)] border border-[#C9A34F] flex items-center justify-center text-[#E8D29A]">
+                  <div className="w-8 h-8 rounded-lg bg-[#DDB763]/10 border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
                     <Target className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#F3F0E9]">
-                  The Long-Term Destination
+                <h2 className="font-sans text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                  Our Corporate Vision
                 </h2>
 
-                <blockquote className="p-4 sm:p-6 rounded-[1px] bg-[#171816] border-l-2 border-[#C9A34F] font-serif text-sm sm:text-base md:text-lg text-[#F3F0E9] leading-relaxed italic">
+                <blockquote className="p-4 sm:p-6 rounded-xl bg-[#070B0E] border-l-2 border-[#DDB763] font-sans text-sm sm:text-base text-white leading-relaxed font-normal">
                   &ldquo;{COMPANY_CONFIG.vision}&rdquo;
                 </blockquote>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-white font-sans leading-relaxed">
+              <div className="pt-4 border-t border-[rgba(221,183,99,0.2)] text-xs text-white/90 font-sans leading-relaxed">
                 We anchor our vision in building long-term trust, creating asset-backed value, and establishing bridges between Indian regional capability and international market demand.
               </div>
             </div>
@@ -79,42 +81,47 @@ export default function VisionMissionPage() {
 
           {/* Mission Panel */}
           <GsapReveal animation="fade-up" delay={0.15} duration={0.85}>
-            <div className="relative h-full rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.24)] p-5 sm:p-8 md:p-12 shadow-card-dark flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[rgba(201,163,79,0.4)] transition-colors duration-300">
+            <div className="relative h-full rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
+                  <span className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
                     OPERATING MANDATE
                   </span>
-                  <div className="w-8 h-8 rounded-[1px] bg-[rgba(201,163,79,0.08)] border border-[#C9A34F] flex items-center justify-center text-[#E8D29A]">
+                  <div className="w-8 h-8 rounded-lg bg-[#DDB763]/10 border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#F3F0E9]">
-                  The Execution Mission
+                <h2 className="font-sans text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                  Our Corporate Mission
                 </h2>
 
-                <blockquote className="p-4 sm:p-6 rounded-[1px] bg-[#171816] border-l-2 border-[#E8D29A] font-serif text-sm sm:text-base md:text-lg text-[#F3F0E9] leading-relaxed italic">
-                  &ldquo;{COMPANY_CONFIG.mission}&rdquo;
-                </blockquote>
+                <div className="space-y-2.5 pt-1">
+                  {COMPANY_CONFIG.missionPoints.map((point, pIdx) => (
+                    <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white font-sans leading-relaxed">
+                      <CheckCircle2 className="w-4 h-4 text-[#DDB763] shrink-0 mt-0.5" />
+                      <span>{point}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(201,163,79,0.14)] text-xs text-white font-sans leading-relaxed">
-                Our mission turns intention into reality through disciplined execution, responsible resource extraction, clean energy transition, and agile joint ventures.
+              <div className="pt-4 border-t border-[rgba(221,183,99,0.2)] text-xs text-white/90 font-sans leading-relaxed">
+                Our mission turns vision into reality through disciplined execution, responsible resource development, and enduring strategic alliances.
               </div>
             </div>
           </GsapReveal>
         </div>
       </section>
 
-      {/* Six Core Values Section */}
-      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E] border-y border-[rgba(201,163,79,0.2)]">
+      {/* Five Core Values Section */}
+      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#0B1317] border-y border-[rgba(221,183,99,0.2)]">
         <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
           <SectionHeading
             badge="OUR CORE CREED"
-            title="THE SIX VALUES OF"
+            title="THE FIVE VALUES OF"
             highlight="KINGSPHERE"
-            description="The foundational compass steering every business agreement, project milestone, and strategic investment."
+            description="Our business philosophy is founded on strong principles of integrity, responsibility, excellence, innovation and collaboration. These values guide our decisions, shape our partnerships and define the way we conduct our business."
             align="center"
           />
 
@@ -123,26 +130,26 @@ export default function VisionMissionPage() {
               const Icon = VALUE_ICONS[val.iconName] || ShieldCheck;
               return (
                 <GsapReveal key={val.id} animation="fade-up" delay={(idx % 3) * 0.1} duration={0.8}>
-                  <GlassCard cornerAccents className="p-6 sm:p-8 space-y-3 flex flex-col justify-between h-full">
+                  <GlassCard cornerAccents className="p-6 sm:p-8 space-y-3 flex flex-col justify-between h-full rounded-2xl">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="font-mono text-xs font-semibold text-[#C9A34F]">
+                        <span className="font-mono text-xs font-bold text-[#DDB763]">
                           VALUE {val.number}
                         </span>
-                        <div className="w-8 h-8 rounded-[1px] bg-[rgba(201,163,79,0.06)] border border-[rgba(201,163,79,0.2)] flex items-center justify-center text-[#E8D29A]">
-                          <Icon className="w-4 h-4 text-[#C9A34F]" />
+                        <div className="w-8 h-8 rounded-lg bg-[#DDB763]/10 border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
+                          <Icon className="w-4 h-4" />
                         </div>
                       </div>
 
-                      <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
+                      <h3 className="font-sans text-xl font-bold uppercase text-white tracking-tight">
                         {val.title}
                       </h3>
 
-                      <div className="text-xs text-[#E8D29A] font-serif italic">
-                        &ldquo;{val.tagline}&rdquo;
+                      <div className="text-xs text-[#F8E9C6] font-sans font-medium">
+                        • {val.tagline}
                       </div>
 
-                      <p className="text-xs text-white leading-relaxed">
+                      <p className="text-xs text-white leading-relaxed font-normal">
                         {val.description}
                       </p>
                     </div>
@@ -154,51 +161,49 @@ export default function VisionMissionPage() {
         </div>
       </section>
 
-      {/* Additional Pillars: Philosophy & Sustainable Growth */}
+      {/* Corporate Belief & Commitment Section */}
       <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
-          <SectionHeading
-            badge="LONG-TERM PERSPECTIVE"
-            title="SUSTAINABILITY &"
-            highlight="RESPONSIBLE SCALE"
-            align="center"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 font-sans">
-            <div className="p-6 sm:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-3">
-              <div className="flex items-center gap-2.5">
-                <Leaf className="w-5 h-5 text-[#C9A34F]" />
-                <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
-                  Sustainable Development Framework
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-white leading-relaxed">
-                Economic development cannot come at the expense of ecological balance. We embed circular economy recovery, renewable captive energy, and environmental impact audits into our industrial ventures from day zero.
-              </p>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 font-sans">
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] space-y-4">
+            <div className="flex items-center gap-2.5">
+              <Sparkles className="w-5 h-5 text-[#DDB763]" />
+              <h3 className="font-sans text-xl font-bold text-white uppercase tracking-tight">
+                Our Corporate Belief
+              </h3>
             </div>
-
-            <div className="p-6 sm:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-3">
-              <div className="flex items-center gap-2.5">
-                <Lightbulb className="w-5 h-5 text-[#C9A34F]" />
-                <h3 className="font-serif text-xl font-normal text-[#F3F0E9]">
-                  Innovation & Digital Transformation
-                </h3>
+            <div className="p-4 rounded-xl bg-[#070B0E] border-l-2 border-[#DDB763]">
+              <div className="font-sans text-lg font-bold uppercase text-[#F8E9C6] space-y-1">
+                <div>BUILDING TRUST.</div>
+                <div>CREATING OPPORTUNITIES.</div>
+                <div>DELIVERING VALUE.</div>
               </div>
-              <p className="text-xs sm:text-sm text-white leading-relaxed">
-                By embracing telemetry, digital trade clearing, enterprise workflows, and modern production automation, we build agile operations capable of competing on the international stage.
-              </p>
             </div>
+            <p className="text-xs sm:text-sm text-white/90 leading-relaxed font-normal">
+              KINGSPHERE — Creating Trust • Delivering Value • Building Opportunities.
+            </p>
+          </div>
+
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] space-y-4">
+            <div className="flex items-center gap-2.5">
+              <CheckCircle2 className="w-5 h-5 text-[#DDB763]" />
+              <h3 className="font-sans text-xl font-bold text-white uppercase tracking-tight">
+                Our Stakeholder Commitment
+              </h3>
+            </div>
+            <p className="text-xs sm:text-sm text-white/90 leading-relaxed font-normal">
+              We are committed to building businesses on trust and ethical values, creating meaningful investor opportunities, developing sustainable business models, encouraging technological innovation, and contributing to infrastructure, industry and economic development across Maharashtra and India.
+            </p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
+      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#0B1317] border-t border-[rgba(221,183,99,0.2)] text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto relative z-10 space-y-5">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#F3F0E9] leading-tight">
+          <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
             JOIN US IN SHAPING A RESPONSIBLE INDUSTRIAL FUTURE.
           </h2>
-          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-white leading-relaxed font-sans max-w-xl mx-auto font-normal">
             Discover how your enterprise can co-invest, partner, and expand with KINGSPHERE.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 pt-3">

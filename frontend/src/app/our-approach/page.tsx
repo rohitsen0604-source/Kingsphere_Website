@@ -20,14 +20,63 @@ export default function OurApproachPage() {
     <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* Approach Hero with /images/hero/04-our-approach-hero.png */}
       <PageHero
-        badge="SYSTEMATIC EXECUTION BLUEPRINT"
-        badgeIcon={<Compass className="w-3.5 h-3.5 text-[#C9A34F]" />}
-        title="FROM OPPORTUNITY TO"
-        highlightTitle="ENTERPRISE."
-        description="A disciplined, end-to-end framework translating market opportunities into resilient, profitable, and enduring enterprises."
+        badge="OUR BUSINESS DEVELOPMENT APPROACH"
+        badgeIcon={<Compass className="w-3.5 h-3.5 text-[#DDB763]" />}
+        title="CONNECTING EXPERTISE."
+        highlightTitle="BUILDING BUSINESSES. CREATING GROWTH."
+        description="A diversified business and development platform bringing together industry leaders, investors, and strategic partners to drive sustainable growth and lasting opportunities."
         imageSrc="/images/kingsphere/04-our-approach-hero.png"
         imageAlt="KINGSPHERE Systematic Execution Blueprint"
       />
+
+      {/* Business Development Ecosystem Flowchart */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0B1317] border-b border-[rgba(221,183,99,0.2)]">
+        <div className="max-w-7xl mx-auto space-y-10 text-center font-sans">
+          <SectionHeading
+            badge="ECOSYSTEM ARCHITECTURE"
+            title="OUR BUSINESS DEVELOPMENT"
+            highlight="APPROACH"
+            description="KINGSPHERE functions as a high-integrity corporate platform converting ideas, assets, and capital into compounding enterprises."
+            align="center"
+          />
+
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#070B0E] border-2 border-[#DDB763]/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-8">
+            <div className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] text-black font-bold text-xs uppercase tracking-[0.2em] shadow-md">
+              Corporate Business & Development Platform
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 pt-2">
+              {[
+                { title: '11 Business Verticals', desc: 'Diversified Operations' },
+                { title: 'Brands & Products', desc: 'Market Reach & FMCG' },
+                { title: 'Projects & Opportunities', desc: 'Execution & Contracts' },
+                { title: 'Investors & Joint Ventures', desc: 'Capital & Synergies' },
+                { title: 'Strategic Partnerships', desc: 'Industrial Alliances' },
+                { title: 'National & Global Trade', desc: 'Cross-Border Corridors' },
+              ].map((tier, tIdx) => (
+                <div
+                  key={tIdx}
+                  className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] hover:border-[#DDB763] transition-all flex flex-col justify-between text-center"
+                >
+                  <span className="text-[10px] font-mono font-bold text-[#DDB763]">
+                    0{tIdx + 1}
+                  </span>
+                  <div className="font-sans text-xs sm:text-sm font-bold text-white mt-1">
+                    {tier.title}
+                  </div>
+                  <div className="text-[10px] text-white/70 mt-1">
+                    {tier.desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-4 border-t border-white/10 text-xs sm:text-sm font-bold text-[#F8E9C6] uppercase tracking-[0.2em]">
+              Sustainable Growth • Business Expansion • Value Creation
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 6-Step Interactive Timeline Section */}
       <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">

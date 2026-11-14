@@ -20,6 +20,8 @@ import {
   Layers,
   ShieldCheck,
   CheckCircle2,
+  Cpu,
+  ShoppingBag,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -38,6 +40,8 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
   Landmark,
   Handshake,
   Layers,
+  Cpu,
+  ShoppingBag,
 };
 
 export default function PartnershipsPage() {
@@ -45,11 +49,11 @@ export default function PartnershipsPage() {
     <div className="relative bg-[#070B0E] text-white min-h-screen">
       {/* 1. Partnerships Hero with /images/hero/06-partnerships-hero.png */}
       <PageHero
-        badge="STRATEGIC ALLIANCES & CAPITAL SYNDICATION"
-        badgeIcon={<Handshake className="w-3.5 h-3.5 text-[#C9A34F]" />}
-        title="BUILDING STRONGER PARTNERSHIPS."
-        highlightTitle="CREATING GREATER OPPORTUNITIES."
-        description="We structure win-win collaborative vehicles, joint ventures, and consortiums uniting institutional capital, technology leaders, and regional market execution."
+        badge="OUR BUSINESS & PARTNERSHIP ECOSYSTEM"
+        badgeIcon={<Handshake className="w-3.5 h-3.5 text-[#DDB763]" />}
+        title="CONNECTING EXPERTISE."
+        highlightTitle="BUILDING BUSINESSES. CREATING GROWTH."
+        description="KINGSPHERE aims to develop opportunities through collaboration with strategic investors, joint venture partners, manufacturers, technology pioneers, and institutional organizations."
         imageSrc="/images/kingsphere/06-partnerships-hero.png"
         imageAlt="KINGSPHERE Strategic Alliances & Partnerships"
       />

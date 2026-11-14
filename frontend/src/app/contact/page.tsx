@@ -26,7 +26,7 @@ export default function ContactPage() {
         badgeIcon={<MessageSquare className="w-3.5 h-3.5 text-[#DDB763]" />}
         title="CONNECT WITH"
         highlightTitle="KINGSPHERE."
-        description="Our corporate desk welcomes discussions with prospective partners, industrial suppliers, infrastructure developers, and institutional stakeholders."
+        description="CREATING TRUST • DELIVERING VALUE. Our corporate desk welcomes discussions with prospective partners, industrial suppliers, infrastructure developers, and institutional stakeholders."
         imageSrc="/images/kingsphere/08-contact-hero.png"
         imageAlt="KINGSPHERE Corporate Headquarters and Direct Inquiries"
       />

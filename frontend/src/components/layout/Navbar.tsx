@@ -143,17 +143,17 @@ export function Navbar() {
                           <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(221, 183, 99,0.2)]">
                             <div>
                               <span className="text-[10px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
-                                DIVERSIFIED PORTFOLIO
+                                DIVERSIFIED OPERATIONS
                               </span>
                               <h3 className="font-sans text-base font-bold text-white">
-                                11 Core Business Sectors
+                                11 Business Verticals
                               </h3>
                             </div>
                             <Link
                               href="/business-sectors"
                               className="inline-flex items-center gap-1 text-xs text-[#DDB763] hover:text-[#F8E9C6] font-bold tracking-[0.12em] uppercase group"
                             >
-                              <span>View Sector Directory</span>
+                              <span>View All 11 Verticals</span>
                               <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                             </Link>
                           </div>

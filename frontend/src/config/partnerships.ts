@@ -10,84 +10,74 @@ export interface PartnerCategory {
 export const PARTNERSHIP_CATEGORIES: PartnerCategory[] = [
   {
     id: 'strategic-investors',
-    title: 'Strategic Investors',
+    title: 'Strategic Investors & Financial Partners',
     description:
-      'Private equity, institutional funds, family offices, and accredited investors seeking structured, long-term capital deployment into India’s infrastructure, natural resources, and industrial development.',
-    targetProfile: 'Institutional funds, family offices, sovereign and private equity investors.',
+      'Private equity, institutional funds, family offices, and accredited investors seeking structured, long-term capital deployment into India’s infrastructure, natural resources, manufacturing, and industrial ventures.',
+    targetProfile: 'Institutional funds, family offices, sovereign wealth, and private equity investors.',
     collaborationModes: ['Equity co-investment', 'Structured debt partnerships', 'Special Purpose Vehicle (SPV) participation'],
     iconName: 'TrendingUp',
   },
   {
-    id: 'manufacturers',
-    title: 'Manufacturers & Industrial Companies',
+    id: 'joint-ventures',
+    title: 'Joint Venture & Equity Partners',
     description:
-      'Established manufacturing leaders aiming to set up regional manufacturing units, expand processing capacity, or secure reliable raw materials and supply chains across Maharashtra and greater India.',
-    targetProfile: 'Original Equipment Manufacturers (OEMs), component fabricators, and industrial processors.',
-    collaborationModes: ['Contract manufacturing', 'Cluster development', 'Capacity-sharing consortia'],
+      'Forward-thinking corporate entities and entrepreneurs seeking complementary operational, capital, or market synergies to build high-scale co-owned business ventures.',
+    targetProfile: 'Corporate promoters, enterprise owners, and established business houses.',
+    collaborationModes: ['50/50 and majority/minority JVs', 'SPV project formation', 'Co-branded business ventures'],
+    iconName: 'Handshake',
+  },
+  {
+    id: 'manufacturers',
+    title: 'Manufacturing & Industrial Partners',
+    description:
+      'Established industrial leaders aiming to set up regional manufacturing units, expand processing capacity, or secure reliable raw materials and supply chains across Maharashtra and India.',
+    targetProfile: 'Original Equipment Manufacturers (OEMs), precision engineering fabricators, and processing units.',
+    collaborationModes: ['Contract manufacturing', 'Industrial cluster development', 'Capacity-sharing consortia'],
     iconName: 'Factory',
   },
   {
-    id: 'international-suppliers',
-    title: 'International Suppliers',
+    id: 'technology-partners',
+    title: 'Technology & Innovation Partners',
     description:
-      'Global equipment fabricators, heavy machinery producers, and industrial input suppliers seeking trusted, compliant Indian partners for localized distribution and procurement.',
-    targetProfile: 'International machinery makers, technology providers, and specialized bulk material producers.',
-    collaborationModes: ['Authorized distributorship', 'Direct procurement framework', 'Warehousing logistics'],
-    iconName: 'Globe',
+      'Technology innovators, software enterprises, and automation leaders collaborating on digital platforms, AI systems, SaaS architectures, and industrial digital transformation.',
+    targetProfile: 'Technology scaleups, SaaS providers, AI developers, and digital solution architects.',
+    collaborationModes: ['Technology integration', 'Platform co-development', 'Digital venture incubation'],
+    iconName: 'Cpu',
   },
   {
-    id: 'importers-exporters',
-    title: 'Importers & Exporters',
+    id: 'project-developers',
+    title: 'Project Development & Execution Partners',
     description:
-      'Trading houses and logistics enterprises looking to facilitate efficient international cargo, commodity trading, and multi-modal supply corridors.',
-    targetProfile: 'Cross-border trading entities, commodity brokers, and maritime logistics operators.',
+      'EPC contractors, civil engineering enterprises, renewable energy developers, and turnkey project managers collaborating on infrastructure and tender execution.',
+    targetProfile: 'Tier-1 and Tier-2 EPC contractors, PMC consultants, and civil developers.',
+    collaborationModes: ['Turnkey PMC partnerships', 'Consortium tender bidding', 'Subcontracting execution'],
+    iconName: 'Building2',
+  },
+  {
+    id: 'trade-partners',
+    title: 'Import-Export & International Trade Partners',
+    description:
+      'Global trading houses, commodity exporters, freight forwarders, and logistics operators seeking compliant Indian trade corridors and distribution networks.',
+    targetProfile: 'Cross-border trading entities, international commodity brokers, and maritime logistics operators.',
     collaborationModes: ['Bilateral trade contracts', 'Consignment partnerships', 'Port-to-inland transit handling'],
     iconName: 'Ship',
   },
   {
-    id: 'infrastructure-companies',
-    title: 'Infrastructure & Construction Companies',
+    id: 'distributors-associates',
+    title: 'Distributors, Dealers & Business Associates',
     description:
-      'Tier-1 and Tier-2 contractors, civil engineering enterprises, and infrastructure developers collaborating on high-impact public and private developments.',
-    targetProfile: 'EPC contractors, civil developers, and urban infrastructure developers.',
-    collaborationModes: ['Consortium bidding', 'Subcontracting alliances', 'Equipment and material leasing'],
-    iconName: 'Building2',
-  },
-  {
-    id: 'project-developers',
-    title: 'Project Developers & Contractors',
-    description:
-      'Renewable energy developers, commercial builders, and municipal project sponsors requiring on-ground execution, regulatory coordination, and site delivery.',
-    targetProfile: 'Solar developers, commercial park builders, and industrial estate managers.',
-    collaborationModes: ['Turnkey PMC partnerships', 'Site preparation & clearances', 'Local execution management'],
-    iconName: 'HardHat',
+      'Regional super-stockists, master distributors, retail networks, and commercial channel partners scaling FMCG products, personal care, packaged water, and automotive distribution.',
+    targetProfile: 'Regional master distributors, stockist networks, commercial wholesalers, and retail operators.',
+    collaborationModes: ['Master distributorship', 'Authorized retail dealership', 'Exclusive territory rights'],
+    iconName: 'ShoppingBag',
   },
   {
     id: 'government-institutions',
-    title: 'Government & Institutional Partners',
+    title: 'Government & Institutional Organizations',
     description:
-      'Regional development authorities, municipal corporations, public sector undertakings, and industry bodies exploring public-private partnerships (PPP).',
+      'Regional development authorities, municipal corporations, public sector undertakings, and industry bodies exploring public-private partnerships (PPP) and civic projects.',
     targetProfile: 'State development agencies, municipal bodies, and trade promotion councils.',
     collaborationModes: ['Public-Private Partnerships (PPP)', 'Policy pilot implementations', 'Regional development projects'],
     iconName: 'Landmark',
   },
-  {
-    id: 'joint-ventures',
-    title: 'Joint Venture Partners',
-    description:
-      'Entrepreneurs and corporate entities seeking complementary operational, capital, or technological synergies to build high-scale co-owned business ventures.',
-    targetProfile: 'Forward-thinking businesses seeking synergistic expansion into emerging sectors.',
-    collaborationModes: ['50/50 and majority/minority JVs', 'SPV formation', 'Technology-transfer ventures'],
-    iconName: 'Handshake',
-  },
-  {
-    id: 'international-orgs',
-    title: 'International Business Organizations',
-    description:
-      'Bilateral trade councils, export promotion boards, and diplomatic trade delegations seeking verified corporate partners within Maharashtra and Indian economic corridors.',
-    targetProfile: 'Trade missions, chambers of commerce, and multilateral economic agencies.',
-    collaborationModes: ['Trade delegation liaison', 'Market entry advisory', 'Investment roadshows'],
-    iconName: 'Layers',
-  },
 ];
-

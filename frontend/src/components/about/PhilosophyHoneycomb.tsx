@@ -16,6 +16,7 @@ import {
   Coins,
   X,
   Sparkles,
+  Lightbulb,
 } from 'lucide-react';
 
 interface HoneycombItem {
@@ -32,120 +33,120 @@ const HONEYCOMB_ITEMS: HoneycombItem[] = [
   {
     id: 'phil-1',
     number: '01',
-    title: 'SUBSTANCE OVER SPECULATION',
+    title: 'BUILDING SUSTAINABLE BUSINESSES',
     category: 'OUR PHILOSOPHY 01',
     description:
-      'We invest time, management focus, and capital strictly in tangible productive enterprises—manufacturing, infrastructure, real trade, and essential resources. Short-term speculation is rejected in favor of enduring asset creation.',
+      'At KINGSPHERE, we focus on building sustainable businesses, creating long-term value, and developing strategic partnerships that drive shared growth and lasting opportunities.',
     icon: Coins,
     theme: 'dark',
   },
   {
     id: 'phil-2',
     number: '02',
-    title: 'SYMMETRIC STAKEHOLDER VALUE',
+    title: 'CREATING TRUST & DELIVERING VALUE',
     category: 'OUR PHILOSOPHY 02',
     description:
-      'Every strategic partnership must create fair, measurable upside for both sides. Enduring collaborations cannot exist without mutual prosperity, risk equilibrium, and shared long-term growth horizons.',
+      'We believe that building a successful business is not just about creating wealth; it is about creating trust, delivering value, embracing responsibility and building opportunities that contribute to a better future.',
     icon: Handshake,
     theme: 'white',
   },
   {
     id: 'phil-3',
     number: '03',
-    title: 'INTEGRITY OF WORD',
-    category: 'OUR PHILOSOPHY 03',
+    title: 'INTEGRITY & ETHICAL PRACTICES',
+    category: 'CORE VALUE 01',
     description:
-      'Trust is our primary asset. We fulfill our contractual commitments with precision, statutory compliance, and transparent communication across all domestic and cross-border initiatives.',
+      'We believe in honesty, transparency, fairness and ethical business practices. We are committed to building trust through responsible decisions, clear commitments and actions that stand the test of time.',
     icon: ShieldCheck,
     theme: 'gold',
   },
   {
     id: 'str-1',
     number: '04',
-    title: 'REGIONAL SOURCING DEPTH',
-    category: 'STRATEGIC STRENGTH 01',
+    title: 'RESPONSIBILITY & STEWARDSHIP',
+    category: 'CORE VALUE 02',
     description:
-      'Intimate familiarity with Maharashtra’s land parcels, industrial corridors, supply ecosystems, regulatory authorities, and administrative frameworks, enabling friction-free ground execution.',
-    icon: Award,
+      'We believe in conducting business with social, environmental and economic responsibility. We strive to create opportunities that benefit our customers, partners, communities and future generations.',
+    icon: Leaf,
     theme: 'dark',
   },
   {
     id: 'str-2',
     number: '05',
-    title: 'CROSS-INDUSTRY VERSATILITY',
-    category: 'STRATEGIC STRENGTH 02',
+    title: 'EXCELLENCE & QUALITY STANDARDS',
+    category: 'CORE VALUE 03',
     description:
-      'Ability to connect disparate industrial sectors—linking mining off-take with manufacturing, agricultural inputs with processing clusters, and energy efficiency with civil infrastructure.',
-    icon: Globe2,
+      'We are committed to quality, professionalism and continuous improvement. We strive to achieve high standards in every project, product, service and business relationship we undertake.',
+    icon: Award,
     theme: 'gold',
   },
   {
     id: 'str-3',
     number: '06',
-    title: 'FLEXIBLE PARTNERSHIP STRUCTURES',
-    category: 'STRATEGIC STRENGTH 03',
+    title: 'INNOVATION & MODERN SOLUTIONS',
+    category: 'CORE VALUE 04',
     description:
-      'Agile joint ventures, project consortia, SPVs, or contract delivery models configured specifically to match institutional investor mandates and corporate strategic needs.',
-    icon: TrendingUp,
+      'We embrace new ideas, emerging technologies and forward-thinking solutions. We encourage creativity, explore new opportunities and transform possibilities into sustainable business ventures.',
+    icon: Lightbulb,
     theme: 'white',
   },
   {
     id: 'ten-1',
     number: '07',
-    title: 'ENDURING ASSET CREATION',
-    category: 'CORE CAPABILITY',
+    title: 'UNITY & COLLABORATION',
+    category: 'CORE VALUE 05',
     description:
-      'Prioritizing physical and industrial assets with multigenerational utility, predictable revenue horizons, and resilient real-economy underlying value across Maharashtra and India.',
-    icon: Building2,
+      'We believe that lasting success is achieved together. We build strong relationships with employees, investors, customers, suppliers and strategic partners through mutual respect, shared goals and collective growth.',
+    icon: Handshake,
     theme: 'dark',
   },
   {
     id: 'gov-1',
     number: '08',
-    title: 'STATUTORY & REGULATORY RIGOR',
-    category: 'CORPORATE GOVERNANCE',
+    title: 'CROSS-INDUSTRY VERSATILITY',
+    category: 'STRATEGIC STRENGTH',
     description:
-      'Uncompromised adherence to corporate governance, statutory compliances, legal ethics, and transparent audit standards across all public and private initiatives.',
-    icon: CheckCircle2,
+      'Connecting diverse industries across manufacturing, infrastructure, international trade, consumer products, technology, mining, energy, recycling, consultancy and strategic investments.',
+    icon: Globe2,
     theme: 'dark',
   },
   {
     id: 'exc-1',
     number: '09',
-    title: 'EXECUTION VELOCITY',
-    category: 'DELIVERY DISCIPLINE',
+    title: 'STRATEGIC PARTNERSHIPS & ALLIANCES',
+    category: 'PARTNERSHIP ECOSYSTEM',
     description:
-      'Rapid on-ground deployment through specialized engineering alliances, agile milestone governance, and verified local operational delivery networks.',
-    icon: Zap,
+      'Bringing together industry experts, entrepreneurs, investors, professionals, and strategic partners to develop businesses, expand opportunities, and build sustainable growth across multiple sectors.',
+    icon: TrendingUp,
     theme: 'gold',
   },
   {
     id: 'sus-1',
     number: '10',
-    title: 'CIRCULAR RESOURCE STEWARDSHIP',
-    category: 'SUSTAINABILITY',
+    title: 'REGIONAL & NATIONAL DEVELOPMENT',
+    category: 'ECONOMIC MANDATE',
     description:
-      'Embedding environmental responsibility, circular material workflows, zero-waste processing, and clean energy optimization across every active operational domain.',
-    icon: Leaf,
+      'Our vision is to connect diverse industries, create new business opportunities, and contribute to the economic and industrial development of Maharashtra and India.',
+    icon: Building2,
     theme: 'dark',
   },
   {
     id: 'dir-1',
     number: '11',
-    title: 'EXECUTIVE LEADERSHIP ACCESS',
-    category: 'STRATEGIC STEWARDSHIP',
+    title: 'CIRCULAR RESOURCE STEWARDSHIP',
+    category: 'SUSTAINABILITY',
     description:
-      'Direct access to corporate decision-makers in Parbhani, eliminating multi-layered administrative bureaucracy and accelerating high-stake transactions and alliances.',
+      'Embedding environmental responsibility, circular material workflows, waste processing, resource recovery, and clean energy optimization across every active operational domain.',
     icon: Compass,
     theme: 'white',
   },
   {
     id: 'tra-1',
     number: '12',
-    title: 'GLOBAL CONNECTIVITY CORRIDORS',
+    title: 'GLOBAL TRADE & MARKET ACCESS',
     category: 'INTERNATIONAL REACH',
     description:
-      'Connecting regional productive potential with verified international trade corridors, cross-border technology partners, and foreign institutional procurement pipelines.',
+      'Connecting Indian productive potential with verified international trade corridors, cross-border technology partners, and global distribution pipelines.',
     icon: Globe,
     theme: 'dark',
   },
@@ -193,8 +194,8 @@ export function PhilosophyHoneycomb() {
             titleColor = 'text-black';
           } else if (item.theme === 'white') {
             borderWrapper = 'bg-[#DDB763]/50 hover:bg-[#DDB763]';
-            innerBg = 'bg-gradient-to-b from-white to-[#F0F2F5] text-black';
-            iconColor = 'text-black';
+            innerBg = 'bg-white text-black';
+            iconColor = 'text-[#DDB763]';
             titleColor = 'text-black';
           }
 
@@ -316,4 +317,3 @@ export function PhilosophyHoneycomb() {
     </div>
   );
 }
-

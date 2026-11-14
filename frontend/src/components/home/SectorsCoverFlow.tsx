@@ -213,6 +213,20 @@ export function SectorsCoverFlow() {
                   {sector.shortDescription}
                 </p>
 
+                {/* Brands Tag if applicable */}
+                {isCenter && sector.brands && sector.brands.length > 0 && (
+                  <div className="flex flex-wrap items-center justify-center gap-1.5 pt-0.5">
+                    {sector.brands.map((b, i) => (
+                      <span
+                        key={i}
+                        className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#DDB763]/20 text-[#F8E9C6] border border-[#DDB763]/50 font-bold tracking-wide"
+                      >
+                        ★ {b.name}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 {/* Bottom CTA Button */}
                 <div className="pt-2">
                   {isCenter ? (
