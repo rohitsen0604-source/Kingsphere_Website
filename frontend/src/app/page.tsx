@@ -58,88 +58,82 @@ export default function HomePage() {
             className="object-cover object-center filter brightness-[0.75] contrast-[1.08] transition-transform duration-1000 ease-out hover:scale-105"
             sizes="100vw"
           />
-          {/* Layer 2: Modern Dark Teal Gradient Overlay & Subtle Ambient Gold Particles */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0E1720]/95 via-[#0E1720]/75 to-[#0E1720]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-[#0E1720]/50" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0E1720_90%)] opacity-35" />
+          {/* Layer 2: Modern Dark Overlay & Subtle Ambient Gold Particles */}
+          <div className="absolute inset-0 bg-[#0E1720]/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-[#0E1720]/60" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0E1720_85%)] opacity-50" />
           <GoldParticles count={22} />
         </div>
 
-        {/* Layer 3: Top Layer - Actual HTML Hero Content */}
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
-          {/* Left Content (Approximately 60%) */}
-          <div className="lg:col-span-8 space-y-5 sm:space-y-6 text-left">
-            <GsapReveal animation="fade-up" duration={0.8}>
-              {/* Eyebrow Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221,183,99,0.35)] bg-[#0B151A]/90 backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] animate-pulse" />
-                <span className="text-[9px] sm:text-[11px] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#F8E9C6]">
-                  CONNECTING EXPERTISE • BUILDING BUSINESSES • CREATING GROWTH
-                </span>
-              </div>
-            </GsapReveal>
+        {/* Layer 3: Top Layer - Centered HTML Hero Content */}
+        <div className="max-w-4xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-5 sm:space-y-6">
+          <GsapReveal animation="fade-up" duration={0.8}>
+            {/* Eyebrow Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221,183,99,0.35)] bg-[#0B151A]/90 backdrop-blur-md mx-auto">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] animate-pulse" />
+              <span className="text-[9px] sm:text-[11px] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#F8E9C6]">
+                CONNECTING EXPERTISE • BUILDING BUSINESSES • CREATING GROWTH
+              </span>
+            </div>
+          </GsapReveal>
 
-            <GsapReveal animation="fade-up" delay={0.15} duration={0.9}>
-              {/* Controlled line breaks heading with white & brand logo metallic gold */}
-              <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-bold tracking-tight text-white leading-[1.12]">
-                BUILDING STRATEGIC PARTNERSHIPS.<br />
-                <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1">
-                  CREATING GLOBAL OPPORTUNITIES.
-                </span>
-              </h1>
-            </GsapReveal>
+          <GsapReveal animation="fade-up" delay={0.15} duration={0.9}>
+            {/* Controlled line breaks heading with white & brand logo metallic gold */}
+            <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[62px] font-bold tracking-tight text-white leading-[1.12] text-center">
+              BUILDING STRATEGIC PARTNERSHIPS.<br />
+              <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1">
+                CREATING GLOBAL OPPORTUNITIES.
+              </span>
+            </h1>
+          </GsapReveal>
 
-            <GsapReveal animation="fade-up" delay={0.25} duration={0.9}>
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-xl font-sans font-medium">
-                A diversified business and development company connecting industries, investments, infrastructure, technology, and global trade opportunities.
-              </p>
-            </GsapReveal>
+          <GsapReveal animation="fade-up" delay={0.25} duration={0.9}>
+            <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-2xl mx-auto font-sans font-medium text-center">
+              A diversified business and development company connecting industries, investments, infrastructure, technology, and global trade opportunities.
+            </p>
+          </GsapReveal>
 
-            <GsapReveal animation="fade-up" delay={0.35} duration={0.9}>
-              <p className="text-xs sm:text-[13px] text-white/90 leading-relaxed max-w-xl font-sans font-normal border-l-2 border-[#DDB763] pl-3 py-0.5">
-                We bring together industry experts, entrepreneurs, investors, professionals, and strategic partners to develop businesses, expand opportunities, and build sustainable growth across multiple sectors.
-              </p>
-            </GsapReveal>
+          <GsapReveal animation="fade-up" delay={0.35} duration={0.9}>
+            <p className="text-xs sm:text-[13px] text-white/90 leading-relaxed max-w-2xl mx-auto font-sans font-normal text-center">
+              We bring together industry experts, entrepreneurs, investors, professionals, and strategic partners to develop businesses, expand opportunities, and build sustainable growth across multiple sectors.
+            </p>
+          </GsapReveal>
 
-            {/* CTAs */}
-            <GsapReveal animation="fade-up" delay={0.45} duration={0.9}>
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1 w-full sm:w-auto">
-                <Button href="/business-sectors" variant="primary" size="lg" withArrow className="w-full sm:w-auto text-center justify-center">
-                  EXPLORE OUR BUSINESS
-                </Button>
-                <Button href="/partnerships" variant="secondary" size="lg" className="w-full sm:w-auto text-center justify-center">
-                  PARTNER WITH US
-                </Button>
-              </div>
-            </GsapReveal>
+          {/* CTAs */}
+          <GsapReveal animation="fade-up" delay={0.45} duration={0.9}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-1 w-full sm:w-auto">
+              <Button href="/business-sectors" variant="primary" size="lg" withArrow className="w-full sm:w-auto text-center justify-center">
+                EXPLORE OUR BUSINESS
+              </Button>
+              <Button href="/partnerships" variant="secondary" size="lg" className="w-full sm:w-auto text-center justify-center">
+                PARTNER WITH US
+              </Button>
+            </div>
+          </GsapReveal>
 
-            {/* Below CTAs: Three Core Credentials (Single horizontal line on mobile & desktop) */}
-            <GsapReveal animation="fade-in" delay={0.55}>
-              <div className="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-xl font-sans">
-                <div className="py-1">
-                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">11</div>
-                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
-                    BUSINESS VERTICALS
-                  </div>
-                </div>
-                <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
-                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">6-STEP</div>
-                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
-                    EXECUTION FRAMEWORK
-                  </div>
-                </div>
-                <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
-                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">PARBHANI</div>
-                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
-                    MAHARASHTRA, INDIA
-                  </div>
+          {/* Below CTAs: Three Core Credentials (Single horizontal line on mobile & desktop, Centered) */}
+          <GsapReveal animation="fade-in" delay={0.55}>
+            <div className="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-xl mx-auto w-full font-sans text-center">
+              <div className="py-1">
+                <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">11</div>
+                <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
+                  BUSINESS VERTICALS
                 </div>
               </div>
-            </GsapReveal>
-          </div>
-
-          {/* Right Visual */}
-          <div className="lg:col-span-4 hidden lg:block" />
+              <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+                <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">6-STEP</div>
+                <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
+                  EXECUTION FRAMEWORK
+                </div>
+              </div>
+              <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+                <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">PARBHANI</div>
+                <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
+                  MAHARASHTRA, INDIA
+                </div>
+              </div>
+            </div>
+          </GsapReveal>
         </div>
 
         {/* Minimal Scroll Indicator */}
