@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsCapabilitiesPage() {
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* 1. Capabilities Hero with /images/hero/05-projects-capabilities-hero.png */}
       <PageHero
         badge="11 BUSINESS VERTICALS • OPERATIONAL CAPACITY"
@@ -32,7 +32,7 @@ export default function ProjectsCapabilitiesPage() {
         imageSrc="/images/kingsphere/05-projects-capabilities-hero.png"
         imageAlt="KINGSPHERE Projects & Capabilities Scope"
       >
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#070B0E]/80 border border-[#DDB763]/30 text-xs text-[#F8E9C6] font-sans">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0E1720]/80 border border-[#DDB763]/30 text-xs text-[#F8E9C6] font-sans">
           <Sparkles className="w-3.5 h-3.5 text-[#DDB763]" />
           <span>CREATING TRUST • DELIVERING VALUE • BUILDING OPPORTUNITIES</span>
         </div>
@@ -56,7 +56,7 @@ export default function ProjectsCapabilitiesPage() {
                 <GsapReveal key={domain.id} animation="fade-up" duration={0.85}>
                   <div
                     id={domain.id}
-                    className="group rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] shadow-[0_15px_40px_rgba(0,0,0,0.6)] overflow-hidden p-6 sm:p-8 lg:p-10 transition-all duration-300 hover:border-[#DDB763]"
+                    className="group rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.25)] shadow-[0_15px_40px_rgba(0,0,0,0.6)] overflow-hidden p-6 sm:p-8 lg:p-10 transition-all duration-300 hover:border-[#DDB763]"
                   >
                     <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
                       {/* Visual Container */}
@@ -69,9 +69,9 @@ export default function ProjectsCapabilitiesPage() {
                             className="object-cover filter brightness-[0.8] contrast-[1.1] transition-transform duration-700 ease-out group-hover:scale-105"
                             sizes="(max-width: 1024px) 100vw, 40vw"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-80" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-transparent opacity-80" />
                           <div className="absolute top-4 left-4">
-                            <span className="font-sans text-[11px] px-3 py-1 rounded-full bg-[#070B0E]/90 border border-[#DDB763] text-[#F8E9C6] font-bold uppercase tracking-wider">
+                            <span className="font-sans text-[11px] px-3 py-1 rounded-full bg-[#0E1720]/90 border border-[#DDB763] text-[#F8E9C6] font-bold uppercase tracking-wider">
                               {domain.category}
                             </span>
                           </div>
@@ -94,7 +94,7 @@ export default function ProjectsCapabilitiesPage() {
 
                       {/* Proprietary Brands Badge if available */}
                       {domain.brands && domain.brands.length > 0 && (
-                        <div className="p-3.5 rounded-xl bg-[#070B0E] border border-[#DDB763]/40 flex flex-wrap items-center gap-3">
+                        <div className="p-3.5 rounded-xl bg-[#0E1720] border border-[#DDB763]/40 flex flex-wrap items-center gap-3">
                           <span className="text-[10px] uppercase font-bold text-[#DDB763] tracking-widest">
                             PROPRIETARY BRANDS:
                           </span>
@@ -113,7 +113,7 @@ export default function ProjectsCapabilitiesPage() {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 font-sans">
                         {/* Operational Scope */}
-                        <div className="p-4 rounded-xl bg-[#070B0E] border border-[rgba(221,183,99,0.2)] space-y-2">
+                        <div className="p-4 rounded-xl bg-[#0E1720] border border-[rgba(221,183,99,0.2)] space-y-2">
                           <div className="text-[11px] font-bold uppercase tracking-wider text-[#F8E9C6]">
                             Operational Scope
                           </div>
@@ -128,7 +128,7 @@ export default function ProjectsCapabilitiesPage() {
                         </div>
 
                         {/* Equipment & Alliances */}
-                        <div className="p-4 rounded-xl bg-[#070B0E] border border-[rgba(221,183,99,0.2)] space-y-2">
+                        <div className="p-4 rounded-xl bg-[#0E1720] border border-[rgba(221,183,99,0.2)] space-y-2">
                           <div className="text-[11px] font-bold uppercase tracking-wider text-[#F8E9C6]">
                             Assets & Alliances
                           </div>
@@ -153,7 +153,7 @@ export default function ProjectsCapabilitiesPage() {
                             {domain.opportunityVectors.map((opp, i) => (
                               <span
                                 key={i}
-                                className="text-[11px] px-2.5 py-1 rounded-full bg-[#070B0E] border border-[rgba(221,183,99,0.25)] text-white font-normal"
+                                className="text-[11px] px-2.5 py-1 rounded-full bg-[#0E1720] border border-[rgba(221,183,99,0.25)] text-white font-normal"
                               >
                                 {opp}
                               </span>
@@ -178,7 +178,7 @@ export default function ProjectsCapabilitiesPage() {
       </section>
 
       {/* Collaboration CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0E1720] border-t border-[rgba(201,163,79,0.2)] text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto relative z-10 space-y-5">
           <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-[#C9A34F]">
             DEPLOY CAPABILITIES WITH US

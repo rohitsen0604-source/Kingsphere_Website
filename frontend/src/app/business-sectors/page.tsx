@@ -29,7 +29,7 @@ export default function BusinessSectorsPage() {
   });
 
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* Editorial Hero Header with /images/hero/03-business-sectors-hero.png */}
       <PageHero
         badge="11 BUSINESS VERTICALS. ONE DIVERSIFIED GROUP."
@@ -46,8 +46,8 @@ export default function BusinessSectorsPage() {
             onClick={() => setActiveCategory('all')}
             className={`min-h-[38px] sm:min-h-[40px] px-3.5 sm:px-4 py-2 rounded-[2px] text-[11px] font-semibold uppercase tracking-[0.12em] transition-all border ${
               activeCategory === 'all'
-                ? 'bg-[#DDB763] text-[#070B0E] border-[#DDB763]'
-                : 'bg-[#0B1317]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
+                ? 'bg-[#DDB763] text-[#0E1720] border-[#DDB763]'
+                : 'bg-[#14222E]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
             }`}
           >
             All 11 Sectors
@@ -56,8 +56,8 @@ export default function BusinessSectorsPage() {
             onClick={() => setActiveCategory('industrial')}
             className={`min-h-[38px] sm:min-h-[40px] px-3.5 sm:px-4 py-2 rounded-[2px] text-[11px] font-semibold uppercase tracking-[0.12em] transition-all border ${
               activeCategory === 'industrial'
-                ? 'bg-[#DDB763] text-[#070B0E] border-[#DDB763]'
-                : 'bg-[#0B1317]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
+                ? 'bg-[#DDB763] text-[#0E1720] border-[#DDB763]'
+                : 'bg-[#14222E]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
             }`}
           >
             Industrial & Infra
@@ -66,8 +66,8 @@ export default function BusinessSectorsPage() {
             onClick={() => setActiveCategory('trade')}
             className={`min-h-[38px] sm:min-h-[40px] px-3.5 sm:px-4 py-2 rounded-[2px] text-[11px] font-semibold uppercase tracking-[0.12em] transition-all border ${
               activeCategory === 'trade'
-                ? 'bg-[#DDB763] text-[#070B0E] border-[#DDB763]'
-                : 'bg-[#0B1317]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
+                ? 'bg-[#DDB763] text-[#0E1720] border-[#DDB763]'
+                : 'bg-[#14222E]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
             }`}
           >
             Trade & Tech
@@ -76,8 +76,8 @@ export default function BusinessSectorsPage() {
             onClick={() => setActiveCategory('resources')}
             className={`min-h-[38px] sm:min-h-[40px] px-3.5 sm:px-4 py-2 rounded-[2px] text-[11px] font-semibold uppercase tracking-[0.12em] transition-all border ${
               activeCategory === 'resources'
-                ? 'bg-[#DDB763] text-[#070B0E] border-[#DDB763]'
-                : 'bg-[#0B1317]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
+                ? 'bg-[#DDB763] text-[#0E1720] border-[#DDB763]'
+                : 'bg-[#14222E]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
             }`}
           >
             Mining & Circular
@@ -86,8 +86,8 @@ export default function BusinessSectorsPage() {
             onClick={() => setActiveCategory('services')}
             className={`min-h-[38px] sm:min-h-[40px] px-3.5 sm:px-4 py-2 rounded-[2px] text-[11px] font-semibold uppercase tracking-[0.12em] transition-all border ${
               activeCategory === 'services'
-                ? 'bg-[#DDB763] text-[#070B0E] border-[#DDB763]'
-                : 'bg-[#0B1317]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
+                ? 'bg-[#DDB763] text-[#0E1720] border-[#DDB763]'
+                : 'bg-[#14222E]/90 text-white border-[rgba(221,183,99,0.24)] hover:text-[#F8E9C6]'
             }`}
           >
             Services & JVs

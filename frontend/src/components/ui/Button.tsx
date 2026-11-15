@@ -24,7 +24,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    'relative inline-flex items-center justify-center font-sans uppercase font-bold tracking-[0.14em] transition-all duration-300 rounded-full select-none cursor-pointer group text-center overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DDB763] focus-visible:ring-offset-2 focus-visible:ring-offset-[#070B0E]';
+    'relative inline-flex items-center justify-center font-sans uppercase font-bold tracking-[0.14em] transition-all duration-300 rounded-full select-none cursor-pointer group text-center overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DDB763] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E1720]';
 
   const sizeStyles = {
     sm: 'min-h-[40px] sm:min-h-[44px] text-[11px] px-5 py-2 gap-1.5',
@@ -36,7 +36,7 @@ export function Button({
     primary:
       'bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] text-black font-bold shadow-[0_4px_20px_rgba(221,183,99,0.25)] hover:shadow-[0_0_28px_rgba(221,183,99,0.45)] hover:brightness-105 active:scale-[0.98] before:absolute before:inset-0 before:-translate-x-full hover:before:translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-transform before:duration-700 ease-out',
     secondary:
-      'bg-[#0B1317] text-white border border-[rgba(221, 183, 99,0.35)] hover:border-[#DDB763] hover:bg-[#101C22] hover:shadow-[0_0_20px_rgba(221, 183, 99,0.25)] active:scale-[0.98]',
+      'bg-[#14222E] text-white border border-[rgba(221, 183, 99,0.35)] hover:border-[#DDB763] hover:bg-[#101C22] hover:shadow-[0_0_20px_rgba(221, 183, 99,0.25)] active:scale-[0.98]',
     outline:
       'bg-transparent text-white border border-white/20 hover:text-white hover:border-[#DDB763] hover:bg-white/5 hover:shadow-[0_0_15px_rgba(221, 183, 99,0.2)] active:scale-[0.98]',
     ghost:

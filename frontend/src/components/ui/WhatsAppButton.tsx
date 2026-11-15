@@ -21,7 +21,7 @@ export function WhatsAppButton({
     <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 font-sans">
       {/* Tooltip / Label */}
       <div
-        className={`hidden sm:flex items-center px-3.5 py-1.5 rounded-full bg-[#0B1317]/95 border border-[#DDB763]/50 text-white text-xs font-medium shadow-[0_10px_25px_rgba(0,0,0,0.6)] backdrop-blur-md transition-all duration-300 pointer-events-none ${
+        className={`hidden sm:flex items-center px-3.5 py-1.5 rounded-full bg-[#14222E]/95 border border-[#DDB763]/50 text-white text-xs font-medium shadow-[0_10px_25px_rgba(0,0,0,0.6)] backdrop-blur-md transition-all duration-300 pointer-events-none ${
           isHovered
             ? 'opacity-100 translate-x-0'
             : 'opacity-0 translate-x-2'
@@ -38,7 +38,7 @@ export function WhatsAppButton({
         rel="noopener noreferrer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="relative group w-14 h-14 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] flex items-center justify-center text-white shadow-[0_10px_30px_rgba(37,211,102,0.4),0_0_20px_rgba(221,183,99,0.2)] hover:shadow-[0_12px_35px_rgba(37,211,102,0.6),0_0_30px_rgba(221,183,99,0.4)] transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#070B0E]"
+        className="relative group w-14 h-14 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] flex items-center justify-center text-white shadow-[0_10px_30px_rgba(37,211,102,0.4),0_0_20px_rgba(221,183,99,0.2)] hover:shadow-[0_12px_35px_rgba(37,211,102,0.6),0_0_30px_rgba(221,183,99,0.4)] transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#0E1720]"
         aria-label="Direct WhatsApp Inquiry with KINGSPHERE"
       >
         {/* Animated Radar Pulse */}

@@ -153,8 +153,8 @@ export function SectorsCoverFlow() {
               }}
               className={`absolute top-1/2 left-1/2 w-[280px] sm:w-[325px] md:w-[360px] h-[430px] sm:h-[465px] md:h-[495px] rounded-[24px] transition-all duration-600 ease-out cursor-pointer flex flex-col justify-between overflow-hidden ${
                 isCenter
-                  ? 'border-2 border-[#DDB763] shadow-[0_0_55px_rgba(221, 183, 99,0.35),0_20px_50px_rgba(0,0,0,0.7)] bg-[#0B1317]'
-                  : 'border border-white/15 bg-[#070B0E]/90 hover:border-[#DDB763]/50'
+                  ? 'border-2 border-[#DDB763] shadow-[0_0_55px_rgba(221, 183, 99,0.35),0_20px_50px_rgba(0,0,0,0.7)] bg-[#14222E]'
+                  : 'border border-white/15 bg-[#0E1720]/90 hover:border-[#DDB763]/50'
               }`}
             >
               {/* Card Background Photography with Luxury Dark Gradient */}
@@ -169,8 +169,8 @@ export function SectorsCoverFlow() {
                   }`}
                   sizes="350px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-[#070B0E]/75 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#070B0E]/60 via-transparent to-[#070B0E]/90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-[#0E1720]/75 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0E1720]/60 via-transparent to-[#0E1720]/90" />
                 {isCenter && (
                   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(221, 183, 99,0.2)_0%,transparent_70%)]" />
                 )}
@@ -184,8 +184,8 @@ export function SectorsCoverFlow() {
                 <div
                   className={`w-9 h-9 rounded-full flex items-center justify-center border transition-all duration-300 ${
                     isCenter
-                      ? 'bg-[#070B0E]/85 border-[#DDB763]/60 shadow-[0_0_15px_rgba(221, 183, 99,0.35)]'
-                      : 'bg-[#070B0E]/60 border-white/15'
+                      ? 'bg-[#0E1720]/85 border-[#DDB763]/60 shadow-[0_0_15px_rgba(221, 183, 99,0.35)]'
+                      : 'bg-[#0E1720]/60 border-white/15'
                   }`}
                 >
                   <Icon

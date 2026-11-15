@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function OurApproachPage() {
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* Approach Hero with /images/hero/04-our-approach-hero.png */}
       <PageHero
         badge="OUR BUSINESS DEVELOPMENT APPROACH"
@@ -30,7 +30,7 @@ export default function OurApproachPage() {
       />
 
       {/* Business Development Ecosystem Flowchart */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0B1317] border-b border-[rgba(221,183,99,0.2)]">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#14222E] border-b border-[rgba(221,183,99,0.2)]">
         <div className="max-w-7xl mx-auto space-y-10 text-center font-sans">
           <SectionHeading
             badge="ECOSYSTEM ARCHITECTURE"
@@ -40,7 +40,7 @@ export default function OurApproachPage() {
             align="center"
           />
 
-          <div className="p-8 sm:p-10 rounded-3xl bg-[#070B0E] border-2 border-[#DDB763]/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-8">
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#0E1720] border-2 border-[#DDB763]/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-8">
             <div className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] text-black font-bold text-xs uppercase tracking-[0.2em] shadow-md">
               Corporate Business & Development Platform
             </div>
@@ -56,7 +56,7 @@ export default function OurApproachPage() {
               ].map((tier, tIdx) => (
                 <div
                   key={tIdx}
-                  className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] hover:border-[#DDB763] transition-all flex flex-col justify-between text-center"
+                  className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221,183,99,0.25)] hover:border-[#DDB763] transition-all flex flex-col justify-between text-center"
                 >
                   <span className="text-[10px] font-mono font-bold text-[#DDB763]">
                     0{tIdx + 1}
@@ -94,7 +94,7 @@ export default function OurApproachPage() {
       </section>
 
       {/* Additional Pillars Section */}
-      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#070B0E] border-y border-[rgba(201,163,79,0.2)]">
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-[#0E1720] border-y border-[rgba(201,163,79,0.2)]">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badge="ARCHITECTURAL FOUNDATION"
@@ -130,14 +130,14 @@ export default function OurApproachPage() {
 
           {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
           <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-4 px-4 font-sans">
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#0E1720] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#0E1720] to-transparent z-20" />
 
             <div className="animate-marquee-track flex gap-4 items-stretch">
               {[...APPROACH_PILLARS, ...APPROACH_PILLARS].map((pillar, idx) => (
                 <div
                   key={idx}
-                  className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                  className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">

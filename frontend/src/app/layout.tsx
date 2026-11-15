@@ -86,7 +86,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-[#070B0E] text-white antialiased selection:bg-[#DDB763]/30 selection:text-white">
+      <body className="bg-[#0E1720] text-white antialiased selection:bg-[#DDB763]/30 selection:text-white">
         <Preloader />
         <div className="relative flex min-h-screen flex-col">
           <Navbar />

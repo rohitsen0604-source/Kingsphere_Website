@@ -32,8 +32,8 @@ export function PartnershipsMarquee() {
   return (
     <div className="relative w-full overflow-hidden py-4">
       {/* Left and Right Fade Gradients */}
-      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#0B1317] via-[#0B1317]/80 to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#0B1317] via-[#0B1317]/80 to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#14222E] via-[#14222E]/80 to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#14222E] via-[#14222E]/80 to-transparent z-10" />
 
       {/* Marquee Track */}
       <div className="animate-marquee-track flex gap-6 items-stretch">
@@ -44,12 +44,12 @@ export function PartnershipsMarquee() {
             <Link
               key={`${cat.id}-${idx}`}
               href={`/partnerships?category=${cat.id}`}
-              className="group relative w-[280px] sm:w-[380px] shrink-0 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-[#0F1A1F] to-[#0B1317] border border-[rgba(221, 183, 99,0.22)] hover:border-[#DDB763] shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(221, 183, 99,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between font-sans cursor-pointer"
+              className="group relative w-[280px] sm:w-[380px] shrink-0 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-[#1A2C3A] to-[#14222E] border border-[rgba(221, 183, 99,0.22)] hover:border-[#DDB763] shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(221, 183, 99,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between font-sans cursor-pointer"
             >
               <div className="space-y-3.5">
                 {/* Header: Icon & External Link indicator */}
                 <div className="flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-[#070B0E] border border-[rgba(221, 183, 99,0.28)] flex items-center justify-center text-[#DDB763] group-hover:scale-105 group-hover:border-[#DDB763] transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-[#0E1720] border border-[rgba(221, 183, 99,0.28)] flex items-center justify-center text-[#DDB763] group-hover:scale-105 group-hover:border-[#DDB763] transition-all">
                     <IconComponent className="w-5 h-5 text-[#DDB763]" />
                   </div>
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-white/60 group-hover:text-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">

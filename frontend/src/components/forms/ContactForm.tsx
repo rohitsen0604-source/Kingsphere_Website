@@ -83,7 +83,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0B1317]/95 border border-[rgba(221, 183, 99,0.28)] shadow-[0_24px_80px_rgba(0,0,0,0.7)] backdrop-blur-xl p-4 sm:p-7 lg:p-10 font-sans overflow-hidden">
+    <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#14222E]/95 border border-[rgba(221, 183, 99,0.28)] shadow-[0_24px_80px_rgba(0,0,0,0.7)] backdrop-blur-xl p-4 sm:p-7 lg:p-10 font-sans overflow-hidden">
       {/* Ambient cyan-teal glow matching screenshot */}
       <div className="pointer-events-none absolute -top-32 -right-32 w-80 h-80 bg-[radial-gradient(circle,rgba(221, 183, 99,0.45)_0%,transparent_70%)]" />
       <div className="pointer-events-none absolute -bottom-32 -left-32 w-80 h-80 bg-[radial-gradient(circle,rgba(221, 183, 99,0.2)_0%,transparent_70%)]" />
@@ -92,7 +92,7 @@ export function ContactForm() {
         {/* ========================================================
             LEFT COLUMN: CONTACT INFORMATION SUB-CARD (Screenshot 2)
         ======================================================== */}
-        <div className="lg:col-span-5 rounded-[22px] sm:rounded-[26px] bg-[#070B0E] border border-white/10 p-6 sm:p-8 flex flex-col justify-between shadow-inner relative overflow-hidden">
+        <div className="lg:col-span-5 rounded-[22px] sm:rounded-[26px] bg-[#0E1720] border border-white/10 p-6 sm:p-8 flex flex-col justify-between shadow-inner relative overflow-hidden">
           {/* Subtle background decorative circle */}
           <div className="pointer-events-none absolute -bottom-16 -right-16 w-48 h-48 rounded-full bg-[#DDB763]/10 blur-2xl" />
 
@@ -116,7 +116,7 @@ export function ContactForm() {
             <div className="space-y-5 sm:space-y-6">
               {/* Official Email */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="text-xs space-y-1">
@@ -144,7 +144,7 @@ export function ContactForm() {
 
               {/* Corporate Head Office */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div className="text-xs space-y-1">
@@ -168,7 +168,7 @@ export function ContactForm() {
 
               {/* Registered Corporate Entity & Hours */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.24)] flex items-center justify-center text-[#DDB763] shrink-0 mt-0.5">
                   <Building2 className="w-4 h-4" />
                 </div>
                 <div className="text-xs space-y-1">
@@ -353,7 +353,7 @@ export function ContactForm() {
                     className="w-full bg-transparent border-b border-white/20 focus:border-[#DDB763] py-2.5 text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer pr-8"
                   >
                     {ENQUIRY_TYPES.map((type) => (
-                      <option key={type} value={type} className="bg-[#0B1317] text-white">
+                      <option key={type} value={type} className="bg-[#14222E] text-white">
                         {type}
                       </option>
                     ))}

@@ -66,7 +66,7 @@ export function PartnershipForm() {
     );
 
     return (
-      <div className="p-8 rounded-[1px] bg-[#070B0E] border border-[#C9A34F]/40 text-center space-y-5 animate-in fade-in duration-300">
+      <div className="p-8 rounded-[1px] bg-[#0E1720] border border-[#C9A34F]/40 text-center space-y-5 animate-in fade-in duration-300">
         <div className="w-12 h-12 mx-auto rounded-[1px] bg-[rgba(201,163,79,0.1)] border border-[#C9A34F] flex items-center justify-center text-[#E8D29A]">
           <CheckCircle2 className="w-6 h-6" />
         </div>
@@ -111,7 +111,7 @@ export function PartnershipForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="p-6 md:p-8 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.2)] space-y-6 shadow-card-dark font-sans"
+      className="p-6 md:p-8 rounded-[1px] bg-[#0E1720] border border-[rgba(201,163,79,0.2)] space-y-6 shadow-card-dark font-sans"
     >
       <div className="border-b border-[rgba(201,163,79,0.14)] pb-4">
         <span className="text-[10px] font-sans font-medium tracking-[0.25em] uppercase text-[#C9A34F]">

@@ -41,9 +41,9 @@ export const PageHero: React.FC<PageHeroProps> = ({
           className="object-cover object-center filter brightness-[0.75] contrast-[1.05] transition-transform duration-1000 ease-out hover:scale-105"
         />
         {/* Modern Ambient Overlay matching dark cyan-teal aesthetic */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-[#070B0E]/65 to-[#070B0E]/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070B0E]/80 via-transparent to-[#070B0E]/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#070B0E_90%)] opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-[#0E1720]/65 to-[#0E1720]/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1720]/80 via-transparent to-[#0E1720]/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0E1720_90%)] opacity-40" />
       </div>
 
       {/* Hero Foreground Content */}

@@ -89,11 +89,10 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-[env(safe-area-inset-top,0px)] ${
-          isScrolled
-            ? 'bg-[#070B0E]/95 backdrop-blur-md border-b border-[rgba(221, 183, 99,0.22)] shadow-[0_10px_35px_rgba(0,0,0,0.6)] py-3 sm:py-3.5'
-            : 'bg-gradient-to-b from-[#070B0E]/90 via-[#070B0E]/50 to-transparent py-4 sm:py-5'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-[env(safe-area-inset-top,0px)] ${isScrolled
+            ? 'bg-[#0E1720]/95 backdrop-blur-md border-b border-[rgba(221, 183, 99,0.25)] shadow-[0_10px_35px_rgba(0,0,0,0.5)] py-3 sm:py-3.5'
+            : 'bg-gradient-to-b from-[#0E1720]/90 via-[#0E1720]/50 to-transparent py-4 sm:py-5'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-2">
@@ -117,29 +116,26 @@ export function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className={`whitespace-nowrap inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 ${
-                          isActive || megaMenuOpen
+                        className={`whitespace-nowrap inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 ${isActive || megaMenuOpen
                             ? 'text-[#DDB763]'
                             : 'text-white hover:text-[#F8E9C6]'
-                        }`}
+                          }`}
                       >
                         <span>{item.title}</span>
                         <ChevronDown
-                          className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                            megaMenuOpen ? 'rotate-180 text-[#DDB763]' : 'opacity-60'
-                          }`}
+                          className={`w-3.5 h-3.5 transition-transform duration-200 ${megaMenuOpen ? 'rotate-180 text-[#DDB763]' : 'opacity-60'
+                            }`}
                         />
                       </Link>
 
                       {/* Mega Menu Dropdown (100% Solid Opaque Background to Prevent Background Bleed-Through) */}
                       <div
-                        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[840px] max-w-[calc(100vw-32px)] z-[100] transition-all duration-300 ${
-                          megaMenuOpen
+                        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[840px] max-w-[calc(100vw-32px)] z-[100] transition-all duration-300 ${megaMenuOpen
                             ? 'opacity-100 translate-y-0 pointer-events-auto visible'
                             : 'opacity-0 -translate-y-2 pointer-events-none invisible'
-                        }`}
+                          }`}
                       >
-                        <div className="rounded-3xl bg-[#070B0E] border-2 border-[#DDB763] shadow-[0_30px_90px_rgba(0,0,0,0.99),0_0_40px_rgba(221,183,99,0.3)] p-6">
+                        <div className="rounded-3xl bg-[#0E1720] border-2 border-[#DDB763] shadow-[0_30px_90px_rgba(0,0,0,0.8),0_0_40px_rgba(221,183,99,0.3)] p-6">
                           <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(221,183,99,0.25)]">
                             <div>
                               <span className="text-[10px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
@@ -167,9 +163,9 @@ export function Navbar() {
                                   key={sector.id}
                                   href={`/business-sectors#${sector.id}`}
                                   onClick={() => setMegaMenuOpen(false)}
-                                  className="group flex items-start gap-2.5 p-2 rounded-xl bg-[#0B1317] hover:bg-[#121E24] border border-[rgba(221,183,99,0.2)] hover:border-[#DDB763] transition-all"
+                                  className="group flex items-start gap-2.5 p-2 rounded-xl bg-[#14222E] hover:bg-[#121E24] border border-[rgba(221,183,99,0.2)] hover:border-[#DDB763] transition-all"
                                 >
-                                  <div className="w-7 h-7 rounded-lg bg-[#070B0E] border border-[rgba(221,183,99,0.3)] flex items-center justify-center shrink-0 group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">
+                                  <div className="w-7 h-7 rounded-lg bg-[#0E1720] border border-[rgba(221,183,99,0.3)] flex items-center justify-center shrink-0 group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">
                                     <Icon className="w-3.5 h-3.5 text-[#DDB763] group-hover:text-white" />
                                   </div>
                                   <div className="overflow-hidden">
@@ -194,17 +190,15 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`whitespace-nowrap relative px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 group ${
-                      isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#F8E9C6]'
-                    }`}
+                    className={`whitespace-nowrap relative px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 group ${isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#F8E9C6]'
+                      }`}
                   >
                     <span>{item.title}</span>
                     <span
-                      className={`absolute bottom-0 left-2.5 right-2.5 h-[2px] bg-gradient-to-r from-transparent via-[#DDB763] to-transparent transition-all duration-300 ease-out origin-center ${
-                        isActive
+                      className={`absolute bottom-0 left-2.5 right-2.5 h-[2px] bg-gradient-to-r from-transparent via-[#DDB763] to-transparent transition-all duration-300 ease-out origin-center ${isActive
                           ? 'opacity-100 scale-x-100 shadow-[0_0_8px_rgba(221,183,99,0.8)]'
                           : 'opacity-0 scale-x-0 group-hover:opacity-75 group-hover:scale-x-75'
-                      }`}
+                        }`}
                     />
                   </Link>
                 );
@@ -230,7 +224,7 @@ export function Navbar() {
               </Button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="w-11 h-11 rounded-xl text-white hover:text-[#F8E9C6] border border-[rgba(221, 183, 99,0.28)] bg-[#0B1317] flex items-center justify-center transition-all duration-300 shrink-0"
+                className="w-11 h-11 rounded-xl text-white hover:text-[#F8E9C6] border border-[rgba(221, 183, 99,0.28)] bg-[#14222E] flex items-center justify-center transition-all duration-300 shrink-0"
                 aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
                 aria-expanded={mobileMenuOpen}
               >
@@ -245,11 +239,10 @@ export function Navbar() {
 
       {/* Mobile Editorial Slide Navigation */}
       <div
-        className={`fixed inset-0 z-40 bg-[#070B0E]/98 backdrop-blur-2xl transition-all duration-300 lg:hidden ${
-          mobileMenuOpen
+        className={`fixed inset-0 z-40 bg-[#0E1720]/98 backdrop-blur-2xl transition-all duration-300 lg:hidden ${mobileMenuOpen
             ? 'opacity-100 pointer-events-auto visible'
             : 'opacity-0 pointer-events-none invisible'
-        }`}
+          }`}
         aria-hidden={!mobileMenuOpen}
       >
         <div className="flex flex-col h-full pt-[calc(env(safe-area-inset-top,0px)+5.2rem)] pb-[calc(env(safe-area-inset-bottom,0px)+2rem)] px-5 sm:px-8 overflow-y-auto">
@@ -273,9 +266,8 @@ export function Navbar() {
                       <Link
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] flex-1 py-2 ${
-                          isActive ? 'text-[#DDB763]' : 'text-white'
-                        }`}
+                        className={`text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] flex-1 py-2 ${isActive ? 'text-[#DDB763]' : 'text-white'
+                          }`}
                       >
                         {item.title}
                       </Link>
@@ -286,9 +278,8 @@ export function Navbar() {
                         aria-expanded={mobileSectorsOpen}
                       >
                         <ChevronDown
-                          className={`w-4 h-4 transition-transform duration-200 ${
-                            mobileSectorsOpen ? 'rotate-180' : ''
-                          }`}
+                          className={`w-4 h-4 transition-transform duration-200 ${mobileSectorsOpen ? 'rotate-180' : ''
+                            }`}
                         />
                       </button>
                     </div>
@@ -321,9 +312,8 @@ export function Navbar() {
                   <Link
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center min-h-[44px] text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] transition-colors py-2 ${
-                      isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#DDB763]'
-                    }`}
+                    className={`flex items-center min-h-[44px] text-sm sm:text-base font-sans font-bold uppercase tracking-[0.14em] transition-colors py-2 ${isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#DDB763]'
+                      }`}
                   >
                     {item.title}
                   </Link>

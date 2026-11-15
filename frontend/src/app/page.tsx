@@ -42,7 +42,7 @@ const VALUE_ICONS: Record<string, React.ElementType> = {
 
 export default function HomePage() {
   return (
-    <div className="relative bg-[#070B0E] text-white overflow-hidden">
+    <div className="relative bg-[#0E1720] text-white overflow-hidden">
       {/* ========================================================
           SECTION 1: CINEMATIC FULL-WIDTH HERO (Clean Photography)
       ======================================================== */}
@@ -59,9 +59,9 @@ export default function HomePage() {
             sizes="100vw"
           />
           {/* Layer 2: Modern Dark Teal Gradient Overlay & Subtle Ambient Gold Particles */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070B0E]/95 via-[#070B0E]/75 to-[#070B0E]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-[#070B0E]/50" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#070B0E_90%)] opacity-35" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0E1720]/95 via-[#0E1720]/75 to-[#0E1720]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-[#0E1720]/50" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0E1720_90%)] opacity-35" />
           <GoldParticles count={22} />
         </div>
 
@@ -154,7 +154,7 @@ export default function HomePage() {
       {/* ========================================================
           SECTION 2: ABOUT KINGSPHERE (Asymmetric Editorial Layout)
       ======================================================== */}
-      <section className="py-20 md:py-28 bg-[#0B1317] border-b border-[rgba(221, 183, 99,0.2)] relative">
+      <section className="py-20 md:py-28 bg-[#14222E] border-b border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Visual Column */}
@@ -168,10 +168,10 @@ export default function HomePage() {
                       fill
                       className="object-cover filter brightness-[0.8] contrast-[1.1]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1317] via-transparent to-transparent opacity-85" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#14222E] via-transparent to-transparent opacity-85" />
                   </div>
 
-                  <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-[#070B0E]/95 border border-[rgba(221, 183, 99,0.25)] backdrop-blur-md">
+                  <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-[#0E1720]/95 border border-[rgba(221, 183, 99,0.25)] backdrop-blur-md">
                     <div className="text-[9.5px] font-sans font-bold tracking-[0.2em] text-[#DDB763] uppercase">
                       CORPORATE HEADQUARTERS
                     </div>
@@ -218,7 +218,7 @@ export default function HomePage() {
                   {COMPANY_CONFIG.brandPillars.map((pillar, i) => (
                     <div
                       key={i}
-                      className="flex items-center gap-2 p-2.5 rounded-xl bg-[#0F1A1F] border border-[rgba(221, 183, 99,0.2)] text-xs text-white font-sans"
+                      className="flex items-center gap-2 p-2.5 rounded-xl bg-[#1A2C3A] border border-[rgba(221, 183, 99,0.2)] text-xs text-white font-sans"
                     >
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#DDB763] shrink-0" />
                       <span>{pillar}</span>
@@ -268,7 +268,7 @@ export default function HomePage() {
       {/* ========================================================
           SECTION 4: OUR BUSINESS APPROACH (Cinematic Stepper)
       ======================================================== */}
-      <section className="py-20 md:py-28 bg-[#0B1317] border-y border-[rgba(221, 183, 99,0.2)] relative">
+      <section className="py-20 md:py-28 bg-[#14222E] border-y border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="METHODOLOGY"
@@ -308,7 +308,7 @@ export default function HomePage() {
               </p>
 
               <div className="space-y-3 pt-1 font-sans">
-                <div className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
+                <div className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
                   <Globe className="w-4 h-4 text-[#DDB763] shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-white">
@@ -320,7 +320,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
+                <div className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#DDB763] shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-white">
@@ -332,7 +332,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
+                <div className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221, 183, 99,0.22)] flex items-start gap-3">
                   <TrendingUp className="w-4 h-4 text-[#DDB763] shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-white">
@@ -354,7 +354,7 @@ export default function HomePage() {
 
             {/* Architectural Visual Container */}
             <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden border border-[rgba(221, 183, 99,0.25)] bg-[#0B1317] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+              <div className="relative rounded-2xl overflow-hidden border border-[rgba(221, 183, 99,0.25)] bg-[#14222E] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
                 <div className="relative h-72 sm:h-96 w-full flex items-center justify-center rounded-xl overflow-hidden">
                   <Image
                     src="/images/kingsphere/global-connectivity-corridors.jpg"
@@ -362,10 +362,10 @@ export default function HomePage() {
                     fill
                     className="object-cover filter brightness-[0.8] contrast-[1.08] transition-transform duration-700 hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1317] via-[#0B1317]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#14222E] via-[#14222E]/40 to-transparent" />
 
                   <div className="relative z-10 text-center space-y-2.5 p-4">
-                    <span className="font-sans text-[10px] px-3 py-1 rounded-full bg-[#070B0E]/90 border border-[#DDB763] text-white font-bold uppercase tracking-widest">
+                    <span className="font-sans text-[10px] px-3 py-1 rounded-full bg-[#0E1720]/90 border border-[#DDB763] text-white font-bold uppercase tracking-widest">
                       STRATEGIC TRADE & ALLIANCES
                     </span>
                     <h3 className="font-sans text-2xl font-bold text-white tracking-tight">
@@ -382,7 +382,7 @@ export default function HomePage() {
       {/* ========================================================
           SECTION 6: VISION & MISSION PREVIEW
       ======================================================== */}
-      <section className="py-20 md:py-28 bg-[#0B1317] border-y border-[rgba(221, 183, 99,0.2)] relative">
+      <section className="py-20 md:py-28 bg-[#14222E] border-y border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="STRATEGIC DIRECTION"
@@ -476,7 +476,7 @@ export default function HomePage() {
       {/* ========================================================
           SECTION 8: STRATEGIC PARTNERSHIPS
       ======================================================== */}
-      <section className="py-20 md:py-28 bg-[#0B1317] border-y border-[rgba(221, 183, 99,0.2)] relative">
+      <section className="py-20 md:py-28 bg-[#14222E] border-y border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="OUR BUSINESS & PARTNERSHIP ECOSYSTEM"

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -84,7 +84,7 @@ export default function SectorDetailPage({
   const Icon = SECTOR_ICONS[sector.iconName] || Factory;
 
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen overflow-hidden">
+    <div className="relative bg-[#0E1720] text-white min-h-screen overflow-hidden">
       {/* Ambient Royal Sapphire & Gold Background Glows */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute -top-40 left-1/4 w-[650px] h-[650px] rounded-full bg-[#1C387A]/20 blur-[140px]" />
@@ -105,8 +105,8 @@ export default function SectorDetailPage({
             className="object-cover object-center filter brightness-[0.5] contrast-[1.1] scale-[1.02]"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-[#070B0E]/75 to-[#070B0E]/60" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070B0E]/95 via-[#070B0E]/65 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-[#0E1720]/75 to-[#0E1720]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0E1720]/95 via-[#0E1720]/65 to-transparent" />
           <div className="absolute inset-0 ambient-grid-pattern opacity-40" />
         </div>
 
@@ -244,7 +244,7 @@ export default function SectorDetailPage({
             {/* Proprietary Brands Callout (e.g., ALBINE AQUA & ELBRUS) */}
             {sector.brands && sector.brands.length > 0 && (
               <GsapReveal animation="fade-up" delay={0.12}>
-                <div className="p-6 rounded-2xl bg-[#0B1317] border-2 border-[#DDB763] shadow-lg space-y-4">
+                <div className="p-6 rounded-2xl bg-[#14222E] border-2 border-[#DDB763] shadow-lg space-y-4">
                   <div className="flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-[#DDB763]" />
                     <span className="text-[11px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
@@ -255,7 +255,7 @@ export default function SectorDetailPage({
                     {sector.brands.map((brand, bIdx) => (
                       <div
                         key={bIdx}
-                        className="p-4 rounded-xl bg-[#070B0E] border border-[#DDB763]/40 flex items-center justify-between"
+                        className="p-4 rounded-xl bg-[#0E1720] border border-[#DDB763]/40 flex items-center justify-between"
                       >
                         <div>
                           <div className="font-sans text-base font-bold text-white tracking-wide">
@@ -308,12 +308,12 @@ export default function SectorDetailPage({
                     className="object-cover filter brightness-[0.88] contrast-[1.08]"
                     sizes="(max-width: 1024px) 100vw, 40vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-[2px] bg-[#070B0E]/90 border border-[#DDB763]/40 text-[10px] font-sans uppercase tracking-[0.2em] text-[#F8E9C6]">
+                    <span className="px-3 py-1 rounded-[2px] bg-[#0E1720]/90 border border-[#DDB763]/40 text-[10px] font-sans uppercase tracking-[0.2em] text-[#F8E9C6]">
                       KINGSPHERE DIVISION {sector.number}
                     </span>
-                    <div className="w-9 h-9 rounded-full bg-[#070B0E]/90 border border-[#DDB763]/50 flex items-center justify-center">
+                    <div className="w-9 h-9 rounded-full bg-[#0E1720]/90 border border-[#DDB763]/50 flex items-center justify-center">
                       <Icon className="w-4 h-4 text-[#F8E9C6]" />
                     </div>
                   </div>
@@ -329,7 +329,7 @@ export default function SectorDetailPage({
       ======================================================== */}
       <section
         id="execution-scope"
-        className="relative z-10 py-16 sm:py-24 bg-[#0B1317]/90 border-y border-[rgba(221,183,99,0.22)] px-4 sm:px-6 lg:px-8"
+        className="relative z-10 py-16 sm:py-24 bg-[#14222E]/90 border-y border-[rgba(221,183,99,0.22)] px-4 sm:px-6 lg:px-8"
       >
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -363,7 +363,7 @@ export default function SectorDetailPage({
                   {sector.capabilities.map((cap, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3.5 p-3.5 rounded-[2px] bg-[#070B0E]/80 border border-[rgba(221,183,99,0.18)] hover:border-[rgba(221,183,99,0.4)] transition-colors"
+                      className="flex items-start gap-3.5 p-3.5 rounded-[2px] bg-[#0E1720]/80 border border-[rgba(221,183,99,0.18)] hover:border-[rgba(221,183,99,0.4)] transition-colors"
                     >
                       <span className="font-mono text-xs text-[#DDB763] font-semibold mt-0.5">
                         0{i + 1}
@@ -395,7 +395,7 @@ export default function SectorDetailPage({
                   {sector.opportunities.map((opp, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3.5 p-3.5 rounded-[2px] bg-[#070B0E]/80 border border-[rgba(221,183,99,0.18)] hover:border-[rgba(221,183,99,0.4)] transition-colors"
+                      className="flex items-start gap-3.5 p-3.5 rounded-[2px] bg-[#0E1720]/80 border border-[rgba(221,183,99,0.18)] hover:border-[rgba(221,183,99,0.4)] transition-colors"
                     >
                       <ArrowUpRight className="w-4 h-4 text-[#F8E9C6] shrink-0 mt-0.5" />
                       <span className="text-xs sm:text-sm text-[#E2E6EE] leading-relaxed font-sans">
@@ -460,7 +460,7 @@ export default function SectorDetailPage({
       {/* ========================================================
           6. TAILORED SECTOR INQUIRY CTA
       ======================================================== */}
-      <section className="relative z-10 py-14 sm:py-20 px-4 sm:px-6 lg:px-8 border-t border-[rgba(221,183,99,0.22)] bg-gradient-to-b from-[#0B1317] to-[#070B0E]">
+      <section className="relative z-10 py-14 sm:py-20 px-4 sm:px-6 lg:px-8 border-t border-[rgba(221,183,99,0.22)] bg-gradient-to-b from-[#14222E] to-[#0E1720]">
         <div className="max-w-5xl mx-auto">
           <GlassCard cornerAccents className="p-8 sm:p-12 text-center space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-[2px] bg-[#DDB763]/10 border border-[#DDB763]/30 text-[10px] font-sans font-semibold uppercase tracking-[0.22em] text-[#F8E9C6]">
@@ -487,14 +487,14 @@ export default function SectorDetailPage({
       {/* ========================================================
           7. PREVIOUS / NEXT SECTOR NAVIGATION
       ======================================================== */}
-      <section className="relative z-10 py-12 px-4 sm:px-6 lg:px-8 border-t border-[rgba(221,183,99,0.2)] bg-[#070B0E]">
+      <section className="relative z-10 py-12 px-4 sm:px-6 lg:px-8 border-t border-[rgba(221,183,99,0.2)] bg-[#0E1720]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Previous Sector */}
           <Link
             href={`/business-sectors/${prevSector.id}`}
             className="group royal-glass rounded-[2px] p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="w-10 h-10 rounded-full border border-[#DDB763]/30 flex items-center justify-center shrink-0 group-hover:bg-[#DDB763] group-hover:text-[#070B0E] transition-colors">
+            <div className="w-10 h-10 rounded-full border border-[#DDB763]/30 flex items-center justify-center shrink-0 group-hover:bg-[#DDB763] group-hover:text-[#0E1720] transition-colors">
               <ArrowLeft className="w-4 h-4" />
             </div>
             <div className="min-w-0 flex-1">
@@ -520,7 +520,7 @@ export default function SectorDetailPage({
                 {nextSector.title}
               </div>
             </div>
-            <div className="w-10 h-10 rounded-full border border-[#DDB763]/30 flex items-center justify-center shrink-0 group-hover:bg-[#DDB763] group-hover:text-[#070B0E] transition-colors">
+            <div className="w-10 h-10 rounded-full border border-[#DDB763]/30 flex items-center justify-center shrink-0 group-hover:bg-[#DDB763] group-hover:text-[#0E1720] transition-colors">
               <ArrowRight className="w-4 h-4" />
             </div>
           </Link>

@@ -46,7 +46,7 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
 
 export default function PartnershipsPage() {
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* 1. Partnerships Hero with /images/hero/06-partnerships-hero.png */}
       <PageHero
         badge="OUR BUSINESS & PARTNERSHIP ECOSYSTEM"
@@ -59,7 +59,7 @@ export default function PartnershipsPage() {
       />
 
       {/* 2. Our Partnership Philosophy */}
-      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E]">
+      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#0E1720]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           <div className="lg:col-span-6 space-y-4 sm:space-y-5 font-sans">
             <SectionHeading
@@ -179,8 +179,8 @@ export default function PartnershipsPage() {
 
           {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
           <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-3.5 px-3.5 font-sans">
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#0E1720] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#0E1720] to-transparent z-20" />
 
             <div className="animate-marquee-track flex gap-4 items-stretch">
               {[...PARTNERSHIP_CATEGORIES, ...PARTNERSHIP_CATEGORIES].map((cat, idx) => {
@@ -188,7 +188,7 @@ export default function PartnershipsPage() {
                 return (
                   <div
                     key={`${cat.id}-${idx}`}
-                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
                   >
                     <div className="space-y-2.5">
                       <div className="flex items-center justify-between">
@@ -226,7 +226,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* 4. Strategic Alliances, 5. Joint Ventures & 6. Business Collaboration */}
-      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#070B0E]">
+      <section className="py-14 sm:py-20 md:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#0E1720]">
         <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
           <SectionHeading
             badge="ENGAGEMENT STRUCTURES"

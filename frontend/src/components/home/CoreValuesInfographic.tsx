@@ -95,7 +95,7 @@ export function CoreValuesInfographic() {
                   <div className="flex items-center w-full max-w-3xl">
                     {/* Outer Side Line Icon */}
                     <div className="w-14 shrink-0 flex items-center justify-center mr-4">
-                      <div className="w-11 h-11 rounded-full border border-white/20 bg-[#0B1317]/90 flex items-center justify-center text-white group-hover:text-white group-hover:border-white/50 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300">
+                      <div className="w-11 h-11 rounded-full border border-white/20 bg-[#14222E]/90 flex items-center justify-center text-white group-hover:text-white group-hover:border-white/50 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300">
                         <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                       </div>
                     </div>
@@ -111,7 +111,7 @@ export function CoreValuesInfographic() {
                         style={{ boxShadow: `0 0 28px ${style.glow}` }}
                       >
                         {/* Dark Center Core with Number */}
-                        <div className="w-full h-full rounded-full bg-[#070B0E] flex items-center justify-center shadow-inner">
+                        <div className="w-full h-full rounded-full bg-[#0E1720] flex items-center justify-center shadow-inner">
                           <span className="font-serif text-2xl font-bold text-white tracking-wider">
                             {val.number}
                           </span>
@@ -122,7 +122,7 @@ export function CoreValuesInfographic() {
                     {/* Horizontal Arrow Banner (Pointing Right) */}
                     <div className="relative flex-1 -ml-4 z-10">
                       <div
-                        className="relative pl-8 pr-12 py-5 bg-[#0B1317]/98 border border-[rgba(221, 183, 99,0.22)] rounded-r-[6px] shadow-[0_12px_35px_rgba(0,0,0,0.6)] group-hover:border-white/40 transition-all duration-300 group-hover:-translate-y-0.5"
+                        className="relative pl-8 pr-12 py-5 bg-[#14222E]/98 border border-[rgba(221, 183, 99,0.22)] rounded-r-[6px] shadow-[0_12px_35px_rgba(0,0,0,0.6)] group-hover:border-white/40 transition-all duration-300 group-hover:-translate-y-0.5"
                         style={{
                           clipPath:
                             'polygon(0% 0%, calc(100% - 24px) 0%, 100% 50%, calc(100% - 24px) 100%, 0% 100%)',
@@ -155,7 +155,7 @@ export function CoreValuesInfographic() {
                   <div className="flex items-center w-full max-w-3xl flex-row-reverse">
                     {/* Outer Side Line Icon */}
                     <div className="w-14 shrink-0 flex items-center justify-center ml-4">
-                      <div className="w-11 h-11 rounded-full border border-white/20 bg-[#0B1317]/90 flex items-center justify-center text-white group-hover:text-white group-hover:border-white/50 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300">
+                      <div className="w-11 h-11 rounded-full border border-white/20 bg-[#14222E]/90 flex items-center justify-center text-white group-hover:text-white group-hover:border-white/50 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300">
                         <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                       </div>
                     </div>
@@ -171,7 +171,7 @@ export function CoreValuesInfographic() {
                         style={{ boxShadow: `0 0 28px ${style.glow}` }}
                       >
                         {/* Dark Center Core with Number */}
-                        <div className="w-full h-full rounded-full bg-[#070B0E] flex items-center justify-center shadow-inner">
+                        <div className="w-full h-full rounded-full bg-[#0E1720] flex items-center justify-center shadow-inner">
                           <span className="font-sans text-2xl font-bold text-white tracking-wider">
                             {val.number}
                           </span>
@@ -188,7 +188,7 @@ export function CoreValuesInfographic() {
                       </div>
 
                       <div
-                        className="relative pr-8 pl-12 py-5 bg-[#0B1317]/98 border border-[rgba(221, 183, 99,0.22)] rounded-l-[6px] shadow-[0_12px_35px_rgba(0,0,0,0.6)] group-hover:border-white/40 transition-all duration-300 group-hover:-translate-y-0.5 text-left"
+                        className="relative pr-8 pl-12 py-5 bg-[#14222E]/98 border border-[rgba(221, 183, 99,0.22)] rounded-l-[6px] shadow-[0_12px_35px_rgba(0,0,0,0.6)] group-hover:border-white/40 transition-all duration-300 group-hover:-translate-y-0.5 text-left"
                         style={{
                           clipPath:
                             'polygon(24px 0%, 100% 0%, 100% 100%, 24px 100%, 0% 50%)',
@@ -222,8 +222,8 @@ export function CoreValuesInfographic() {
       ======================================================== */}
       <div className="md:hidden relative z-10 w-full overflow-hidden py-3 -mx-2 px-2">
         {/* Soft edge fades */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#0E1720] to-transparent z-20" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#0E1720] to-transparent z-20" />
 
         <div className="animate-marquee-track flex gap-4 items-stretch">
           {[...CORE_VALUES, ...CORE_VALUES].map((val, idx) => {
@@ -233,7 +233,7 @@ export function CoreValuesInfographic() {
             return (
               <div
                 key={`${val.id}-${idx}`}
-                className="w-[280px] shrink-0 rounded-2xl bg-[#0B1317]/95 border border-[rgba(221,183,99,0.25)] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.6)] flex flex-col justify-between"
+                className="w-[280px] shrink-0 rounded-2xl bg-[#14222E]/95 border border-[rgba(221,183,99,0.25)] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.6)] flex flex-col justify-between"
               >
                 {/* Header with Circular Gradient Node & Icon */}
                 <div className="flex items-center justify-between gap-3 mb-3.5">
@@ -243,7 +243,7 @@ export function CoreValuesInfographic() {
                       className={`w-12 h-12 shrink-0 rounded-full p-[3px] bg-gradient-to-br ${style.gradient} flex items-center justify-center`}
                       style={{ boxShadow: `0 0 16px ${style.glow}` }}
                     >
-                      <div className="w-full h-full rounded-full bg-[#070B0E] flex items-center justify-center shadow-inner">
+                      <div className="w-full h-full rounded-full bg-[#0E1720] flex items-center justify-center shadow-inner">
                         <span className="font-sans text-base font-bold text-white">
                           {val.number}
                         </span>

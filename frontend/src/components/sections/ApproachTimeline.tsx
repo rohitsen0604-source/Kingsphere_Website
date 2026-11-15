@@ -60,7 +60,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
 
         <button
           onClick={() => setIsPaused((prev) => !prev)}
-          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.25)] hover:border-[#C9A34F] text-[#E8D29A] text-[10px] uppercase tracking-wider transition-colors cursor-pointer"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[1px] bg-[#0E1720] border border-[rgba(201,163,79,0.25)] hover:border-[#C9A34F] text-[#E8D29A] text-[10px] uppercase tracking-wider transition-colors cursor-pointer"
           title={isPaused ? 'Resume Auto-Progression' : 'Pause Auto-Progression'}
         >
           {isPaused ? (
@@ -105,7 +105,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
                   className={`relative z-20 w-12 h-12 rounded-[2px] flex items-center justify-center transition-all duration-300 border ${isActive
                       ? 'bg-[#171816] border-[#E8D29A] text-[#E8D29A] shadow-[0_0_20px_rgba(201,163,79,0.45)] scale-110 ring-2 ring-[#C9A34F]/30'
                       : isPassed
-                        ? 'bg-[#070B0E] border-[#C9A34F] text-[#C9A34F]'
+                        ? 'bg-[#0E1720] border-[#C9A34F] text-[#C9A34F]'
                         : 'bg-[#080909] border-[rgba(201,163,79,0.25)] text-white hover:border-[#C9A34F]/60 hover:text-[#E8D29A]'
                     }`}
                 >
@@ -136,7 +136,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
       {/* Active Step Highlight Card (Desktop Display) - Dynamic Animated Content */}
       <div
         key={activeStep.step}
-        className="hidden lg:block rounded-[2px] bg-[#070B0E] border border-[rgba(201,163,79,0.28)] p-8 sm:p-10 shadow-card-dark transition-all duration-500 animate-in fade-in slide-in-from-bottom-2"
+        className="hidden lg:block rounded-[2px] bg-[#0E1720] border border-[rgba(201,163,79,0.28)] p-8 sm:p-10 shadow-card-dark transition-all duration-500 animate-in fade-in slide-in-from-bottom-2"
       >
         <div className="grid grid-cols-12 gap-8 items-center">
           {/* Left Column: Phase Description */}
@@ -219,7 +219,7 @@ export function ApproachTimeline({ interactive = true }: { interactive?: boolean
               key={step.step}
               className={`relative rounded-[1px] p-4 sm:p-5 border transition-all duration-300 cursor-pointer ${isSelected
                   ? 'bg-[#141615] border-[#C9A34F] shadow-[0_0_20px_rgba(201,163,79,0.18)]'
-                  : 'bg-[#070B0E] border-[rgba(201,163,79,0.18)] hover:border-[rgba(201,163,79,0.4)]'
+                  : 'bg-[#0E1720] border-[rgba(201,163,79,0.18)] hover:border-[rgba(201,163,79,0.4)]'
                 }`}
               onClick={() => handleStepClick(idx)}
             >

@@ -46,12 +46,12 @@ export function SectorCard({ sector, featured = false }: SectorCardProps) {
   return (
     <div
       id={sector.id}
-      className={`group relative rounded-2xl royal-glass overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1.5 focus-within:ring-2 focus-within:ring-[#DDB763] focus-within:ring-offset-2 focus-within:ring-offset-[#070B0E] flex flex-col justify-between ${
+      className={`group relative rounded-2xl royal-glass overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1.5 focus-within:ring-2 focus-within:ring-[#DDB763] focus-within:ring-offset-2 focus-within:ring-offset-[#0E1720] flex flex-col justify-between ${
         featured ? 'md:col-span-2' : ''
       }`}
     >
       {/* Top Image Preview with Controlled Editorial Cropping */}
-      <Link href={sectorHref} className="relative block h-48 sm:h-52 w-full overflow-hidden bg-[#070B0E]">
+      <Link href={sectorHref} className="relative block h-48 sm:h-52 w-full overflow-hidden bg-[#0E1720]">
         <Image
           src={sector.image}
           alt={sector.title}
@@ -59,14 +59,14 @@ export function SectorCard({ sector, featured = false }: SectorCardProps) {
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-[0.82] contrast-[1.08]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1317] via-[#0B1317]/45 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#14222E] via-[#14222E]/45 to-transparent" />
 
         {/* Large Architectural Sector Number & Icon */}
         <div className="absolute top-4 left-4 right-4 z-10 flex items-center justify-between">
           <span className="font-sans text-xl sm:text-2xl font-bold text-white tracking-wider drop-shadow-md">
             {sector.number}
           </span>
-          <div className="w-8 h-8 rounded-full bg-[#070B0E]/85 border border-[rgba(221, 183, 99,0.35)] flex items-center justify-center text-[#DDB763] backdrop-blur-md group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/20 transition-all duration-300">
+          <div className="w-8 h-8 rounded-full bg-[#0E1720]/85 border border-[rgba(221, 183, 99,0.35)] flex items-center justify-center text-[#DDB763] backdrop-blur-md group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/20 transition-all duration-300">
             <Icon className="w-4 h-4 text-[#DDB763] group-hover:scale-110 transition-transform duration-300" />
           </div>
         </div>
@@ -105,7 +105,7 @@ export function SectorCard({ sector, featured = false }: SectorCardProps) {
             {sector.capabilities.slice(0, 2).map((cap, idx) => (
               <span
                 key={idx}
-                className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#0F1A1F] text-white border border-[rgba(221, 183, 99,0.2)] truncate max-w-full font-sans group-hover:border-[rgba(221, 183, 99,0.4)] transition-colors"
+                className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#1A2C3A] text-white border border-[rgba(221, 183, 99,0.2)] truncate max-w-full font-sans group-hover:border-[rgba(221, 183, 99,0.4)] transition-colors"
               >
                 {cap}
               </span>
@@ -117,7 +117,7 @@ export function SectorCard({ sector, featured = false }: SectorCardProps) {
         <div className="pt-2">
           <Link
             href={sectorHref}
-            className="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-full bg-[#0F1A1F] border border-[rgba(221, 183, 99,0.35)] text-[11px] font-sans font-bold uppercase tracking-[0.14em] text-white hover:bg-gradient-to-r hover:from-[#FFFDF7] hover:via-[#F8E9C6] hover:to-[#DDB763] hover:text-black hover:border-transparent hover:shadow-[0_0_20px_rgba(221, 183, 99,0.4)] transition-all duration-300 group/btn"
+            className="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-full bg-[#1A2C3A] border border-[rgba(221, 183, 99,0.35)] text-[11px] font-sans font-bold uppercase tracking-[0.14em] text-white hover:bg-gradient-to-r hover:from-[#FFFDF7] hover:via-[#F8E9C6] hover:to-[#DDB763] hover:text-black hover:border-transparent hover:shadow-[0_0_20px_rgba(221, 183, 99,0.4)] transition-all duration-300 group/btn"
           >
             <span>Explore Sector Details</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 ease-out group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />

@@ -183,7 +183,7 @@ export function PhilosophyHoneycomb() {
 
           // Theme-specific styles matching Screenshot 5
           let borderWrapper = 'bg-[#DDB763]/40 hover:bg-[#DDB763]';
-          let innerBg = 'bg-[#0B1317] text-white';
+          let innerBg = 'bg-[#14222E] text-white';
           let iconColor = 'text-[#DDB763]';
           let titleColor = 'text-white';
 
@@ -256,7 +256,7 @@ export function PhilosophyHoneycomb() {
           aria-modal="true"
         >
           <div
-            className="relative w-full max-w-lg rounded-3xl bg-[#0B1317] border-2 border-[#DDB763] p-6 sm:p-8 shadow-[0_25px_80px_rgba(0,0,0,0.95),0_0_40px_rgba(221,183,99,0.3)] animate-in zoom-in-95 duration-200"
+            className="relative w-full max-w-lg rounded-3xl bg-[#14222E] border-2 border-[#DDB763] p-6 sm:p-8 shadow-[0_25px_80px_rgba(0,0,0,0.95),0_0_40px_rgba(221,183,99,0.3)] animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}

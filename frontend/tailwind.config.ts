@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#070B0E',
-          secondary: '#0B1317',
-          surface: '#0F1A1F',
-          elevated: '#14232A',
+          DEFAULT: '#0E1720',
+          secondary: '#14222E',
+          surface: '#1A2C3A',
+          elevated: '#223746',
         },
         royal: {
-          obsidian: '#070B0E',
-          midnight: '#0B1317',
-          sapphire: '#0F1A1F',
-          slate: '#14232A',
+          obsidian: '#0E1720',
+          midnight: '#14222E',
+          sapphire: '#1A2C3A',
+          slate: '#223746',
         },
         gold: {
           DEFAULT: '#DDB763',

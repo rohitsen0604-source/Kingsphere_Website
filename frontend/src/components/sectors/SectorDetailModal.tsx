@@ -64,7 +64,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[1px] bg-[#070B0E] border border-[rgba(201,163,79,0.32)] shadow-[0_30px_70px_rgba(0,0,0,0.98)] text-[#F3F0E9] p-6 sm:p-8 md:p-10"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[1px] bg-[#0E1720] border border-[rgba(201,163,79,0.32)] shadow-[0_30px_70px_rgba(0,0,0,0.98)] text-[#F3F0E9] p-6 sm:p-8 md:p-10"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -102,7 +102,7 @@ export function SectorDetailModal({ sector, onClose }: SectorDetailModalProps) {
             fill
             className="object-cover filter brightness-[0.8] contrast-[1.1]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-transparent to-transparent opacity-85" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-transparent to-transparent opacity-85" />
           <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-[1px] bg-[#080909]/85 border border-[rgba(201,163,79,0.2)] backdrop-blur-sm">
             <div className="text-[10px] uppercase font-sans font-medium tracking-[0.2em] text-[#C9A34F]">
               Strategic Focus

@@ -75,7 +75,7 @@ export function Preloader() {
     <div
       className={`fixed inset-0 z-[9999] flex flex-col items-center justify-between p-4 sm:p-8 md:p-10 transition-all duration-1000 ease-in-out overflow-hidden ${isFinished ? 'opacity-0 scale-[1.02] pointer-events-none' : 'opacity-100 scale-100 pointer-events-auto'
         }`}
-      style={{ backgroundColor: '#070B0E' }}
+      style={{ backgroundColor: '#0E1720' }}
       aria-hidden={isFinished}
       role="progressbar"
       aria-valuenow={progress}
@@ -93,25 +93,25 @@ export function Preloader() {
           className="object-cover object-center filter blur-[1.5px] brightness-[0.7] contrast-[1.08]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070B0E] via-[#070B0E]/40 to-[#070B0E]/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070B0E]/60 via-transparent to-[#070B0E]/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0E1720] via-[#0E1720]/40 to-[#0E1720]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1720]/60 via-transparent to-[#0E1720]/60" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(221, 183, 99,0.35)_0%,transparent_65%)]" />
       </div>
 
       {/* Top Header Eyebrow */}
       <div className="relative z-10 w-full flex items-center justify-between text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.28em] uppercase text-white font-sans drop-shadow-md">
-        <div className="flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#070B0E]/80 backdrop-blur-md border border-[rgba(221, 183, 99,0.3)]">
+        <div className="flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#0E1720]/80 backdrop-blur-md border border-[rgba(221, 183, 99,0.3)]">
           <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] animate-pulse" />
           <span className="text-white font-bold text-[8px] sm:text-[10px]">KINGSPHERE INFRA-TECH-TRADE</span>
         </div>
-        <div className="hidden sm:flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#070B0E]/80 backdrop-blur-md border border-[rgba(221, 183, 99,0.3)] text-[#DDB763] font-bold">
+        <div className="hidden sm:flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0E1720]/80 backdrop-blur-md border border-[rgba(221, 183, 99,0.3)] text-[#DDB763] font-bold">
           PARBHANI, MAHARASHTRA
         </div>
       </div>
 
       {/* Center Stage: Framed Modern Glass Container */}
       <div className="relative z-10 my-auto w-full max-w-sm px-2">
-        <div className="relative flex flex-col items-center justify-center text-center space-y-5 sm:space-y-6 w-full mx-auto p-6 sm:p-10 rounded-2xl bg-[#0B1317]/90 backdrop-blur-xl border border-[rgba(221, 183, 99,0.3)] shadow-[0_25px_60px_rgba(0,0,0,0.8)]">
+        <div className="relative flex flex-col items-center justify-center text-center space-y-5 sm:space-y-6 w-full mx-auto p-6 sm:p-10 rounded-2xl bg-[#14222E]/90 backdrop-blur-xl border border-[rgba(221, 183, 99,0.3)] shadow-[0_25px_60px_rgba(0,0,0,0.8)]">
           {/* Modern Corner Accents */}
           <div className="absolute top-0 left-0 w-2.5 h-2.5 border-t-2 border-l-2 border-[#DDB763] rounded-tl-sm" />
           <div className="absolute top-0 right-0 w-2.5 h-2.5 border-t-2 border-r-2 border-[#DDB763] rounded-tr-sm" />
@@ -150,7 +150,7 @@ export function Preloader() {
 
           {/* Progress Bar Container */}
           <div className="w-full max-w-[220px] sm:max-w-[260px] space-y-2 sm:space-y-2.5 pt-1">
-            <div className="h-[2.5px] w-full bg-[#070B0E] rounded-full overflow-hidden border border-[rgba(221, 183, 99,0.3)]">
+            <div className="h-[2.5px] w-full bg-[#0E1720] rounded-full overflow-hidden border border-[rgba(221, 183, 99,0.3)]">
               <div
                 className="h-full bg-gradient-to-r from-[#DDB763] via-[#F8E9C6] to-[#DDB763] transition-all duration-150 ease-out shadow-[0_0_12px_rgba(221, 183, 99,0.8)]"
                 style={{ width: `${progress}%` }}

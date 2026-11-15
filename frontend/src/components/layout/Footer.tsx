@@ -10,7 +10,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#070B0E] border-t border-[rgba(221,183,99,0.24)] text-white pt-16 pb-12 overflow-hidden">
+    <footer className="relative bg-[#0E1720] border-t border-[rgba(221,183,99,0.24)] text-white pt-16 pb-12 overflow-hidden">
       {/* Precision hairline gold accent */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#DDB763] to-transparent shadow-[0_0_12px_rgba(221,183,99,0.6)]" />
 
@@ -38,7 +38,7 @@ export function Footer() {
             <p className="text-xs sm:text-sm text-white leading-relaxed max-w-md font-sans font-normal">
               {COMPANY_CONFIG.description}
             </p>
-            <div className="p-4 rounded-xl bg-[#0B1317] border border-[rgba(221,183,99,0.22)] shadow-sm max-w-md">
+            <div className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221,183,99,0.22)] shadow-sm max-w-md">
               <div className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-[#DDB763] mb-1">
                 Official Brand Tagline
               </div>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* 1. Contact Hero with /images/hero/08-contact-hero.png */}
       <PageHero
         badge="DIRECT CORPORATE COMMUNICATIONS"
@@ -50,7 +50,7 @@ export default function ContactPage() {
       </section>
 
       {/* 3. Location Map Section */}
-      <section className="py-12 sm:py-16 px-3.5 sm:px-6 lg:px-8 bg-[#0B1317] border-t border-[rgba(221,183,99,0.22)]">
+      <section className="py-12 sm:py-16 px-3.5 sm:px-6 lg:px-8 bg-[#14222E] border-t border-[rgba(221,183,99,0.22)]">
         <div className="max-w-7xl mx-auto space-y-5 sm:space-y-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 font-sans">
             <div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
           </div>
 
           {/* Map Container */}
-          <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-[2px] overflow-hidden border border-[rgba(221,183,99,0.28)] shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#0B1317]">
+          <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-[2px] overflow-hidden border border-[rgba(221,183,99,0.28)] shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#14222E]">
             <iframe
               src={COMPANY_CONFIG.location.mapEmbedUrl}
               width="100%"

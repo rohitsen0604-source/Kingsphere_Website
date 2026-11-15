@@ -36,7 +36,7 @@ const VALUE_ICONS: Record<string, React.ElementType> = {
 
 export default function VisionMissionPage() {
   return (
-    <div className="relative bg-[#070B0E] text-white min-h-screen">
+    <div className="relative bg-[#0E1720] text-white min-h-screen">
       {/* Hero with /images/hero/07-vision-mission-hero.png */}
       <PageHero
         badge="STRATEGIC CHARTER & ETHICAL FOUNDATION"
@@ -53,7 +53,7 @@ export default function VisionMissionPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Vision Panel */}
           <GsapReveal animation="fade-up" delay={0} duration={0.85}>
-            <div className="relative h-full rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
+            <div className="relative h-full rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
@@ -68,7 +68,7 @@ export default function VisionMissionPage() {
                   Our Corporate Vision
                 </h2>
 
-                <blockquote className="p-4 sm:p-6 rounded-xl bg-[#070B0E] border-l-2 border-[#DDB763] font-sans text-sm sm:text-base text-white leading-relaxed font-normal">
+                <blockquote className="p-4 sm:p-6 rounded-xl bg-[#0E1720] border-l-2 border-[#DDB763] font-sans text-sm sm:text-base text-white leading-relaxed font-normal">
                   &ldquo;{COMPANY_CONFIG.vision}&rdquo;
                 </blockquote>
               </div>
@@ -81,7 +81,7 @@ export default function VisionMissionPage() {
 
           {/* Mission Panel */}
           <GsapReveal animation="fade-up" delay={0.15} duration={0.85}>
-            <div className="relative h-full rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
+            <div className="relative h-full rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.3)] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-6 sm:space-y-8 hover:border-[#DDB763] transition-colors duration-300">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
@@ -115,7 +115,7 @@ export default function VisionMissionPage() {
       </section>
 
       {/* Five Core Values Section */}
-      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#0B1317] border-y border-[rgba(221,183,99,0.2)]">
+      <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8 bg-[#14222E] border-y border-[rgba(221,183,99,0.2)]">
         <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
           <SectionHeading
             badge="OUR CORE CREED"
@@ -162,8 +162,8 @@ export default function VisionMissionPage() {
 
           {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
           <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-3.5 px-3.5 font-sans">
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#0B1317] to-transparent z-20" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#0B1317] to-transparent z-20" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#14222E] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#14222E] to-transparent z-20" />
 
             <div className="animate-marquee-track flex gap-4 items-stretch">
               {[...CORE_VALUES, ...CORE_VALUES].map((val, idx) => {
@@ -171,7 +171,7 @@ export default function VisionMissionPage() {
                 return (
                   <div
                     key={`${val.id}-${idx}`}
-                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#070B0E] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#0E1720] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
                   >
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
@@ -206,14 +206,14 @@ export default function VisionMissionPage() {
       {/* Corporate Belief & Commitment Section */}
       <section className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 font-sans">
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] space-y-4">
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.25)] space-y-4">
             <div className="flex items-center gap-2.5">
               <Sparkles className="w-5 h-5 text-[#DDB763]" />
               <h3 className="font-sans text-xl font-bold text-white uppercase tracking-tight">
                 Our Corporate Belief
               </h3>
             </div>
-            <div className="p-4 rounded-xl bg-[#070B0E] border-l-2 border-[#DDB763]">
+            <div className="p-4 rounded-xl bg-[#0E1720] border-l-2 border-[#DDB763]">
               <div className="font-sans text-lg font-bold uppercase text-[#F8E9C6] space-y-1">
                 <div>BUILDING TRUST.</div>
                 <div>CREATING OPPORTUNITIES.</div>
@@ -225,7 +225,7 @@ export default function VisionMissionPage() {
             </p>
           </div>
 
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.25)] space-y-4">
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#14222E] border border-[rgba(221,183,99,0.25)] space-y-4">
             <div className="flex items-center gap-2.5">
               <CheckCircle2 className="w-5 h-5 text-[#DDB763]" />
               <h3 className="font-sans text-xl font-bold text-white uppercase tracking-tight">
@@ -240,7 +240,7 @@ export default function VisionMissionPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#0B1317] border-t border-[rgba(221,183,99,0.2)] text-center relative overflow-hidden">
+      <section className="py-16 sm:py-24 px-3.5 sm:px-6 lg:px-8 bg-[#14222E] border-t border-[rgba(221,183,99,0.2)] text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto relative z-10 space-y-5">
           <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
             JOIN US IN SHAPING A RESPONSIBLE INDUSTRIAL FUTURE.
