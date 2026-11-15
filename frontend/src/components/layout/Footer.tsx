@@ -18,21 +18,13 @@ export function Footer() {
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-[rgba(221,183,99,0.18)]">
           {/* Column 1: Company Identity (Span 6) */}
-          <div className="lg:col-span-6 space-y-5 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="flex justify-center lg:justify-start">
               <Logo size="lg" variant="full" />
             </div>
             <p className="text-xs sm:text-sm text-white leading-relaxed max-w-md font-sans font-normal mx-auto lg:mx-0">
               {COMPANY_CONFIG.description}
             </p>
-            <div className="p-4 rounded-xl bg-[#14222E] border border-[rgba(221,183,99,0.22)] shadow-sm max-w-md w-full mx-auto lg:mx-0 text-center lg:text-left">
-              <div className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-[#DDB763] mb-1">
-                Official Brand Tagline
-              </div>
-              <div className="text-xs text-white font-sans italic leading-relaxed">
-                &ldquo;{COMPANY_CONFIG.tagline}&rdquo;
-              </div>
-            </div>
           </div>
 
           {/* Column 2: Navigation (Span 3) */}
@@ -89,18 +81,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-between gap-4 text-[11px] text-white/80 font-sans text-center">
+        <div className="pt-8 flex items-center justify-center text-[11px] text-white/80 font-sans text-center">
           <div className="flex items-center justify-center gap-2">
             <ShieldCheck className="w-3.5 h-3.5 text-[#DDB763]" />
             <span>
               &copy; {currentYear} {COMPANY_CONFIG.legalName}. All rights reserved.
             </span>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            <span>Corporate Location: Parbhani, Maharashtra, India</span>
-            <Link href="/contact" className="hover:text-[#DDB763] transition-colors text-white">
-              Inquiries & Governance
-            </Link>
           </div>
         </div>
       </div>
