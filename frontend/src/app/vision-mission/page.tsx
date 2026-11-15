@@ -125,7 +125,8 @@ export default function VisionMissionPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
             {CORE_VALUES.map((val, idx) => {
               const Icon = VALUE_ICONS[val.iconName] || ShieldCheck;
               return (
@@ -157,6 +158,47 @@ export default function VisionMissionPage() {
                 </GsapReveal>
               );
             })}
+          </div>
+
+          {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
+          <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-3.5 px-3.5 font-sans">
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#0B1317] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#0B1317] to-transparent z-20" />
+
+            <div className="animate-marquee-track flex gap-4 items-stretch">
+              {[...CORE_VALUES, ...CORE_VALUES].map((val, idx) => {
+                const Icon = VALUE_ICONS[val.iconName] || ShieldCheck;
+                return (
+                  <div
+                    key={`${val.id}-${idx}`}
+                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#070B0E] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                  >
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="font-mono text-xs font-bold text-[#DDB763]">
+                          VALUE {val.number}
+                        </span>
+                        <div className="w-8 h-8 rounded-lg bg-[#DDB763]/10 border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
+                          <Icon className="w-4 h-4" />
+                        </div>
+                      </div>
+
+                      <h3 className="font-sans text-lg font-bold uppercase text-white tracking-tight">
+                        {val.title}
+                      </h3>
+
+                      <div className="text-xs text-[#DDB763] font-sans font-medium">
+                        • {val.tagline}
+                      </div>
+
+                      <p className="text-xs text-white leading-relaxed font-normal">
+                        {val.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

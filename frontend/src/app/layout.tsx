@@ -3,6 +3,7 @@ import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Preloader } from '@/components/layout/Preloader';
+import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { COMPANY_CONFIG } from '@/config/company';
 
 export const metadata: Metadata = {
@@ -92,6 +93,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <WhatsAppButton />
       </body>
     </html>
   );

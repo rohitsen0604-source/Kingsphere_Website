@@ -218,55 +218,61 @@ export function CoreValuesInfographic() {
       </div>
 
       {/* ========================================================
-          MOBILE VIEW (< 768px: Fluid Timeline Stream with Zero Cramping)
+          MOBILE VIEW (< 768px: Infinite Horizontal Loop Track)
       ======================================================== */}
-      <div className="md:hidden flex flex-col space-y-6 relative z-10 px-2">
-        {CORE_VALUES.map((val, idx) => {
-          const Icon = VALUE_ICONS[val.iconName] || ShieldCheck;
-          const style = VALUE_STYLES[idx % VALUE_STYLES.length];
+      <div className="md:hidden relative z-10 w-full overflow-hidden py-3 -mx-2 px-2">
+        {/* Soft edge fades */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
 
-          return (
-            <div
-              key={val.id}
-              className="relative rounded-2xl bg-[#0B1317]/95 border border-[rgba(221, 183, 99,0.22)] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.6)] overflow-hidden"
-            >
-              {/* Header with Circular Gradient Node & Icon */}
-              <div className="flex items-center justify-between gap-3 mb-3.5">
-                <div className="flex items-center gap-3">
-                  {/* Circular Gradient Badge */}
-                  <div
-                    className={`w-14 h-14 shrink-0 rounded-full p-[4px] bg-gradient-to-br ${style.gradient} flex items-center justify-center`}
-                    style={{ boxShadow: `0 0 18px ${style.glow}` }}
-                  >
-                    <div className="w-full h-full rounded-full bg-[#070B0E] flex items-center justify-center shadow-inner">
-                      <span className="font-sans text-lg font-bold text-white">
-                        {val.number}
-                      </span>
+        <div className="animate-marquee-track flex gap-4 items-stretch">
+          {[...CORE_VALUES, ...CORE_VALUES].map((val, idx) => {
+            const Icon = VALUE_ICONS[val.iconName] || ShieldCheck;
+            const style = VALUE_STYLES[idx % VALUE_STYLES.length];
+
+            return (
+              <div
+                key={`${val.id}-${idx}`}
+                className="w-[280px] shrink-0 rounded-2xl bg-[#0B1317]/95 border border-[rgba(221,183,99,0.25)] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.6)] flex flex-col justify-between"
+              >
+                {/* Header with Circular Gradient Node & Icon */}
+                <div className="flex items-center justify-between gap-3 mb-3.5">
+                  <div className="flex items-center gap-3">
+                    {/* Circular Gradient Badge */}
+                    <div
+                      className={`w-12 h-12 shrink-0 rounded-full p-[3px] bg-gradient-to-br ${style.gradient} flex items-center justify-center`}
+                      style={{ boxShadow: `0 0 16px ${style.glow}` }}
+                    >
+                      <div className="w-full h-full rounded-full bg-[#070B0E] flex items-center justify-center shadow-inner">
+                        <span className="font-sans text-base font-bold text-white">
+                          {val.number}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="font-sans text-base font-bold uppercase text-white tracking-wider">
+                        {val.title}
+                      </h3>
+                      <div className="text-[11px] font-sans text-[#DDB763]">
+                        {val.tagline}
+                      </div>
                     </div>
                   </div>
 
-                  <div>
-                    <h3 className="font-sans text-lg font-bold uppercase text-white tracking-wider">
-                      {val.title}
-                    </h3>
-                    <div className="text-[11px] font-sans text-[#DDB763]">
-                      {val.tagline}
-                    </div>
+                  <div className="w-8 h-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white/90 shrink-0">
+                    <Icon className="w-4 h-4 text-[#DDB763]" />
                   </div>
                 </div>
 
-                <div className="w-9 h-9 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white/90 shrink-0">
-                  <Icon className="w-4 h-4 text-[#DDB763]" />
-                </div>
+                {/* Description */}
+                <p className="text-xs text-white/95 font-sans leading-relaxed font-normal">
+                  {val.description}
+                </p>
               </div>
-
-              {/* Description - Plain White */}
-              <p className="text-xs text-white font-sans leading-relaxed pl-1 font-normal">
-                {val.description}
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

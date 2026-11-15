@@ -132,7 +132,8 @@ export default function PartnershipsPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
             {PARTNERSHIP_CATEGORIES.map((cat, idx) => {
               const Icon = CATEGORY_ICONS[cat.iconName] || Handshake;
               return (
@@ -174,6 +175,52 @@ export default function PartnershipsPage() {
                 </GsapReveal>
               );
             })}
+          </div>
+
+          {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
+          <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-3.5 px-3.5 font-sans">
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
+
+            <div className="animate-marquee-track flex gap-4 items-stretch">
+              {[...PARTNERSHIP_CATEGORIES, ...PARTNERSHIP_CATEGORIES].map((cat, idx) => {
+                const Icon = CATEGORY_ICONS[cat.iconName] || Handshake;
+                return (
+                  <div
+                    key={`${cat.id}-${idx}`}
+                    className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                  >
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between">
+                        <div className="w-7 h-7 rounded-[1px] bg-[rgba(221,183,99,0.1)] border border-[rgba(221,183,99,0.3)] flex items-center justify-center text-[#DDB763]">
+                          <Icon className="w-3.5 h-3.5 text-[#DDB763]" />
+                        </div>
+                        <span className="text-[9px] font-mono text-[#DDB763] uppercase tracking-wider">
+                          Active Profile
+                        </span>
+                      </div>
+
+                      <h3 className="font-sans text-base font-bold text-white">
+                        {cat.title}
+                      </h3>
+
+                      <p className="text-xs text-white/90 leading-relaxed font-normal">
+                        {cat.description}
+                      </p>
+                    </div>
+
+                    <div className="pt-2.5 border-t border-[rgba(221,183,99,0.15)] space-y-1">
+                      <div className="text-[9px] uppercase font-semibold tracking-wider text-[#DDB763]">
+                        Modes:
+                      </div>
+                      <div className="text-[11px] text-white/80 leading-snug">
+                        {cat.collaborationModes.slice(0, 2).join(' • ')}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

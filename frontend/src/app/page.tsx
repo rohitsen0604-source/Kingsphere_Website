@@ -113,24 +113,24 @@ export default function HomePage() {
               </div>
             </GsapReveal>
 
-            {/* Below CTAs: Three Core Credentials */}
+            {/* Below CTAs: Three Core Credentials (Single horizontal line on mobile & desktop) */}
             <GsapReveal animation="fade-in" delay={0.55}>
-              <div className="pt-5 sm:pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-lg font-sans">
-                <div className="p-2 sm:p-0">
-                  <div className="font-sans text-xl sm:text-2xl font-bold text-white">11</div>
-                  <div className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-[0.14em] mt-0.5 font-medium">
+              <div className="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-xl font-sans">
+                <div className="py-1">
+                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">11</div>
+                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                     BUSINESS VERTICALS
                   </div>
                 </div>
-                <div className="p-2 sm:p-0">
-                  <div className="font-sans text-xl sm:text-2xl font-bold text-white">6-STEP</div>
-                  <div className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-[0.14em] mt-0.5 font-medium">
+                <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">6-STEP</div>
+                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                     EXECUTION FRAMEWORK
                   </div>
                 </div>
-                <div className="col-span-2 sm:col-span-1 p-2 sm:p-0 border-t sm:border-t-0 border-[rgba(221,183,99,0.15)]">
-                  <div className="font-sans text-lg sm:text-2xl font-bold text-white">PARBHANI</div>
-                  <div className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-[0.14em] mt-0.5 font-medium">
+                <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+                  <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">PARBHANI</div>
+                  <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                     MAHARASHTRA, INDIA
                   </div>
                 </div>
@@ -412,9 +412,9 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(221, 183, 99,0.2)]">
+              <div className="pt-4 border-t border-[rgba(221,183,99,0.2)]">
                 <Link
-                  href="/vision-mission"
+                  href="/about#vision-mission"
                   className="text-xs uppercase font-sans font-bold tracking-[0.14em] text-[#DDB763] hover:text-[#F8E9C6] inline-flex items-center gap-1 group"
                 >
                   <span>Learn more about our vision</span>
@@ -430,7 +430,7 @@ export default function HomePage() {
                   <span className="text-[10px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
                     OPERATING MANDATE
                   </span>
-                  <div className="w-8 h-8 rounded-lg bg-[rgba(221, 183, 99,0.1)] border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
+                  <div className="w-8 h-8 rounded-lg bg-[rgba(221,183,99,0.1)] border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                 </div>
@@ -442,9 +442,9 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[rgba(221, 183, 99,0.2)]">
+              <div className="pt-4 border-t border-[rgba(221,183,99,0.2)]">
                 <Link
-                  href="/vision-mission"
+                  href="/about#vision-mission"
                   className="text-xs uppercase font-sans font-bold tracking-[0.14em] text-[#DDB763] hover:text-[#F8E9C6] inline-flex items-center gap-1 group"
                 >
                   <span>Learn more about our mission</span>
@@ -499,30 +499,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========================================================
-          SECTION 9: FINAL CTA
-      ======================================================== */}
-      <section className="py-24 relative overflow-hidden text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-5">
-          <span className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] text-[#DDB763]">
-            DIRECT EXECUTIVE DIALOGUE
-          </span>
-          <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight">
-            FROM OPPORTUNITY TO ENTERPRISE.
-          </h2>
-          <p className="text-xs sm:text-sm md:text-base text-white max-w-xl mx-auto leading-relaxed font-sans font-normal">
-            Let&apos;s explore strategic opportunities and build enduring corporate partnerships.
-          </p>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 pt-3 w-full sm:w-auto max-w-md mx-auto">
-            <Button href="/contact" variant="primary" size="lg" withArrow className="w-full sm:w-auto text-center justify-center">
-              CONTACT OUR TEAM
-            </Button>
-            <Button href="/partnerships" variant="outline" size="lg" className="w-full sm:w-auto text-center justify-center">
-              PARTNER WITH US
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Section 8 ends cleanly */}
     </div>
   );
 }

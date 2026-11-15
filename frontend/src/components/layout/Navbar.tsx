@@ -102,8 +102,8 @@ export function Navbar() {
               <Logo size="md" variant="full" />
             </div>
 
-            {/* Center: Desktop Navigation (Manrope Medium, Centered, Controlled) */}
-            <nav className="hidden xl:flex items-center justify-center space-x-1 lg:space-x-2">
+            {/* Center: Desktop Navigation (Manrope Medium, Centered, Single-Line) */}
+            <nav className="hidden lg:flex items-center justify-center gap-0.5 xl:gap-2">
               {MAIN_NAV_ITEMS.map((item) => {
                 const isActive = pathname === item.href;
 
@@ -117,30 +117,30 @@ export function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className={`inline-flex items-center gap-1 px-3 py-2 text-xs font-sans font-medium uppercase tracking-[0.14em] transition-colors duration-200 ${
+                        className={`whitespace-nowrap inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 ${
                           isActive || megaMenuOpen
-                            ? 'text-[#E8D29A]'
-                            : 'text-white hover:text-[#F3F0E9]'
+                            ? 'text-[#DDB763]'
+                            : 'text-white hover:text-[#F8E9C6]'
                         }`}
                       >
                         <span>{item.title}</span>
                         <ChevronDown
                           className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                            megaMenuOpen ? 'rotate-180 text-[#E8D29A]' : 'opacity-60'
+                            megaMenuOpen ? 'rotate-180 text-[#DDB763]' : 'opacity-60'
                           }`}
                         />
                       </Link>
 
-                      {/* Mega Menu Dropdown */}
+                      {/* Mega Menu Dropdown (100% Solid Opaque Background to Prevent Background Bleed-Through) */}
                       <div
-                        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[880px] transition-all duration-300 ${
+                        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[840px] max-w-[calc(100vw-32px)] z-[100] transition-all duration-300 ${
                           megaMenuOpen
                             ? 'opacity-100 translate-y-0 pointer-events-auto visible'
                             : 'opacity-0 -translate-y-2 pointer-events-none invisible'
                         }`}
                       >
-                        <div className="rounded-2xl bg-[#0B1317]/98 border border-[rgba(221, 183, 99,0.24)] shadow-[0_24px_60px_rgba(0,0,0,0.7)] p-6 backdrop-blur-xl">
-                          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(221, 183, 99,0.2)]">
+                        <div className="rounded-3xl bg-[#070B0E] border-2 border-[#DDB763] shadow-[0_30px_90px_rgba(0,0,0,0.99),0_0_40px_rgba(221,183,99,0.3)] p-6">
+                          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[rgba(221,183,99,0.25)]">
                             <div>
                               <span className="text-[10px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
                                 DIVERSIFIED OPERATIONS
@@ -151,6 +151,7 @@ export function Navbar() {
                             </div>
                             <Link
                               href="/business-sectors"
+                              onClick={() => setMegaMenuOpen(false)}
                               className="inline-flex items-center gap-1 text-xs text-[#DDB763] hover:text-[#F8E9C6] font-bold tracking-[0.12em] uppercase group"
                             >
                               <span>View All 11 Verticals</span>
@@ -165,9 +166,10 @@ export function Navbar() {
                                 <Link
                                   key={sector.id}
                                   href={`/business-sectors#${sector.id}`}
-                                  className="group flex items-start gap-2.5 p-2 rounded-xl hover:bg-[#101C22] border border-transparent hover:border-[rgba(221, 183, 99,0.25)] transition-all"
+                                  onClick={() => setMegaMenuOpen(false)}
+                                  className="group flex items-start gap-2.5 p-2 rounded-xl bg-[#0B1317] hover:bg-[#121E24] border border-[rgba(221,183,99,0.2)] hover:border-[#DDB763] transition-all"
                                 >
-                                  <div className="w-7 h-7 rounded-lg bg-[rgba(221, 183, 99,0.08)] border border-[rgba(221, 183, 99,0.2)] flex items-center justify-center shrink-0 group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">
+                                  <div className="w-7 h-7 rounded-lg bg-[#070B0E] border border-[rgba(221,183,99,0.3)] flex items-center justify-center shrink-0 group-hover:border-[#DDB763] group-hover:bg-[#DDB763]/10 transition-colors">
                                     <Icon className="w-3.5 h-3.5 text-[#DDB763] group-hover:text-white" />
                                   </div>
                                   <div className="overflow-hidden">
@@ -175,7 +177,7 @@ export function Navbar() {
                                       {sector.title}
                                     </div>
                                     <div className="text-[10px] text-white/70 truncate mt-0.5 font-sans">
-                                      Sector {sector.number}
+                                      Vertical {sector.number}
                                     </div>
                                   </div>
                                 </Link>
@@ -192,15 +194,15 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`relative px-3 py-2 text-xs font-sans font-medium uppercase tracking-[0.14em] transition-colors duration-200 group ${
-                      isActive ? 'text-[#E8D29A]' : 'text-white hover:text-[#F3F0E9]'
+                    className={`whitespace-nowrap relative px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-sans font-bold uppercase tracking-[0.1em] xl:tracking-[0.14em] transition-colors duration-200 group ${
+                      isActive ? 'text-[#DDB763]' : 'text-white hover:text-[#F8E9C6]'
                     }`}
                   >
                     <span>{item.title}</span>
                     <span
-                      className={`absolute bottom-0 left-3 right-3 h-[1.5px] bg-gradient-to-r from-[#C9A34F] via-[#E8D29A] to-[#C9A34F] transition-all duration-300 ease-out origin-center ${
+                      className={`absolute bottom-0 left-2.5 right-2.5 h-[2px] bg-gradient-to-r from-transparent via-[#DDB763] to-transparent transition-all duration-300 ease-out origin-center ${
                         isActive
-                          ? 'opacity-100 scale-x-100 shadow-[0_0_8px_rgba(201,163,79,0.7)]'
+                          ? 'opacity-100 scale-x-100 shadow-[0_0_8px_rgba(221,183,99,0.8)]'
                           : 'opacity-0 scale-x-0 group-hover:opacity-75 group-hover:scale-x-75'
                       }`}
                     />
@@ -210,14 +212,14 @@ export function Navbar() {
             </nav>
 
             {/* Right: Partner CTA Button */}
-            <div className="hidden xl:flex items-center shrink-0">
-              <Button href={CTA_BUTTON.href} variant="primary" size="sm" withArrow>
+            <div className="hidden lg:flex items-center shrink-0">
+              <Button href={CTA_BUTTON.href} variant="primary" size="sm" withArrow className="whitespace-nowrap">
                 {CTA_BUTTON.title}
               </Button>
             </div>
 
             {/* Mobile Hamburger Trigger */}
-            <div className="flex xl:hidden items-center gap-2 sm:gap-3">
+            <div className="flex lg:hidden items-center gap-2 sm:gap-3">
               <Button
                 href={CTA_BUTTON.href}
                 variant="primary"
@@ -243,7 +245,7 @@ export function Navbar() {
 
       {/* Mobile Editorial Slide Navigation */}
       <div
-        className={`fixed inset-0 z-40 bg-[#070B0E]/98 backdrop-blur-2xl transition-all duration-300 xl:hidden ${
+        className={`fixed inset-0 z-40 bg-[#070B0E]/98 backdrop-blur-2xl transition-all duration-300 lg:hidden ${
           mobileMenuOpen
             ? 'opacity-100 pointer-events-auto visible'
             : 'opacity-0 pointer-events-none invisible'

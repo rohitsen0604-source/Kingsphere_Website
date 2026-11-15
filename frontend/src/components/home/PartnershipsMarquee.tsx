@@ -44,7 +44,7 @@ export function PartnershipsMarquee() {
             <Link
               key={`${cat.id}-${idx}`}
               href={`/partnerships?category=${cat.id}`}
-              className="group relative w-[320px] sm:w-[380px] shrink-0 p-6 rounded-2xl bg-gradient-to-b from-[#0F1A1F] to-[#0B1317] border border-[rgba(221, 183, 99,0.22)] hover:border-[#DDB763] shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(221, 183, 99,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between font-sans cursor-pointer"
+              className="group relative w-[280px] sm:w-[380px] shrink-0 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-[#0F1A1F] to-[#0B1317] border border-[rgba(221, 183, 99,0.22)] hover:border-[#DDB763] shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(221, 183, 99,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between font-sans cursor-pointer"
             >
               <div className="space-y-3.5">
                 {/* Header: Icon & External Link indicator */}

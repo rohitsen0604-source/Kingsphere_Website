@@ -104,7 +104,8 @@ export default function OurApproachPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-sans">
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 font-sans">
             {APPROACH_PILLARS.map((pillar, idx) => (
               <GsapReveal key={idx} animation="fade-up" delay={idx * 0.1} duration={0.8}>
                 <GlassCard cornerAccents className="p-8 space-y-4 h-full">
@@ -125,6 +126,40 @@ export default function OurApproachPage() {
                 </GlassCard>
               </GsapReveal>
             ))}
+          </div>
+
+          {/* Mobile View: Continuous Infinite Marquee Loop (Single Line) */}
+          <div className="md:hidden relative z-10 w-full overflow-hidden py-2 -mx-4 px-4 font-sans">
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#070B0E] to-transparent z-20" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#070B0E] to-transparent z-20" />
+
+            <div className="animate-marquee-track flex gap-4 items-stretch">
+              {[...APPROACH_PILLARS, ...APPROACH_PILLARS].map((pillar, idx) => (
+                <div
+                  key={idx}
+                  className="w-[280px] shrink-0 p-5 rounded-2xl bg-[#0B1317] border border-[rgba(221,183,99,0.3)] shadow-[0_10px_30px_rgba(0,0,0,0.6)] space-y-3 flex flex-col justify-between"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-bold text-[#DDB763]">
+                        PILLAR 0{((idx % APPROACH_PILLARS.length) + 1)}
+                      </span>
+                      <div className="w-8 h-8 rounded-lg bg-[#DDB763]/10 border border-[#DDB763] flex items-center justify-center text-[#DDB763]">
+                        <Shield className="w-4 h-4" />
+                      </div>
+                    </div>
+
+                    <h3 className="font-sans text-lg font-bold uppercase text-white tracking-tight">
+                      {pillar.title}
+                    </h3>
+
+                    <p className="text-xs text-white leading-relaxed font-normal">
+                      {pillar.content}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
