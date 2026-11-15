@@ -29,7 +29,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
   heightClass = 'min-h-[50vh] sm:min-h-[58vh] md:min-h-[65vh]',
 }) => {
   return (
-    <section className={`relative ${heightClass} flex items-center justify-center pt-24 sm:pt-28 md:pt-32 pb-14 sm:pb-16 px-3.5 sm:px-6 lg:px-8 border-b border-[rgba(201,163,79,0.2)] overflow-hidden`}>
+    <section className={`relative ${heightClass} flex items-center justify-center pt-24 sm:pt-28 md:pt-30 pb-8 sm:pb-10 px-3.5 sm:px-6 lg:px-8 overflow-hidden`}>
       {/* Background Hero Image with Cinematic Scale Entrance */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
@@ -82,14 +82,6 @@ export const PageHero: React.FC<PageHeroProps> = ({
             <div className="pt-2">{children}</div>
           </GsapReveal>
         )}
-
-        {/* Subtle Decorative Scroll Indicator */}
-        <div className="pt-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
-          <div className="inline-flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase text-[#E8D29A] font-medium font-sans">
-            <span>EXPLORE</span>
-            <ChevronDown className="w-3.5 h-3.5 text-[#C9A34F] animate-bounce" />
-          </div>
-        </div>
       </div>
     </section>
   );

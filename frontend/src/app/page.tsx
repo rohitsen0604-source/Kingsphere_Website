@@ -46,7 +46,7 @@ export default function HomePage() {
       {/* ========================================================
           SECTION 1: CINEMATIC FULL-WIDTH HERO (Clean Photography)
       ======================================================== */}
-      <section className="relative min-h-[84vh] sm:min-h-[88vh] lg:min-h-[92vh] flex items-center justify-center pt-24 sm:pt-28 lg:pt-32 pb-12 sm:pb-16 px-3.5 sm:px-6 lg:px-8 overflow-hidden border-b border-[rgba(221, 183, 99,0.2)]">
+      <section className="relative min-h-[68vh] sm:min-h-[75vh] lg:min-h-[82vh] flex items-center justify-center pt-24 sm:pt-28 pb-6 sm:pb-8 px-3.5 sm:px-6 lg:px-8 overflow-hidden">
         {/* Layer 1: Lowest Layer - Clean Professional Photography */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <Image
@@ -66,7 +66,7 @@ export default function HomePage() {
         </div>
 
         {/* Layer 3: Top Layer - Centered HTML Hero Content */}
-        <div className="max-w-5xl xl:max-w-6xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-5 sm:space-y-6">
+        <div className="max-w-5xl xl:max-w-6xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-4 sm:space-y-5">
           <GsapReveal animation="fade-up" duration={0.8}>
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221,183,99,0.35)] bg-[#0B151A]/90 backdrop-blur-md mx-auto">
@@ -103,7 +103,7 @@ export default function HomePage() {
 
           {/* CTAs */}
           <GsapReveal animation="fade-up" delay={0.45} duration={0.9}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-1 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-0.5 w-full sm:w-auto">
               <Button href="/business-sectors" variant="primary" size="lg" withArrow className="w-full sm:w-auto text-center justify-center">
                 EXPLORE OUR BUSINESS
               </Button>
@@ -113,22 +113,22 @@ export default function HomePage() {
             </div>
           </GsapReveal>
 
-          {/* Below CTAs: Three Core Credentials (Single horizontal line on mobile & desktop, Centered) */}
+          {/* Below CTAs: Three Core Credentials (No divider line, compact managed spacing) */}
           <GsapReveal animation="fade-in" delay={0.55}>
-            <div className="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-6 border-t border-[rgba(221,183,99,0.2)] max-w-xl mx-auto w-full font-sans text-center">
-              <div className="py-1">
+            <div className="pt-2 sm:pt-3 grid grid-cols-3 gap-2 sm:gap-6 max-w-xl mx-auto w-full font-sans text-center">
+              <div className="py-0.5">
                 <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">11</div>
                 <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                   BUSINESS VERTICALS
                 </div>
               </div>
-              <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+              <div className="py-0.5 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
                 <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">6-STEP</div>
                 <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                   EXECUTION FRAMEWORK
                 </div>
               </div>
-              <div className="py-1 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
+              <div className="py-0.5 border-l border-[rgba(221,183,99,0.2)] pl-2 sm:pl-4 sm:border-l-0">
                 <div className="font-sans text-base sm:text-2xl font-bold text-white tracking-tight">PARBHANI</div>
                 <div className="text-[8px] sm:text-[10px] text-white/80 uppercase tracking-wider mt-0.5 font-medium leading-tight">
                   MAHARASHTRA, INDIA
@@ -137,20 +137,12 @@ export default function HomePage() {
             </div>
           </GsapReveal>
         </div>
-
-        {/* Minimal Scroll Indicator */}
-        <div className="hidden lg:flex absolute bottom-5 left-1/2 -translate-x-1/2 items-center gap-2 pointer-events-none opacity-70">
-          <span className="text-[9px] uppercase font-sans font-bold tracking-[0.25em] text-[#DDB763]">
-            SCROLL TO EXPLORE
-          </span>
-          <ChevronDown className="w-3.5 h-3.5 text-[#DDB763] animate-bounce" />
-        </div>
       </section>
 
       {/* ========================================================
           SECTION 2: ABOUT KINGSPHERE (Asymmetric Editorial Layout)
       ======================================================== */}
-      <section className="py-20 md:py-28 bg-[#14222E] border-b border-[rgba(221, 183, 99,0.2)] relative">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#14222E] border-b border-[rgba(221, 183, 99,0.2)] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Visual Column */}
