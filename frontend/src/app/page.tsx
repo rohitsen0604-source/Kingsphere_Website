@@ -66,7 +66,7 @@ export default function HomePage() {
         </div>
 
         {/* Layer 3: Top Layer - Centered HTML Hero Content */}
-        <div className="max-w-4xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-5 sm:space-y-6">
+        <div className="max-w-5xl xl:max-w-6xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-5 sm:space-y-6">
           <GsapReveal animation="fade-up" duration={0.8}>
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221,183,99,0.35)] bg-[#0B151A]/90 backdrop-blur-md mx-auto">
@@ -78,10 +78,12 @@ export default function HomePage() {
           </GsapReveal>
 
           <GsapReveal animation="fade-up" delay={0.15} duration={0.9}>
-            {/* Controlled line breaks heading with white & brand logo metallic gold */}
-            <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[62px] font-bold tracking-tight text-white leading-[1.12] text-center">
-              BUILDING STRATEGIC PARTNERSHIPS.<br />
-              <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1">
+            {/* Exactly 2 lines: Line 1 = BUILDING STRATEGIC PARTNERSHIPS. | Line 2 = CREATING GLOBAL OPPORTUNITIES. */}
+            <h1 className="font-sans text-[19px] min-[400px]:text-[22px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-bold tracking-tight text-white leading-[1.16] text-center">
+              <span className="block whitespace-nowrap">
+                BUILDING STRATEGIC PARTNERSHIPS.
+              </span>
+              <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1 whitespace-nowrap">
                 CREATING GLOBAL OPPORTUNITIES.
               </span>
             </h1>

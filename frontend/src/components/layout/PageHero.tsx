@@ -47,9 +47,9 @@ export const PageHero: React.FC<PageHeroProps> = ({
       </div>
 
       {/* Hero Foreground Content */}
-      <div className="relative z-10 max-w-5xl mx-auto text-center space-y-4 sm:space-y-5">
+      <div className="relative z-10 max-w-5xl xl:max-w-6xl mx-auto text-center space-y-4 sm:space-y-5">
         <GsapReveal animation="fade-up" duration={0.7}>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221, 183, 99,0.35)] bg-[#0B151A]/90 backdrop-blur-md shadow-md">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(221, 183, 99,0.35)] bg-[#0B151A]/90 backdrop-blur-md shadow-md mx-auto">
             {badgeIcon ? badgeIcon : <span className="w-1.5 h-1.5 rounded-full bg-[#DDB763] animate-pulse" />}
             <span className="text-[9.5px] sm:text-[11px] font-sans font-bold tracking-[0.22em] sm:tracking-[0.25em] uppercase text-[#F8E9C6]">
               {badge}
@@ -58,10 +58,13 @@ export const PageHero: React.FC<PageHeroProps> = ({
         </GsapReveal>
 
         <GsapReveal animation="fade-up" delay={0.12} duration={0.85}>
-          <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[68px] font-bold tracking-tight text-white leading-[1.12]">
-            {title}{' '}
+          {/* Exactly 2 lines: Line 1 = title | Line 2 = highlightTitle */}
+          <h1 className="font-sans text-[20px] min-[400px]:text-[24px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] font-bold tracking-tight text-white leading-[1.16] text-center">
+            <span className="block sm:whitespace-nowrap">
+              {title}
+            </span>
             {highlightTitle && (
-              <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1 font-bold">
+              <span className="bg-gradient-to-r from-[#FFFDF7] via-[#F8E9C6] to-[#DDB763] bg-clip-text text-transparent block mt-1 sm:whitespace-nowrap font-bold">
                 {highlightTitle}
               </span>
             )}
@@ -69,7 +72,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
         </GsapReveal>
 
         <GsapReveal animation="fade-up" delay={0.25} duration={0.85}>
-          <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-2xl mx-auto font-sans font-normal drop-shadow-sm">
+          <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed max-w-3xl mx-auto font-sans font-normal drop-shadow-sm">
             {description}
           </p>
         </GsapReveal>

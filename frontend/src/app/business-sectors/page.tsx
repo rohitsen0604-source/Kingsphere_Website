@@ -35,7 +35,7 @@ export default function BusinessSectorsPage() {
         badge="11 BUSINESS VERTICALS. ONE DIVERSIFIED GROUP."
         badgeIcon={<Layers className="w-3.5 h-3.5 text-[#DDB763]" />}
         title="11 BUSINESS VERTICALS."
-        highlightTitle="ONE VISION."
+        highlightTitle="ONE DIVERSIFIED BUSINESS GROUP."
         description="CREATING TRUST • DELIVERING VALUE • BUILDING OPPORTUNITIES. KINGSPHERE is engaged in developing business opportunities across manufacturing, infrastructure, international trade, consumer products, technology, mining, energy, recycling, consultancy, projects, and strategic investments."
         imageSrc="/images/kingsphere/03-business-sectors-hero.png"
         imageAlt="KINGSPHERE 11 Diversified Business Verticals"
